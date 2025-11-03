@@ -1,0 +1,126 @@
+/* src/styles.scss (Hoặc main.css) */
+
+/* 1. Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. CSS Variables (Design System Tokens) */
+:root {
+  /* Font Family */
+  --font-primary: 'Poppins', sans-serif; /* Sử dụng Poppins cho tất cả */
+
+  /* Colors */
+  --primary: #16B013;
+  --soft-primary: #2FE12C;
+  --hard-primary: #0E6E0C;
+  --warning: #F97D1A;
+  --danger: #ED1A29;
+  --surface-dim: #595959; /* Text phụ */
+  --surface: #C2C2C2;      /* Viền/Nền tối hơn */
+  --secondary: #EBF0EA;   /* Nền container nhạt */
+
+  /* Font Sizes - Headings */
+  --hero: 96px;
+  --h1: 80px;
+  --h2: 72px;
+  --h3: 54px;
+  --h4: 40px;
+  --h5: 34px;
+  --h6: 28px;
+  --h7: 20px;
+
+  /* Font Sizes - Body/Other */
+  --font-size-24: 24px;
+  --font-size-20: 20px; /* Trùng với --h7 */
+  --font-size-18: 18px;
+  --font-size-16: 16px; /* Mặc định */
+  --font-size-14: 14px;
+  --font-size-12: 12px;
+
+  /* Font Weights (Poppins thường có nhiều độ đậm) */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line Heights */
+  --line-height-heading: 1.2;
+  --line-height-body: 1.5;
+  --line-height-tight: 1.1;
+}
+
+/* 3. Base Body & HTML Element Styles */
+body {
+  font-family: var(--font-primary); /* Áp dụng Poppins */
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-body);
+  background-color: var(--secondary); /* Ví dụ: Nền */
+  color: var(--surface-dim); /* Ví dụ: Chữ */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary); /* Áp dụng Poppins */
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+  margin-bottom: 0.75rem;
+  color: var(--hard-primary); /* Ví dụ: Tiêu đề */
+}
+
+h1 { font-size: var(--h1); line-height: var(--line-height-tight); }
+h2 { font-size: var(--h2); line-height: var(--line-height-tight); }
+h3 { font-size: var(--h3); }
+h4 { font-size: var(--h4); }
+h5 { font-size: var(--h5); }
+h6 { font-size: var(--h6); }
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 4. Utility Classes (Giữ nguyên từ file export, đã dọn dẹp) */
+
+/* Color Utilities */
+.primary { color: var(--primary); }
+.soft-primary { color: var(--soft-primary); }
+.hard-primary { color: var(--hard-primary); }
+.warning { color: var(--warning); }
+.danger { color: var(--danger); }
+.surface-dim { color: var(--surface-dim); }
+.surface { color: var(--surface); }
+.secondary { color: var(--secondary); }
+
+/* Typography Utilities - Headings */
+.hero { font-size: var(--hero); line-height: 1; font-weight: 700; }
+.h1 { font-size: var(--h1); line-height: 1.05; font-weight: 700; }
+.h2 { font-size: var(--h2); line-height: 1.055556; font-weight: 700; }
+.h3 { font-size: var(--h3); line-height: 1.074074; font-weight: 700; }
+.h4 { font-size: var(--h4); line-height: 1.1; font-weight: 700; }
+.h5 { font-size: var(--h5); line-height: 1.117647; font-weight: 700; }
+.h6 { font-size: var(--h6); line-height: 1.142857; font-weight: 700; }
+.h7 { font-size: var(--h7); line-height: 1.4; font-weight: 700; }
+
+/* Typography Utilities - Body/Other (Giữ lại các cặp size/weight bạn dùng) */
+.text-lg-regular { font-size: var(--font-size-18); font-weight: var(--font-weight-regular); line-height: 1.7; }
+.text-lg-semibold { font-size: var(--font-size-18); font-weight: var(--font-weight-semibold); line-height: 1.7; }
+
+.text-md-regular { font-size: var(--font-size-16); font-weight: var(--font-weight-regular); line-height: 1.75; }
+.text-md-semibold { font-size: var(--font-size-16); font-weight: var(--font-weight-semibold); line-height: 1.75; }
+
+.text-sm-regular { font-size: var(--font-size-14); font-weight: var(--font-weight-regular); line-height: 1.8; }
+.text-sm-semibold { font-size: var(--font-size-14); font-weight: var(--font-weight-semibold); line-height: 1.8; }
+
+.text-xs-regular { font-size: var(--font-size-12); font-weight: var(--font-weight-regular); line-height: 2; }
+.text-xs-semibold { font-size: var(--font-size-12); font-weight: var(--font-weight-semibold); line-height: 2; }
