@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đào Thế Khải_K234111339</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Part A: Top Menu -->
+    <header class="part-a">
+        <nav class="menu">
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a href="#" data-page="about-me">About me</a>
+                </li>
+                <li class="menu-item dropdown">
+                    <a href="#">API and External</a>
+                    <ul class="submenu">
+                        <li><a href="#" data-page="weather-api">Weather API</a></li>
+                        <li><a href="#" data-page="rss">RSS</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item dropdown">
+                    <a href="#">Form & Javascript</a>
+                    <ul class="submenu">
+                        <li><a href="#" data-page="products">Products</a></li>
+                        <li><a href="#" data-page="providers">Providers</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#" data-page="login" id="login-logout-link">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <!-- Part B: Left Column -->
+        <aside class="part-b">
+            <iframe class="embedded-page" src="../Part B/PartB.HTML" title="Part B"></iframe>
+        </aside>
+
+        <!-- Part C: Central Area -->
+        <main class="part-c" id="content-area">
+            <!-- Default: About me content -->
+            <div id="about-me-content" class="page-content">
+                <h1>About me</h1>
+                <div class="student-info">
+                    <img src="../images/img_me.jpg" alt="Avatar" class="avatar">
+                    <div class="student-details">
+                        <p><strong>Student ID:</strong> K234111339</p>
+                        <p><strong>Student Name:</strong> Đào Thế Khải</p>
+                        <p><strong>Class Name:</strong> K23411T</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Weather API content -->
+            <div id="weather-api-content" class="page-content" style="display: none;">
+                <h1>Weather API</h1>
+                <div id="weather-container">
+                    <p>Đang tải dữ liệu thời tiết...</p>
+                </div>
+            </div>
+
+            <!-- RSS content -->
+            <div id="rss-content" class="page-content" style="display: none;">
+                <h1>RSS Feed - ThanhNien Education</h1>
+                <div id="rss-container">
+                    <p>Đang tải RSS feed...</p>
+                </div>
+            </div>
+
+            <!-- Products content -->
+            <div id="products-content" class="page-content" style="display: none;">
+                <h1>Products</h1>
+                <div class="filter-container">
+                    <label for="category-filter">Filter by Category:</label>
+                    <select id="category-filter">
+                        <option value="all">All Categories</option>
+                    </select>
+                </div>
+                <div id="products-container">
+                    <p>Đang tải sản phẩm...</p>
+                </div>
+            </div>
+
+            <!-- Providers content -->
+            <div id="providers-content" class="page-content" style="display: none;">
+                <h1>Providers</h1>
+                <div class="provider-form-container">
+                    <h2>Add New Provider</h2>
+                    <form id="provider-form">
+                        <div class="form-group">
+                            <label for="provider-id">ID:</label>
+                            <input type="text" id="provider-id" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="provider-name">Name:</label>
+                            <input type="text" id="provider-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="provider-phone">Phone:</label>
+                            <input type="text" id="provider-phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="provider-email">Email:</label>
+                            <input type="email" id="provider-email" required>
+                        </div>
+                        <button type="submit">Add Provider</button>
+                    </form>
+                </div>
+                <div id="providers-table-container">
+                    <h2>Providers List</h2>
+                    <table id="providers-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Phone</th>
+                                <th>Email</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="providers-tbody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Login content -->
+            <div id="login-content" class="page-content" style="display: none;">
+                <h1>Login</h1>
+                <div class="login-form-container">
+                    <form id="login-form">
+                        <div class="form-group">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" required>
+                        </div>
+                        <button type="submit">Login</button>
+                    </form>
+                    <p id="login-message"></p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Part D: Right Column -->
+        <aside class="part-d">
+            <iframe class="embedded-page" src="../Part D/partD.html" title="Part D"></iframe>
+        </aside>
+    </div>
+
+    <!-- Part E: Bottom Footer -->
+    <footer class="part-e">
+        <iframe class="embedded-footer" src="../Part E/PartE.html" title="Part E"></iframe>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

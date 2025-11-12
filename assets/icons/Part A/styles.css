@@ -1,0 +1,507 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Part A: Top Menu */
+.part-a {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    width: 100%;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+}
+
+.menu-item > a:hover {
+    background-color: #555;
+}
+
+/* Dropdown menu */
+.menu-item.dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    list-style: none;
+    min-width: 180px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    overflow: hidden;
+    z-index: 1001;
+}
+
+.submenu li {
+    border-bottom: 1px solid #555;
+}
+
+.submenu li:last-child {
+    border-bottom: none;
+}
+
+.submenu a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.submenu a:hover {
+    background-color: #555;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    min-height: 0;
+    width: 100%;
+}
+
+/* Part B: Left Column */
+.part-b {
+    width: 300px;
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-right: 2px solid #ccc;
+    height: calc(100vh - 120px);
+}
+
+.part-b h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Part C: Central Area */
+.part-c {
+    flex: 1;
+    background-color: white;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.page-content h1 {
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 10px;
+}
+
+/* About me styling */
+.student-info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #007bff;
+    object-fit: cover;
+}
+
+.student-details {
+    font-size: 18px;
+}
+
+.student-details p {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #007bff;
+    padding-left: 15px;
+}
+
+/* Part D: Right Column */
+.part-d {
+    width: 300px;
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-left: 2px solid #ccc;
+    height: calc(100vh - 120px);
+}
+
+.part-d h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Part E: Bottom Footer */
+.part-e {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Embedded external pages */
+.embedded-page {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background-color: white;
+}
+
+.embedded-footer {
+    width: 100%;
+    height: 90px;
+    border: 0;
+    background-color: white;
+}
+
+.part-b, .part-d {
+    overflow: auto;
+}
+
+/* Weather API styling */
+#weather-container {
+    margin-top: 20px;
+}
+
+.weather-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather-table th,
+.weather-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.weather-table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.weather-table th:first-child {
+    width: 60px;
+    text-align: center;
+}
+
+.weather-table th:nth-child(3) {
+    width: 120px;
+    text-align: center;
+}
+
+.weather-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.weather-table tr:nth-child(odd) {
+    background-color: white;
+}
+
+.weather-table tr:hover {
+    background-color: #e3f2fd;
+    transform: scale(1.01);
+    transition: background-color 0.2s ease;
+}
+
+/* RSS styling */
+#rss-container {
+    margin-top: 20px;
+}
+
+.rss-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f8f9fa;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.rss-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.rss-item h3 {
+    color: #007bff;
+    margin-bottom: 12px;
+    font-size: 1.3em;
+    line-height: 1.4;
+}
+
+.rss-item h3 a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.rss-item h3 a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.rss-date {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.rss-date::before {
+    content: "🕒";
+    margin-right: 5px;
+}
+
+.rss-description {
+    color: #555;
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.rss-link {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 16px;
+    background-color: white;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.rss-link:hover {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+}
+
+/* Products styling */
+.filter-container {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.filter-container label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.filter-container select {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.products-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.products-table th,
+.products-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.products-table th {
+    background-color: #28a745;
+    color: white;
+}
+
+.products-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.products-table tr:hover {
+    background-color: #e9ecef;
+}
+
+/* Providers styling */
+.provider-form-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.provider-form-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#providers-table-container {
+    margin-top: 30px;
+}
+
+#providers-table-container h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#providers-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#providers-table th {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#providers-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+/* Providers table row styling - even rows yellow, odd rows magenta */
+#providers-table tbody tr:nth-child(even) {
+    background-color: yellow;
+}
+
+#providers-table tbody tr:nth-child(odd) {
+    background-color: magenta;
+    color: white;
+}
+
+#providers-table tbody tr:hover {
+    opacity: 0.8;
+}
+
+.btn-remove {
+    background-color: #dc3545;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-remove:hover {
+    background-color: #c82333;
+}
+
+/* Login styling */
+.login-form-container {
+    max-width: 400px;
+    margin: 30px auto;
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#login-message {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.success {
+    color: #28a745;
+}
+
+.error {
+    color: #dc3545;
+}
+

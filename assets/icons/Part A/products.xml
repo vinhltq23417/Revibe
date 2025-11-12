@@ -1,0 +1,56 @@
+<products>
+<product catename="category 1">
+<id>1</id>
+<name>Where's Spot? </name>
+<detail>With its bold blue cover, this board product edition of Eric Hill’s classic story featuring everyone’s favorite puppy is just as iconic as the first lift-the-flap edition.</detail>
+<image>https://images-na.ssl-images-amazon.com/images/I/81KAMv9wetL._AC_UL160_SR160,160_.jpg</image>
+</product>
+<product catename="category 2">
+<id>2</id>
+<name>Lansinoh Stay Dry Disposable Nursing Pads</name>
+<detail>SUPERIOR ABSORBENCY FOR EXTRA CONFIDENCE - These pads absorb 20 times their weight to keep you confident and dry day and night RECOMMENDED BY MOMS - Convenient, easy to use, and very absorbent, Lansinoh nursing pads have an InvisiLock core to instantly capture and disperse moisture</detail>
+<image>https://images-na.ssl-images-amazon.com/images/I/71e0wNZ3ZQL._AC_UL160_SR160,160_.jpg</image>
+</product>
+<product catename="category 2">
+<id>3</id>
+<name>Goodnight Moon</name>
+<detail>In a great green room, tucked away in bed, is a little bunny. "Goodnight room, goodnight moon." And to all the familiar things in the softly lit room—to the picture of the three little bears sitting on chairs, to the clocks and his socks, to the mittens and the kittens, to everything one by one—the little bunny says goodnight.</detail>
+<image>https://images-na.ssl-images-amazon.com/images/I/81t-IstQ+ZL._AC_UL232_SR232,232_.jpg</image>
+</product>
+<product catename="category 1">
+<id>4</id>
+<name>The Very Hungry Caterpillar </name>
+<detail>THE all-time classic picture product, from generation to generation, sold somewhere in the world every 30 seconds! A sturdy and beautiful product to give as a gift for new babies, baby showers, birthdays, and other new beginnings!</detail>
+<image>https://images-na.ssl-images-amazon.com/images/I/91vnzZO5yPL._AC_UL232_SR232,232_.jpg</image>
+</product>
+<product catename="category 1">
+<id>5</id>
+<name>Brown Bear, Brown Bear, What Do You See?</name>
+<detail>A big happy frog, a plump purple cat, a handsome blue horse, and a soft yellow duck--all parade across the pages of this delightful product. Children will immediately respond to Eric Carle's flat, boldly colored collages. Combined with Bill Martin's singsong text, they create unforgettable images of these endearing animals.</detail>
+<image>https://images-na.ssl-images-amazon.com/images/I/81kZ3Gl3WKL._AC_UL254_SR254,254_.jpg</image>
+</product>
+<product catename="category 3">
+<id>6</id>
+<name>Tie-neck cotton-poplin shirt</name>
+<detail>Gucci's take on the classic white shirt is smart, timeless and subtly distinct. Embossed with the logo on the collar, it's made from crisp cotton-poplin for a loose fit and has long, slim ties that can be wrapped around the neck a few times or left to drape. The exaggerated patch pocket is unexpectedly cool.</detail>
+<image>https://www.net-a-porter.com/variants/images/1647597355461119/in/w2000_q80.jpg</image>
+</product>
+<product catename="category 3">
+<id>7</id>
+<name>Ester ruched stretch-TENCEL™ Lyocell jersey tank</name>
+<detail>AGOLDE's 'Ester' tank top is ruched at the shoulder and side seams to create a beautiful drape. It's made from stretch-TENCEL™ Lyocell jersey for a close fit and has a high neckline. Lower-Impact Materials. This product is made using at least 50% lower-impact materials or ingredients. Find out more about our NET SUSTAIN criteria here..</detail>
+<image>https://www.net-a-porter.com/variants/images/1647597356772589/in/w2000_q80.jpg</image>
+</product>
+<product catename="category 3">
+<id>8</id>
+<name>Cropped mid-rise straight-leg jeans</name>
+<detail>Gucci's jeans are designed with a distinct cut and wash that stands out from styles in your typical rotation. Made from inky blue denim, they have a mid-rise waist and straight legs with elongating pressed creases and cropped cuffs.</detail>
+<image>https://www.net-a-porter.com/variants/images/1647597355460259/in/w2000_q60.jpg</image>
+</product>
+<product catename="category 2">
+<id>9</id>
+<name>Striped open-knit cotton polo shirt</name>
+<detail>Bally's polo shirt is made from cotton in an airy open-knit construction. It has a ribbed polo collar and contrasting stripes tipping the cuffs and hem. Wear yours with jeans.</detail>
+<image>https://www.net-a-porter.com/variants/images/1647597352560861/in/w2000_q60.jpg</image>
+</product>
+</products>
