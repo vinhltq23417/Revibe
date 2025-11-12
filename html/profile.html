@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Sign In - ReVibe</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+        
+        <link rel="stylesheet" href="../css/main.css" /> 
+    </head>
+    <body class="auth-page-body"> 
+        
+        <div class="profile-dashboard container section">
+
+            <aside class="profile-nav-column">
+                <div class="profile-nav-card">
+                    <h3 class="profile-nav__title">Account</h3>
+                    <ul class="profile-nav__list">
+                        <li>
+                            <a href="#personal-info" class="profile-nav__link is-active" data-target="tab-personal-info">
+                                <img src="../assets/icons/avatar_full.svg" alt="" class="profile-nav__icon">
+                                <span>Personal Info</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#address-book" class="profile-nav__link" data-target="tab-address-book">
+                                <img src="../assets/icons/address.svg" alt="" class="profile-nav__icon">
+                                <span>Address Book</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#order-history" class="profile-nav__link" data-target="tab-order-history">
+                                <img src="../assets/icons/history.svg" alt="" class="profile-nav__icon">
+                                <span>Order History</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <section class="profile-content-column">
+
+                <div id="tab-personal-info" class="tab-content is-active">
+                    <div class="personal-info-grid">
+                        <div class="profile-avatar-card">
+                            <div class="avatar-uploader">
+                                <img src="../assets/images/avatar-hoang.jpg" alt="User Avatar" class="avatar-uploader__image">
+                                <button class="avatar-uploader__button" aria-label="Change Avatar">
+                                <img src="../assets/icons/camera.svg" alt="Upload Icon">
+                                </button>
+                            </div>
+                            <h2 class="profile-avatar__name">Nguyễn Huy Hoàng</h2>
+                            <p class="profile-avatar__email">hoangnh2341@st.uel.edu.vn</p>
+                            <button class="profile-avatar__upload-btn auth-form__button button--outlined">Upload Avatar</button>
+                        </div>
+
+                        <div class="profile-form-card auth-form-container">
+                            <h1 class="auth-form__title" style="text-align: left;">Personal Information</h1>
+                            <form class="auth-form" onsubmit="return false;">
+                                <div class="form-group">
+                                    <label for="first-name" class="form-group__label">First Name</label>
+                                    <input type="text" id="first-name" class="form-group__input" value="Hoàng">
+                                </div>
+                                <div class="form-group">
+                                    <label for="last-name" class="form-group__label">Last Name</label>
+                                    <input type="text" id="last-name" class="form-group__input" value="Nguyễn">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone" class="form-group__label">Phone Number</label>
+                                    <input type="tel" id="phone" class="form-group__input" value="084546789">
+                                </div>
+                                    <div class="form-group">
+                                    <label for="email" class="form-group__label">Email</label>
+                                    <input type="email" id="email" class="form-group__input" value="hoangnh2341@st.uel.edu.vn" disabled>
+                                </div>
+                                    <div class="form-actions">
+                                    <button type="button" id="save-profile-button" class="auth-form__button">Save Changes</button>
+                                    <button type="button" id="change-password-trigger" class="auth-form__button button--outlined">
+                                        <a href="change_password.html" id="change-password-trigger" class="auth-form__button button--outlined ajax-link">
+                                            Change Password
+                                        </a>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="tab-address-book" style="display: none;">
+            
+                    <div class="profile-tab-header">
+                        <h2 class="profile-tab-title">Address Book</h2>
+                        <button class="auth-form__button" id="add-new-address-btn" style="padding: 10px 15px;">
+                            + Add New Address
+                        </button>
+                    </div>
+
+                    <div id="address-form-container" style="display:none; margin-bottom: 30px;">
+                        </div>
+
+                    <div id="address-list-container">
+                        <div class="loading-spinner" style="margin: 50px auto;">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-order-history" class="tab-content">
+
+            <h1 class="order-history-title">Order History</h1>
+
+                    <section class="order-search">
+                        <div class="search-input-wrapper">
+                            <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"/>
+                            </svg>
+                            <input 
+                                type="search" 
+                                class="search-input" 
+                                placeholder="Search by Order ID or Product name"
+                                aria-label="Search orders"
+                                id="searchInput"
+                            />
+                        </div>
+                        <button class="search-btn" type="button" id="searchBtn">Search</button>
+                    </section>
+
+                    <section class="order-filters">
+                        <div class="filter-tabs" id="orders-status-tabs"> 
+                            <button class="filter-tab active tab-btn" data-status="all">
+                                <span class="filter-tab-text">All Order</span>
+                                <span class="filter-tab-count" id="allCount">(0)</span>
+                            </button>
+                            <button class="filter-tab tab-btn" data-status="Processing">
+                                <span class="filter-tab-text">Processing</span>
+                                <span class="filter-tab-count" id="processingCount">(0)</span>
+                            </button>
+                            <button class="filter-tab tab-btn" data-status="Shipped">
+                                <span class="filter-tab-text">Shipped</span>
+                                <span class="filter-tab-count" id="shippedCount">(0)</span>
+                            </button>
+                            <button class="filter-tab tab-btn" data-status="Canceled">
+                                <span class="filter-tab-text">Canceled</span>
+                                <span class="filter-tab-count" id="canceledCount">(0)</span>
+                            </button>
+                        </div>
+                    </section>
+
+                    <section class="orders-table-container">
+                        <div class="orders-table-header">
+                            <span>Order ID</span>
+                            <span>Product</span>
+                            <span>Order Date</span>
+                            <span>Status</span>
+                            <span>Total</span>
+                            <span>Action</span>
+                        </div>
+                        <div id="ordersContainer">
+                            <div class="loading-spinner" style="margin: 50px auto;"></div>
+                        </div>
+                    </section>
+
+                    <nav class="orders-pagination" aria-label="Order pagination">
+                        <button class="pagination-btn" id="prevPage" aria-label="Previous page">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                        <div class="pagination-pages" id="paginationPages"></div>
+                        <button class="pagination-btn" id="nextPage" aria-label="Next page">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                    </nav>
+
+                    </div>
+
+            </section>
+        </div>
+        <script src="../js/main.js"></script>
+    </body>
+</html>

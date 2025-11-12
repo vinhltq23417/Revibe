@@ -1,0 +1,134 @@
+{
+  "categories": [
+    "All Products",
+    "Clothing",
+    "Footwear",
+    "Accessories",
+    "Furniture",
+    "Home Decor",
+    "Kitchen & Dining"
+  ],
+  "products": [
+    {
+      "id": "sf-1",
+      "name": "Eco Tee",
+      "image": "https://picsum.photos/seed/eco-tee/600/400",
+      "category": "Clothing",
+      "price": 320000,
+      "score": 88,
+      "artisan": "ReVibe Studio",
+      "description": "T-shirt làm từ cotton hữu cơ, nhuộm ít nước."
+    },
+    {
+      "id": "sf-2",
+      "name": "Organic Hoodie",
+      "image": "https://picsum.photos/seed/hoodie/600/400",
+      "category": "Clothing",
+      "price": 590000,
+      "score": 90,
+      "artisan": "Green Loom",
+      "description": "Hoodie sợi tái chế, ấm áp và bền vững."
+    },
+    {
+      "id": "ft-1",
+      "name": "Recycled Sneakers",
+      "image": "https://picsum.photos/seed/sneaker/600/400",
+      "category": "Footwear",
+      "price": 850000,
+      "score": 86,
+      "artisan": "EcoStep",
+      "description": "Giày sneaker từ nhựa tái chế đại dương."
+    },
+    {
+      "id": "ft-2",
+      "name": "Vegan Leather Boots",
+      "image": "https://picsum.photos/seed/boots/600/400",
+      "category": "Footwear",
+      "price": 1250000,
+      "score": 82,
+      "artisan": "Kind Walk",
+      "description": "Boots da thuần chay, đế cao su tái chế."
+    },
+    {
+      "id": "ac-1",
+      "name": "Bamboo Sunglasses",
+      "image": "https://picsum.photos/seed/sunglasses/600/400",
+      "category": "Accessories",
+      "price": 450000,
+      "score": 84,
+      "artisan": "Sun&Leaf",
+      "description": "Gọng bằng tre, nhẹ và bền."
+    },
+    {
+      "id": "ac-2",
+      "name": "Cork Wallet",
+      "image": "https://picsum.photos/seed/wallet/600/400",
+      "category": "Accessories",
+      "price": 260000,
+      "score": 80,
+      "artisan": "ReCork",
+      "description": "Ví làm từ vỏ bần tự nhiên, không thấm nước."
+    },
+    {
+      "id": "fur-1",
+      "name": "Reclaimed Wood Table",
+      "image": "https://picsum.photos/seed/table/600/400",
+      "category": "Furniture",
+      "price": 3200000,
+      "score": 89,
+      "artisan": "WoodCycle",
+      "description": "Bàn gỗ tái chế, vân gỗ nguyên bản."
+    },
+    {
+      "id": "fur-2",
+      "name": "Upcycled Chair",
+      "image": "https://picsum.photos/seed/chair/600/400",
+      "category": "Furniture",
+      "price": 1500000,
+      "score": 83,
+      "artisan": "Renew Home",
+      "description": "Ghế tái chế từ gỗ pallet, kiểu dáng tối giản."
+    },
+    {
+      "id": "hd-1",
+      "name": "Glass Vase",
+      "image": "https://picsum.photos/seed/vase/600/400",
+      "category": "Home Decor",
+      "price": 380000,
+      "score": 78,
+      "artisan": "Refill Studio",
+      "description": "Bình hoa thủy tinh thổi thủ công tái chế."
+    },
+    {
+      "id": "hd-2",
+      "name": "Recycled Lamp",
+      "image": "https://picsum.photos/seed/lamp/600/400",
+      "category": "Home Decor",
+      "price": 720000,
+      "score": 81,
+      "artisan": "LightLoop",
+      "description": "Đèn bàn từ nhôm tái chế, ánh sáng ấm."
+    },
+    {
+      "id": "kd-1",
+      "name": "Bamboo Cutlery Set",
+      "image": "https://picsum.photos/seed/cutlery/600/400",
+      "category": "Kitchen & Dining",
+      "price": 190000,
+      "score": 87,
+      "artisan": "Green Utensils",
+      "description": "Bộ muỗng nĩa bằng tre kèm túi vải."
+    },
+    {
+      "id": "kd-2",
+      "name": "Recycled Plate Set",
+      "image": "https://picsum.photos/seed/plates/600/400",
+      "category": "Kitchen & Dining",
+      "price": 540000,
+      "score": 79,
+      "artisan": "EcoWare",
+      "description": "Bộ dĩa từ vật liệu tái chế an toàn thực phẩm."
+    }
+  ]
+}
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR Payment - REVIBE</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/utility.css" />
+</head>
+<body>
+
+  <div class="qr-container">
+    <!-- Breadcrumb -->
+    <!-- Breadcrumb - Fixed to match other pages -->
+    <div class="qr-breadcrumb">
+        <a href="Homepage.html">
+            <img class="home-icon" src="../assets/icons/house.svg" alt="Home" />
+        </a>
+        <span class="separator">›</span>
+        <a href="Cart.html">My Shopping Cart</a>
+        <span class="separator">›</span>
+        <a href="Product_Order_Page.html">Order Checkout</a>
+        <span class="separator">›</span>
+        <a href="Check_Out.html">Payment</a>
+        <span class="separator">›</span>
+        <span class="current">QR Payment</span>
+    </div>
+
+    <div class="qr-layout">
+      <!-- Left Column - QR Code -->
+      <div class="qr-section">
+        <h2 class="qr-title">Scan to Pay</h2>
+        
+        <img src="../assets/images/QRCode.jpg" alt="QR Code" class="qr-image" id="qrCodeImage" />
+        
+        <p class="qr-instructions">
+          Scan the QR code below using your Internet Banking app to make a payment.
+        </p>
+        
+        <p class="qr-note">
+          Note: This QR code will expire 24 hours after creation.
+        </p>
+        
+        <p class="qr-instructions">
+          After payment, click the button below.
+        </p>
+        
+        <button class="payment-btn" id="paymentCompletedBtn">
+          <span>I have completed the payment on the app</span>
+        </button>
+      </div>
+
+      <!-- Right Column - Order Information -->
+      <div class="order-info-section">
+        <h2 class="section-title">Order Information</h2>
+        
+        <div class="info-grid">
+          <div class="info-label">Order ID:</div>
+          <div class="info-value" id="orderIdDisplay">-</div>
+          
+          <div class="info-label">Total Amount:</div>
+          <div class="info-value total-amount" id="totalAmountDisplay">-</div>
+          
+          <div class="info-label">Payment Method:</div>
+          <div class="info-value" id="paymentMethodDisplay">-</div>
+          
+          <div class="info-label">Invoice Number:</div>
+          <div class="info-value" id="invoiceNumberDisplay">-</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+
+
+  <div class="cart-container">
+    <!-- Breadcrumb -->
+    <div class="cart-breadcrumb">
+      <a href="Homepage.html">
+        <img class="home-icon" src="../assets/icons/house.svg" alt="Home" />
+      </a>
+      <span class="separator">›</span>
+      <a href="Cart.html">My Shopping Cart</a>
+      <span class="separator">›</span>
+      <span class="current">Order Checkout</span>
+    </div>
+
+    <div class="cart-layout">
+      <!-- Left Column - Cart Items -->
+      <div class="cart-items-column">
+        <!-- Customer Address Section -->
+        <div class="address-card">
+          <div class="address-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"/>
+            </svg>
+          </div>
+          <div class="address-info">
+            <div class="customer-header">
+              <div class="customer-name" id="customerName">-</div>
+              <div class="customer-phone" id="customerPhone">-</div>
+            </div>
+            <div class="customer-address" id="customerAddress">-</div>
+          </div>
+        </div>
+
+        <!-- Cart Items Section -->
+        <div class="cart-items-card">
+          <h2 class="card-title">Cart Items</h2>
+          <div id="cartItemsContainer">
+            <!-- Cart items will be dynamically loaded here -->
+          </div>
+        </div>
+
+        <!-- Note Section -->
+        <div class="note-card">
+          <h2 class="card-title">Note for Revibe:</h2>
+          <textarea class="note-textarea" placeholder="Add any special instructions or notes for your order..."></textarea>
+        </div>
+      </div>
+
+      <!-- Right Column - Order Summary -->
+      <div class="order-summary-column">
+        <div class="summary-card">
+          <h2 class="card-title">Order Summary</h2>
+          <div class="summary-grid">
+            <div class="summary-label">Subtotal:</div>
+            <div class="summary-value" id="subtotal">0 đ</div>
+            <div class="summary-label">Shipping fee:</div>
+            <div class="summary-value" id="shippingFee">0 đ</div>
+            <div class="summary-label">Total voucher discount:</div>
+            <div class="summary-value discount" id="voucherDiscount">0 đ</div>
+            <div class="divider"></div>
+            <div class="summary-label total">Total:</div>
+            <div class="summary-value total" id="totalAmount">0 đ</div>
+          </div>
+          <button class="checkout-btn" id="checkoutBtn">
+            <span>Check out</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>

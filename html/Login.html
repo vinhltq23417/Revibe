@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Sign In - ReVibe</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+        
+        <link rel="stylesheet" href="../css/main.css" /> 
+    </head>
+    <body class="auth-page-body"> 
+
+        <main class="auth-main">
+            <div class="auth-form-container">
+                <h1 class="auth-form__title">Sign In</h1>
+                <div class="social-signup-options">
+                    <button class="social-signup-btn google-btn">
+                        <img src="../assets/icons/google.svg" alt="Google Icon">
+                        Continue with Google
+                    </button>
+                </div>
+        
+                <div class="form-divider">
+                    <span>OR</span>
+                </div>
+
+                <form class="auth-form" onsubmit="return false;">
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-group__label">Email</label>
+                        <input type="email" id="email" class="form-group__input" required>
+                        <span class="form-error-message"></span>
+                    </div>
+
+                    <div class="form-group form-group--password">
+                        <label for="password" class="form-group__label">Password</label>
+                        <input type="password" id="password" class="form-group__input" required>
+                        <span class="form-error-message"></span>
+                    </div>
+
+                    <a href="forgot-password.html" class="auth-form__forgot-password ajax-link">Forgot Password?</a>
+                    
+                    <div class="form-group-inline">
+                        <input type="checkbox" id="remember-me" class="form-checkbox">
+                        <label for="remember-me" class="form-checkbox-label">Remember me</label>
+                    </div>
+                    <button type="button" id="login-form-button" class="auth-form__button">Sign In</button>
+                
+                </form>
+                
+                <p class="auth-form__footer-link">
+                    Don't have an account? 
+                    <a href="SignUp.html" class="ajax-link">Sign Up</a>
+                </p>
+
+            </div>
+        </main>
+
+        <script src="../js/main.js"></script>
+
+    </body>
+</html>

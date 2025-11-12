@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ReVibe - Sustainable Goods</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="top-announcement-bar">
+      <p class="announcement-text">Discover the Story & Sustainability Score Behind Every Product</p>
+    </div>
+
+    <div class="middle-header">
+      <div class="header-container">
+        <a href="index.html" class="logo">
+          <img class="logo__image" src="../assets/icons/logo.svg" alt="ReVibe Logo"/>
+          <span class="logo__text">ReVibe</span>
+        </a>
+
+        <form class="search-form" action="/search" method="get">
+          <label for="search-input" class="visually-hidden">Search</label>
+          <div class="search-form__input-wrapper">
+            <img class="search-form__icon" src="../assets/icons/search.svg" alt=""/>
+            <input type="text" id="search-input" class="search-form__input" placeholder="Search">
+          </div>
+          <button type="submit" class="search-form__button">Search</button>
+        </form>
+
+        <div class="header-actions">
+          <a href="wishlist.html" class="action-link" aria-label="Wishlist">
+            <img src="../assets/icons/heart.svg" alt="Wishlist Icon" class="action-link__icon"/>
+          </a>
+          <a href="cart.html" class="action-link cart-summary" aria-label="Shopping Cart">
+            <div class="cart-summary__icon-wrapper">
+              <img src="../assets/icons/handbag.svg" alt="Cart Icon" class="action-link__icon"/>
+              <span class="cart-summary__count">2</span> </div>
+            <div class="cart-summary__details">
+              <span class="cart-summary__label">Shopping cart</span>
+              <span class="cart-summary__price">$ 200,000</span>
+            </div>
+          </a>
+          <a href="profile.html" class="action-link account-icon" aria-label="My Account">
+              <img src="../assets/icons/avatar.svg" alt="Account Icon" class="action-link__icon">
+          </a>
+          <a href="/logout" class="logout-link">Log out</a>
+          </div>
+      </div>
+    </div>
+
+    <nav class="main-navigation">
+      <div class="header-container">
+        <button class="all-categories-button">
+          <img src="../assets/icons/menu.svg" alt="" class="all-categories-button__icon"/>
+          All Categories
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-menu__item"><a href="index.html" class="nav-menu__link active">Home</a></li>
+          <li class="nav-menu__item">
+            <a href="products.html" class="nav-menu__link has-dropdown">Shop <img src="../assets/icons/down.svg" alt="" class="nav-menu__arrow"/></a>
+          </li>
+          <li class="nav-menu__item">
+            <a href="artisans.html" class="nav-menu__link has-dropdown">Artisans <img src="../assets/icons/down.svg" alt="" class="nav-menu__arrow"/></a>
+          </li>
+          <li class="nav-menu__item">
+            <a href="journal.html" class="nav-menu__link has-dropdown">Blogs <img src="../assets/icons/down.svg" alt="" class="nav-menu__arrow"/></a>
+          </li>
+          <li class="nav-menu__item"><a href="about.html" class="nav-menu__link">About Us</a></li>
+          <li class="nav-menu__item"><a href="contact.html" class="nav-menu__link">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Page Content</h1>
+  </main>
+
+  <footer>
+    </footer>
+
+  <style>.visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }</style>
+
+  </body>
+</html>

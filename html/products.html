@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sustainable Fashion - ReVibe</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/products.css">
+</head>
+<body>
+  
+  <main class="product-list-page">
+    
+  <nav class="container breadcrumbs-container">
+    <a href="index.html" class="breadcrumb-link ajax-link">Home</a>
+    <span class="breadcrumb-separator">›</span>
+    <span class="breadcrumb-current" id="breadcrumb-category">Product Categories</span>
+  </nav>
+
+  <section class="container section-header-wrapper">
+    <h1 class="section__title" id="category-title" style="text-align: left; margin: 0;">Products</h1>
+    <div class="sort-bar">
+      <label for="sort-by" class="sort-bar__label">Sort by:</label>
+      <select id="sort-by" class="sort-bar__select">
+        <option value="featured">Featured (Default)</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="name-asc">Name: A to Z</option>
+      </select>
+    </div>
+  </section>
+
+  <div class="container section shop-layout">
+    
+    <aside class="shop-layout__filters">
+      <div class="filter-header">
+        <h2 class="filter-title">Filter</h2>
+        <button class="filter-clear-all" id="clear-all-filters-btn">Clear All</button>
+      </div>
+
+      <div class="accordion-item is-open">
+        <h3 class="accordion-item__header">Price Range</h3>
+        <div class="accordion-item__content">
+          <ul class="filter-list" id="price-filter-list">
+            <li>
+              <input type="radio" id="price-all" name="price-filter" value="all" checked>
+              <label for="price-all">All Prices</label>
+            </li>
+            <li>
+              <input type="radio" id="price-1" name="price-filter" value="0-100000">
+              <label for="price-1">0 - 100.000 VND</label>
+            </li>
+            <li>
+              <input type="radio" id="price-2" name="price-filter" value="100000-300000">
+              <label for="price-2">100.000 - 300.000 VND</label>
+            </li>
+            <li>
+              <input type="radio" id="price-3" name="price-filter" value="300000-500000">
+              <label for="price-3">300.000 - 500.000 VND</label>
+            </li>
+            <li>
+              <input type="radio" id="price-4" name="price-filter" value="500000">
+              <label for="price-4">Over 500.000 VND</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion-item is-open">
+        <h3 class="accordion-item__header">Categories</h3>
+        <div class="accordion-item__content">
+          <ul class="filter-list" id="category-filter-list">
+            </ul>
+        </div>
+      </div>
+
+      <div class="accordion-item is-open">
+        <h3 class="accordion-item__header">Sustainability Score</h3>
+        <div class="accordion-item__content">
+          <ul class="filter-list" id="score-filter-list">
+            <li>
+              <input type="radio" id="score-all" name="score-filter" value="all" checked>
+              <label for="score-all">Show All</label>
+            </li>
+            <li>
+              <input type="radio" id="score-9" name="score-filter" value="9">
+              <label for="score-9">Score: 9.0 or higher</label>
+            </li>
+            <li>
+              <input type="radio" id="score-8" name="score-filter" value="8">
+              <label for="score-8">Score: 8.0 or higher</label>
+            </li>
+            </ul>
+        </div>
+      </div>
+
+    </aside>
+
+    <div class="shop-layout__content">
+      <div class="product-grid" id="product-grid-container">
+        </div>
+
+      <nav class="pagination-container">
+        <a href="#" class="pagination-link is-active">1</a>
+        <a href="#" class="pagination-link">2</a>
+        <a href="#" class="pagination-link">3</a>
+        <a href="#" class="pagination-link">→</a>
+      </nav>
+      <nav class="pagination-container" id="pagination-container">
+        </nav>
+    </div> 
+
+  </div> 
+</main>
+
+  <script src="../js/Product_List.js"></script>
+</body>
+</html>

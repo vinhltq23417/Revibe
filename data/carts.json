@@ -1,0 +1,50 @@
+{
+  "u1": {
+    "cartItems": [
+      {
+        "productId": "p1",
+        "quantity": 2,
+        "productName": "Organic Cotton V-Neck Tee",
+        "imagePath": "../assets/images/placeholder/fashion_top_1.jpg",
+        "originalPrice": 350000,
+        "sellPrice": 350000
+      },
+      {
+        "productId": "p5",
+        "quantity": 1,
+        "productName": "Ví 'Bạt Xe Tải' Chống Nước",
+        "imagePath": "../assets/images/placeholder/fashion_wallet_1.jpg",
+        "originalPrice": 290000,
+        "sellPrice": 290000
+      },
+      {
+        "productId": "p22",
+        "quantity": 1,
+        "productName": "Bàn Cờ 'Gỗ Tái Chế'",
+        "imagePath": "../assets/images/placeholder/home_decor_3.jpg",
+        "originalPrice": 650000,
+        "sellPrice": 650000
+      }
+    ]
+  },
+  "u2": {
+    "cartItems": [
+      {
+        "productId": "p8",
+        "quantity": 3,
+        "productName": "Khuyên Tai 'Giấy Xoắn'",
+        "imagePath": "../assets/images/placeholder/fashion_jewelry_3.jpg",
+        "originalPrice": 180000,
+        "sellPrice": 180000
+      },
+      {
+        "productId": "p40",
+        "quantity": 1,
+        "productName": "Túi Đựng Laptop 'Bao Cà Phê'",
+        "imagePath": "../assets/images/placeholder/fashion_bag_3.jpg",
+        "originalPrice": 550000,
+        "sellPrice": 550000
+      }
+    ]
+  }
+}

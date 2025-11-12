@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Review Page</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS ĐÚNG THỨ TỰ -->
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/utility.css" />
+
+  <style>
+    * { 
+      font-family: 'Poppins', sans-serif !important; 
+      font-size: 18px; /* Giảm cỡ chữ */
+      line-height: 1.5; 
+    }
+    .review-page-container { 
+      padding: 40px; 
+      background: #fff; 
+      min-height: 100vh; 
+    }
+    @media (min-width: 1940px) {
+      .review-page-container { 
+        max-width: 1940px; 
+        margin: 0 auto; 
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="review-page-container">
+
+    <!-- Breadcrumb -->
+    <div class="review-breadcrumb">
+      <a href="index.html" class="home-icon-link">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M10 2.5L2.5 10H5v7h3v-4h4v4h3v-7h2.5L10 2.5z"/>
+        </svg>
+      </a>
+      <span class="separator">›</span>
+      <a href="Profile.html">Account</a>
+      <span class="separator">›</span>
+      <a href="Order_History.html">Order History</a>
+      <span class="separator">›</span>
+      <a href="Order_Detail.html">Order Detail</a>
+      <span class="separator">›</span>
+      <span class="current">Review</span>
+    </div>
+
+    <div class="review-layout">
+
+      <!-- Product List -->
+      <div class="review-card product-card">
+        <h2>Product List</h2>
+        <div class="product-list"></div>
+      </div>
+
+      <!-- Review -->
+      <div class="review-card">
+        <h2>Review</h2>
+
+        <div class="review-content">
+          <div class="rating-section">
+            <div class="rating-grid">
+              <label>Product rate:</label>
+              <div class="stars" data-group="productRate"></div>
+
+              <label>Is the product as described?</label>
+              <div></div>
+              
+              <label class="indent">Size:</label>
+              <div class="stars" data-group="size"></div>
+
+              <label class="indent">Quantity:</label>
+              <div class="stars" data-group="quantity"></div>
+
+              <label class="indent">Material:</label>
+              <div class="stars" data-group="material"></div>
+
+              <label class="indent">Color:</label>
+              <div class="stars" data-group="color"></div>
+            </div>
+          </div>
+
+          <div class="upload-section">
+            <div class="upload-box" id="imageUpload">
+              <div class="upload-default">
+                <img src="../assets/images/photo_upload.jpg" alt="Upload photos" class="upload-default-image" />
+                <p>Upload pictures</p>
+              </div>
+              <img class="upload-preview" alt="Preview" />
+              <input type="file" accept="image/*" style="display: none;" />
+            </div>
+
+            <div class="upload-box" id="videoUpload">
+              <div class="upload-default">
+                <img src="../assets/images/video_upload.jpg" alt="Upload video" class="upload-default-image" />
+                <p>Upload a video</p>
+              </div>
+              <video class="upload-preview" controls></video>
+              <input type="file" accept="video/*" style="display: none;" />
+            </div>
+          </div>
+
+        <div class="review-text-wrapper">
+          <p>Review content:</p>
+          <textarea class="review-textarea" placeholder="Write your review..."></textarea>
+        </div>
+
+        <button class="submit-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let orders = [], products = [], reviews = [], reviewData = {}, currentProductKey = '';
+    let currentOrder = null;
+    const CURRENT_CUSTOMER_ID = "C1001"; // Giả lập customer ID
+
+    async function loadData() {
+      try {
+        // Get order ID from URL params or localStorage
+        const urlParams = new URLSearchParams(window.location.search);
+        const orderIdFromUrl = urlParams.get('orderId');
+        
+        // Try to get order data from localStorage first
+        const reviewOrderDataStr = localStorage.getItem('reviewOrderData');
+        let targetOrderId = orderIdFromUrl;
+        
+        if (reviewOrderDataStr) {
+          const reviewOrderData = JSON.parse(reviewOrderDataStr);
+          targetOrderId = reviewOrderData.orderId || orderIdFromUrl;
+          currentOrder = reviewOrderData;
+        }
+        
+        if (!targetOrderId) {
+          alert('No order ID specified. Redirecting to Order History...');
+          window.location.href = 'Order_History.html';
+          return;
+        }
+        
+        // Load orders to get full order details
+        const orderRes = await fetch('orders.json');
+        const ordersData = await orderRes.json();
+        orders = ordersData.orders || [];
+        
+        // Find the specific order
+        const order = orders.find(o => o.orderId === targetOrderId);
+        if (!order) {
+          alert('Order not found. Redirecting to Order History...');
+          window.location.href = 'Order_History.html';
+          return;
+        }
+        
+        currentOrder = order;
+        
+        // Load products
+        const productRes = await fetch('products.json');
+        products = await productRes.json();
+        
+        // Load existing reviews
+        try {
+          const reviewRes = await fetch('reviews.json');
+          reviews = await reviewRes.json();
+        } catch (e) {
+          reviews = [];
+        }
+        
+        renderProducts();
+      } catch (e) { 
+        console.error('Error loading data:', e);
+        alert('Error loading order data. Redirecting to Order History...');
+        window.location.href = 'Order_History.html';
+      }
+    }
+
+    function renderProducts() {
+      if (!currentOrder) {
+        console.error('No order data available');
+        return;
+      }
+      
+      const list = document.querySelector('.product-list');
+      list.innerHTML = '';
+      let first = true;
+      
+      // Only render products from the current order
+      currentOrder.products.forEach((orderProd, j) => {
+        // Tìm thông tin chi tiết sản phẩm từ products.json
+        const productDetail = products.find(p => p.productId === orderProd.productId);
+        if (!productDetail) return;
+        
+        const key = `${currentOrder.orderId}-${j}`;
+        const item = document.createElement('div');
+        item.className = 'product-item';
+        item.dataset.product = key;
+        item.dataset.orderId = currentOrder.orderId;
+        item.dataset.productId = orderProd.productId;
+        item.innerHTML = `
+          <img src="${productDetail.imagePath}" class="product-img" alt="${productDetail.productName}" onerror="this.src='https://via.placeholder.com/70?text=Image'" />
+          <div class="product-info">
+            <p>${productDetail.productName}</p>
+            <p>Quantity: ${orderProd.quantity}</p>
+          </div>
+        `;
+        if (first) { 
+          item.classList.add('active'); 
+          currentProductKey = key; 
+          first = false; 
+        }
+        list.appendChild(item);
+      });
+      
+      if (currentOrder.products.length === 0) {
+        list.innerHTML = '<p>No products found in this order.</p>';
+      } else {
+        addProductListeners();
+        loadReview(currentProductKey);
+      }
+    }
+
+    function createStars(container, group) {
+      container.innerHTML = '';
+      for (let i = 1; i <= 5; i++) {
+        const star = document.createElement('span');
+        star.innerHTML = '★';
+        star.className = 'star';
+        star.dataset.value = i;
+        star.onclick = () => {
+          const val = i;
+          container.querySelectorAll('.star').forEach((s, idx) => s.classList.toggle('active', idx < val));
+          reviewData[currentProductKey].ratings[group] = val;
+        };
+        container.appendChild(star);
+      }
+    }
+
+    function loadReview(key) {
+      if (!reviewData[key]) {
+        reviewData[key] = { 
+          ratings: {}, 
+          text: '', 
+          imageUpload: null, 
+          videoUpload: null 
+        };
+      }
+      const d = reviewData[key];
+      
+      // Cập nhật sao
+      document.querySelectorAll('.stars').forEach(g => {
+        const val = d.ratings[g.dataset.group] || 0;
+        g.querySelectorAll('.star').forEach((s, idx) => s.classList.toggle('active', idx < val));
+      });
+      
+      // Cập nhật text
+      document.querySelector('.review-textarea').value = d.text || '';
+      
+      // Cập nhật image upload
+      const imageBox = document.getElementById('imageUpload');
+      const imagePreview = imageBox.querySelector('img.upload-preview');
+      if (d.imageUpload) {
+        imagePreview.src = d.imageUpload;
+        imagePreview.style.display = 'block';
+        imageBox.classList.add('filled');
+      } else {
+        imagePreview.src = '';
+        imagePreview.style.display = 'none';
+        imageBox.classList.remove('filled');
+      }
+      
+      // Cập nhật video upload
+      const videoBox = document.getElementById('videoUpload');
+      const videoPreview = videoBox.querySelector('video.upload-preview');
+      if (d.videoUpload) {
+        videoPreview.src = d.videoUpload;
+        videoPreview.style.display = 'block';
+        videoBox.classList.add('filled');
+      } else {
+        videoPreview.src = '';
+        videoPreview.style.display = 'none';
+        videoBox.classList.remove('filled');
+      }
+    }
+
+    function addProductListeners() {
+      document.querySelectorAll('.product-item').forEach(item => {
+        item.onclick = () => {
+          document.querySelectorAll('.product-item').forEach(p => p.classList.remove('active'));
+          item.classList.add('active');
+          currentProductKey = item.dataset.product;
+          loadReview(currentProductKey);
+        };
+      });
+    }
+
+    // Xử lý upload ảnh/video
+    function setupUploadHandlers() {
+      // Setup image upload
+      const imageBox = document.getElementById('imageUpload');
+      const imageInput = imageBox.querySelector('input[type="file"]');
+      const imagePreview = imageBox.querySelector('img.upload-preview');
+      
+      imageBox.onclick = () => imageInput.click();
+      imageInput.onchange = (e) => {
+        const file = e.target.files[0];
+        if (file) {
+          // Validate file type
+          if (!file.type.startsWith('image/')) {
+            alert('Please select an image file.');
+            return;
+          }
+          
+          const url = URL.createObjectURL(file);
+          imagePreview.src = url;
+          imagePreview.style.display = 'block';
+          imageBox.classList.add('filled');
+          
+          // Initialize reviewData if needed
+          if (!reviewData[currentProductKey]) {
+            reviewData[currentProductKey] = { 
+              ratings: {}, 
+              text: '', 
+              imageUpload: null, 
+              videoUpload: null 
+            };
+          }
+          
+          reviewData[currentProductKey].imageUpload = url;
+          console.log('Image uploaded:', file.name);
+        }
+      };
+      
+      // Setup video upload
+      const videoBox = document.getElementById('videoUpload');
+      const videoInput = videoBox.querySelector('input[type="file"]');
+      const videoPreview = videoBox.querySelector('video.upload-preview');
+      
+      videoBox.onclick = () => videoInput.click();
+      videoInput.onchange = (e) => {
+        const file = e.target.files[0];
+        if (file) {
+          // Validate file type
+          if (!file.type.startsWith('video/')) {
+            alert('Please select a video file.');
+            return;
+          }
+          
+          const url = URL.createObjectURL(file);
+          videoPreview.src = url;
+          videoPreview.style.display = 'block';
+          videoBox.classList.add('filled');
+          
+          // Initialize reviewData if needed
+          if (!reviewData[currentProductKey]) {
+            reviewData[currentProductKey] = { 
+              ratings: {}, 
+              text: '', 
+              imageUpload: null, 
+              videoUpload: null 
+            };
+          }
+          
+          reviewData[currentProductKey].videoUpload = url;
+          console.log('Video uploaded:', file.name);
+        }
+      };
+    }
+
+    // Xử lý textarea
+    document.querySelector('.review-textarea').oninput = e => {
+      reviewData[currentProductKey].text = e.target.value;
+    };
+
+    // Xử lý submit
+    document.querySelector('.submit-btn').onclick = async e => {
+      e.preventDefault();
+      
+      const item = document.querySelector('.product-item.active');
+      if (!item) {
+        alert('Please select a product to review.');
+        return;
+      }
+      
+      const [orderId, productIndex] = currentProductKey.split('-');
+      const order = currentOrder || orders.find(o => o.orderId === orderId);
+      if (!order) {
+        alert('Order not found.');
+        return;
+      }
+      
+      const orderProduct = order.products[parseInt(productIndex)];
+      if (!orderProduct) {
+        alert('Product not found in order.');
+        return;
+      }
+      
+      const productDetail = products.find(p => p.productId === orderProduct.productId);
+      if (!productDetail) {
+        alert('Product details not found.');
+        return;
+      }
+      
+      // Tạo review object
+      const review = {
+        reviewId: reviews.length > 0 ? Math.max(...reviews.map(r => r.reviewId)) + 1 : 1,
+        orderId: orderId,
+        customerId: CURRENT_CUSTOMER_ID,
+        productId: orderProduct.productId,
+        productName: productDetail.productName,
+        rating: reviewData[currentProductKey].ratings.productRate || 0,
+        image: reviewData[currentProductKey].imageUpload || null,
+        video: reviewData[currentProductKey].videoUpload || null,
+        content: reviewData[currentProductKey].text || '',
+        createdAt: new Date().toISOString()
+      };
+      
+      // Thêm vào mảng reviews
+      reviews.push(review);
+      
+      // Lưu vào file (trong thực tế sẽ gửi đến server)
+      try {
+        // Giả lập lưu vào localStorage hoặc gửi đến API
+        localStorage.setItem('reviews', JSON.stringify(reviews));
+        console.log('Review saved:', review);
+        alert("Your review has been successfully submitted!");
+        
+        // Reset form
+        reviewData[currentProductKey] = { ratings: {}, text: '', imageUpload: null, videoUpload: null };
+        loadReview(currentProductKey);
+        
+      } catch (error) {
+        console.error('Error saving review:', error);
+        alert("There was an error submitting your review. Please try again.");
+      }
+    };
+
+    // Khởi tạo
+    document.querySelectorAll('.stars').forEach(g => createStars(g, g.dataset.group));
+    
+    // Setup upload handlers after DOM is ready
+    setupUploadHandlers();
+    
+    loadData();
+  </script>
+</body>
+</html>

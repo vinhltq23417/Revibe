@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edit Product | ReVibe</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .ep-wrap{background:#eef6ec;border-radius:16px;padding:24px}
+    .ep-header{display:flex;align-items:center;gap:10px;margin-bottom:20px}
+    .ep-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:24px}
+    .ep-upload{background:#ddd;border-radius:12px;height:380px;display:flex;align-items:center;justify-content:center;position:relative}
+    .ep-upload img{max-width:100%;max-height:100%;object-fit:contain;border-radius:12px}
+    .ep-browse{display:flex;justify-content:center;margin-top:14px}
+    .ep-browse input{display:none}
+    .ep-col .row{display:flex;flex-direction:column;gap:6px;margin-bottom:10px}
+    .ep-col input,.ep-col textarea,.ep-col select{padding:10px 12px;border:1px solid #e5e7eb;border-radius:10px}
+    .ep-actions{display:flex;gap:12px;justify-content:flex-end;margin-top:14px}
+    .btn-light{background:#e5e7eb;border:none;padding:10px 16px;border-radius:10px;cursor:pointer}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar" data-include="partials/sidebar.html"></aside>
+    <main class="main">
+      <header class="header" data-include="partials/header.html"></header>
+
+      <div class="ep-wrap">
+        <div class="ep-header">
+          <button id="epBack" class="btn-light">◀ Back</button>
+          <h2>EDIT PRODUCT</h2>
+        </div>
+
+        <div class="ep-grid">
+          <div>
+            <div id="preview" class="ep-upload"><span>Preview</span></div>
+            <div class="ep-browse">
+              <label class="btn-light" for="fileInput">Browse Image ⭳</label>
+              <input id="fileInput" type="file" accept="image/*" />
+            </div>
+          </div>
+          <div class="ep-col">
+            <div class="row">
+              <label for="epName">Name</label>
+              <input id="epName" type="text" placeholder="Product name" />
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+              <div class="row"><label for="epPrice">Price</label><input id="epPrice" type="number" min="0" step="1" /></div>
+              <div class="row"><label for="epScore">Sustainability Score</label><input id="epScore" type="number" min="0" max="100" step="1" /></div>
+            </div>
+            <div class="row">
+              <label for="epArtisan">Artisan</label>
+              <input id="epArtisan" type="text" />
+            </div>
+            <div class="row">
+              <label for="epCategory">Category</label>
+              <select id="epCategory"></select>
+            </div>
+            <div class="row">
+              <label for="epDesc">Description</label>
+              <textarea id="epDesc" rows="6"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="ep-actions">
+          <button id="epSave" class="btn-primary">Save</button>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="../js/layout.js"></script>
+  <script>
+  (function(){
+    const DATA_URL = '../assets/data/products.json';
+    const STORAGE_KEY = 'revibe_products_extra';
+    let productId = '';
+    let imageDataURL = '';
+    function q(name){ try{ return new URLSearchParams(location.search).get(name)||''; }catch(e){ return ''; } }
+    function readExtras(){ try{ return JSON.parse(localStorage.getItem(STORAGE_KEY)||'[]'); }catch(e){ return []; } }
+    function writeExtras(arr){ try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(arr)); }catch(e){} }
+
+    async function loadProduct(){
+      productId = q('id');
+      const res = await fetch(DATA_URL); const json = await res.json();
+      const base = (json.products||[]).find(p=>p.id===productId);
+      const categories = (json.categories||[]).filter(c=>c.toLowerCase()!=='all products');
+      const extras = readExtras();
+      const override = extras.find(p=>p.id===productId);
+      const data = {...base, ...override};
+      const sel = document.getElementById('epCategory');
+      sel.innerHTML = categories.map(c=>`<option value="${c}">${c}</option>`).join('');
+      if (data.category && categories.includes(data.category)) sel.value = data.category;
+      if (data.name) document.getElementById('epName').value = data.name;
+      if (data.price) document.getElementById('epPrice').value = data.price;
+      if (data.score) document.getElementById('epScore').value = data.score;
+      if (data.artisan) document.getElementById('epArtisan').value = data.artisan;
+      if (data.description) document.getElementById('epDesc').value = data.description;
+      if (data.image){ imageDataURL = data.image; document.getElementById('preview').innerHTML = `<img src="${data.image}" alt="preview"/>`; }
+    }
+
+    function wireUpload(){
+      const file = document.getElementById('fileInput');
+      const preview = document.getElementById('preview');
+      file.addEventListener('change', () => {
+        const f = file.files && file.files[0]; if (!f) return;
+        const r = new FileReader(); r.onload = () => { imageDataURL = r.result; preview.innerHTML = `<img src="${imageDataURL}" alt="preview"/>`; }; r.readAsDataURL(f);
+      });
+    }
+
+    function wireButtons(){
+      document.getElementById('epBack').addEventListener('click', () => {
+        const cat = document.getElementById('epCategory').value || q('cat');
+        location.href = `ProductManagement.html${cat ? `?cat=${encodeURIComponent(cat)}` : ''}`;
+      });
+      document.getElementById('epSave').addEventListener('click', () => {
+        const payload = {
+          id: productId,
+          name: (document.getElementById('epName').value||'').trim(),
+          image: imageDataURL,
+          category: document.getElementById('epCategory').value,
+          price: (document.getElementById('epPrice').value||'').trim(),
+          score: (document.getElementById('epScore').value||'').trim(),
+          artisan: (document.getElementById('epArtisan').value||'').trim(),
+          description: (document.getElementById('epDesc').value||'').trim()
+        };
+        const extras = readExtras();
+        const idx = extras.findIndex(p=>p.id===productId);
+        if (idx>=0) extras[idx] = {...extras[idx], ...payload}; else extras.push(payload);
+        writeExtras(extras);
+        const cat = payload.category || q('cat');
+        location.href = `ProductManagement.html${cat ? `?cat=${encodeURIComponent(cat)}` : ''}`;
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadProduct();
+      wireUpload();
+      wireButtons();
+    });
+  })();
+  </script>
+</body>
+</html>
+
+

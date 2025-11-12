@@ -1,0 +1,162 @@
+[
+  {
+    "id": "a1",
+    "name": "The Saigon Upcyclers",
+    "location": "Ho Chi Minh City",
+    "avatarUrl": "../assets/images/avatar-hoang.jpg",
+    "heroImageUrl": "../assets/images/artisan1.jpg",
+    "story": "Chúng tôi là một nhóm các nhà thiết kế trẻ tại Sài Gòn, tin rằng rác thải đô thị là một nguồn tài nguyên. Chúng tôi chuyên biến đổi bạt quảng cáo, lốp xe cũ và bao cà phê thành những chiếc túi xách và phụ kiện thời trang độc đáo..."
+  },
+  {
+    "id": "a2",
+    "name": "Hanoi Circular Textiles",
+    "location": "Hanoi",
+    "avatarUrl": "../assets/images/avatar-hoang.jpg",
+    "heroImageUrl": "../assets/images/artisan1.jpg",
+    "story": "Xưởng của chúng tôi tập trung vào việc tái chế vải vóc. Bằng cách thu thập vải vụn từ các nhà máy may lớn ở phía Bắc, chúng tôi dệt lại, nhuộm thủ công và tạo ra các sản phẩm dệt may gia dụng như thảm, gối và chăn..."
+  },
+  {
+    "id": "a3",
+    "name": "Vung Tau Reclaimed",
+    "location": "Vung Tau",
+    "avatarUrl": "../assets/images/avatar-hoang.jpg",
+    "heroImageUrl": "../assets/images/artisan1.jpg",
+    "story": "Nghệ nhân của chúng tôi là những ngư dân đã nghỉ hưu. Chúng tôi thu thập gỗ từ những chiếc thuyền đánh cá cũ không còn ra khơi được nữa và chế tác chúng thành đồ nội thất và đồ trang trí. Mỗi mảnh gỗ đều mang trong mình câu chuyện của biển cả."
+  },
+  {
+    "id": "a4",
+    "name": "Hoi An Lantern Makers",
+    "location": "Hoi An",
+    "avatarUrl": "../assets/images/avatar-hoang.jpg",
+    "heroImageUrl": "../assets/images/artisan1.jpg",
+    "story": "Tại Hội An, chúng tôi gìn giữ truyền thống làm đèn lồng, nhưng với một bước ngoặt mới. Chúng tôi sử dụng giấy 'dó' tái chế và khung tre được xử lý tự nhiên, tạo ra những chiếc đèn lồng không chỉ đẹp mà còn thân thiện với môi trường."
+  },
+  {
+    "id": "a5",
+    "name": "Hue Royal Weavers",
+    "location": "Hue",
+    "avatarUrl": "../assets/images/avatar-hoang.jpg",
+    "heroImageUrl": "../assets/images/artisan1.jpg",
+    "story": "Chúng tôi phục hồi kỹ thuật dệt lụa cung đình cũ của Huế. Chúng tôi sử dụng lụa tơ tằm thô và thuốc nhuộm tự nhiên từ cây cỏ địa phương như vỏ cây, lá trà, tạo ra các sản phẩm vải vóc tinh tế với độ bền màu cao."
+  },
+  {
+    "id": "a6",
+    "name": "Mekong Delta Coir",
+    "location": "Ben Tre",
+    "avatarUrl": "../assets/images/avatar-hoang.jpg",
+    "heroImageUrl": "../assets/images/artisan1.jpg",
+    "story": "Ở Bến Tre, không có gì từ cây dừa bị lãng phí. Chúng tôi chuyên chế tác xơ dừa và gáo dừa thành các sản phẩm gia dụng hữu ích như chậu cây, thảm, và bộ đồ ăn, thay thế các sản phẩm nhựa."
+  },
+  {
+    "id": "a7",
+    "name": "Da Nang Coastal Glass",
+    "location": "Da Nang",
+    "avatarUrl": "../assets/images/avatar-hoang.jpg",
+    "heroImageUrl": "../assets/images/artisan1.jpg",
+    "story": "Các bãi biển Đà Nẵng truyền cảm hứng cho chúng tôi. Chúng tôi thu thập các mảnh vỡ thủy tinh từ chai lọ do biển đánh dạt vào, mài nhẵn chúng và tạo ra đồ trang sức 'thủy tinh biển' độc đáo và đồ trang trí mosaic."
+  },
+  {
+    "id": "a8",
+    "name": "Sapa Hemp Collective",
+    "location": "Sapa",
+    "avatarUrl": "../assets/images/avatar-hoang.jpg",
+    "heroImageUrl": "../assets/images/artisan1.jpg",
+    "story": "Chúng tôi là một hợp tác xã của phụ nữ H'mông, bảo tồn nghệ thuật dệt vải lanh từ cây gai dầu. Mọi công đoạn từ trồng trọt, se sợi, dệt vải đến nhuộm chàm đều được làm thủ công, không hóa chất."
+  },
+  {
+    "id": "a9",
+    "name": "Da Lat Pine Recyclers",
+    "location": "Da Lat",
+    "avatarUrl": "../assets/images/avatar-hoang.jpg",
+    "heroImageUrl": "../assets/images/artisan1.jpg",
+    "story": "Những rừng thông của Đà Lạt để lại rất nhiều cành khô và quả thông. Chúng tôi biến chúng thành những món đồ trang trí Giáng Sinh, đồ lưu niệm mộc mạc, mang hơi thở của cao nguyên vào mỗi ngôi nhà."
+  },
+  {
+    "id": "a10",
+    "name": "Can Tho Water Hyacinth",
+    "location": "Can Tho",
+    "avatarUrl": "../assets/images/avatar-hoang.jpg",
+    "heroImageUrl": "../assets/images/artisan1.jpg",
+    "story": "Lục bình (bèo tây) là một vấn đề ở sông Cửu Long, nhưng với chúng tôi, đó là nguyên liệu vàng. Chúng tôi phơi khô và đan thủ công lục bình thành giỏ, túi xách, và dép đi trong nhà, vừa giải quyết vấn đề môi trường, vừa tạo ra sản phẩm đẹp."
+  },
+  {
+    "id": "a11",
+    "name": "Ninh Binh Reed Crafters",
+    "location": "Ninh Binh",
+    "avatarUrl": "../assets/images/avatar-hoang.jpg",
+    "heroImageUrl": "../assets/images/artisan1.jpg",
+    "story": "Vùng đất ngập nước Tràng An cung cấp cho chúng tôi nguồn cói và lau sậy dồi dào. Các nghệ nhân của chúng tôi sử dụng kỹ thuật đan truyền thống để tạo ra những chiếc chiếu, túi xách và hộp đựng đồ tinh xảo."
+  },
+  {
+    "id": "a12",
+    "name": "Bat Trang New Generation",
+    "location": "Hanoi",
+    "avatarUrl": "../assets/images/avatar-hoang.jpg",
+    "heroImageUrl": "../assets/images/artisan1.jpg",
+    "story": "Là thế hệ mới của làng gốm Bát Tràng, chúng tôi thử nghiệm việc sử dụng men tro (ash glaze) từ rơm rạ và trấu. Kỹ thuật này không chỉ tạo ra màu men độc đáo mà còn tận dụng phế phẩm nông nghiệp."
+  },
+  {
+    "id": "a13",
+    "name": "Phu Quoc Shell Art",
+    "location": "Phu Quoc",
+    "avatarUrl": "../assets/images/avatar-hoang.jpg",
+    "heroImageUrl": "../assets/images/artisan1.jpg",
+    "story": "Chúng tôi tận dụng vỏ ngọc trai, vỏ sò, và vỏ ốc bị loại ra từ các trang trại ngọc trai hoặc dạt vào bờ. Qua bàn tay của nghệ nhân, chúng được khảm lên các sản phẩm gỗ, tạo ra sự lấp lánh của biển cả."
+  },
+  {
+    "id": "a14",
+    "name": "Quang Nam Bamboo",
+    "location": "Quang Nam",
+    "avatarUrl": "../assets/images/artisan1.jpg",
+    "heroImageUrl": "../assets/images/artisan1.jpg",
+    "story": "Tre là 'thép xanh' của Việt Nam. Chúng tôi ở Quảng Nam tin vào điều đó. Chúng tôi tạo ra mọi thứ từ tre, từ ống hút, bàn chải đánh răng đến xe đạp tre, tất cả đều bền vững và có thể phân hủy sinh học."
+  },
+  {
+    "id": "a15",
+    "name": "Ha Giang Highlands Plastic",
+    "location": "Ha Giang",
+    "avatarUrl": "../assets/images/artisan1.jpg",
+    "heroImageUrl": "../assets/images/artisan1.jpg",
+    "story": "Ở vùng cao Hà Giang, rác thải nhựa là một thách thức. Chúng tôi hợp tác với cộng đồng địa phương để thu gom túi nilon, làm sạch và ép nhiệt chúng thành những tấm vật liệu dẻo dai, sau đó may thành ví và ba lô."
+  },
+  {
+    "id": "a16",
+    "name": "Dong Nai Scrap Metal",
+    "location": "Dong Nai",
+    "avatarUrl": "../assets/images/artisan1.jpg",
+    "heroImageUrl": "../assets/images/artisan1.jpg",
+    "story": "Chúng tôi là những thợ cơ khí yêu nghệ thuật. Từ phế liệu kim loại như bu lông, đai ốc, xích xe máy, chúng tôi hàn và tạo hình thành những tác phẩm điêu khắc, mô hình xe, và đồ trang trí nội thất độc đáo."
+  },
+  {
+    "id": "a17",
+    "name": "Binh Thuan Paper Art",
+    "location": "Binh Thuan",
+    "avatarUrl": "../assets/images/artisan1.jpg",
+    "heroImageUrl": "../assets/images/artisan1.jpg",
+    "story": "Giấy báo và tạp chí cũ được chúng tôi cuộn lại và dệt. Kỹ thuật 'dệt giấy' này tạo ra các sản phẩm cứng cáp như giỏ đựng đồ, khay và thậm chí là ghế đẩu, tất cả đều được phủ một lớp sơn bóng chống nước."
+  },
+  {
+    "id": "a18",
+    "name": "Central Highlands Coffee",
+    "location": "Dak Lak",
+    "avatarUrl": "../assets/images/artisans/avatar_daklak.jpg",
+    "heroImageUrl": "../assets/images/artisans/hero_daklak.jpg",
+    "story": "Sau khi pha chế cà phê, bã cà phê thường bị bỏ đi. Chúng tôi thu gom bã cà phê, sấy khô và trộn chúng với sáp ong để làm nến thơm, hoặc dùng làm xà phòng tẩy tế bào chết tự nhiên."
+  },
+  {
+    "id": "a19",
+    "name": "Ha Long Bay Recycled",
+    "location": "Quang Ninh",
+    "avatarUrl": "../assets/images/artisans/avatar_halong.jpg",
+    "heroImageUrl": "../assets/images/artisans/hero_halong.jpg",
+    "story": "Để giữ gìn vẻ đẹp của Vịnh Hạ Long, chúng tôi tập trung vào rác thải từ du lịch. Chai nhựa được biến thành sợi polyester để dệt túi, và phao xốp hỏng được điêu khắc thành đồ trang trí."
+  },
+  {
+    "id": "a20",
+    "name": "Phu Yen Reclaimed Silk",
+    "location": "Phu Yen",
+    "avatarUrl": "../assets/images/artisans/avatar_phuyen.jpg",
+    "heroImageUrl": "../assets/images/artisans/hero_phuyen.jpg",
+    "story": "Chúng tôi tìm kiếm những mảnh lụa, gấm vụn từ các nhà may áo dài. Bằng kỹ thuật chắp vá (patchwork) và thêu tay, chúng tôi tạo ra những chiếc khăn quàng cổ, ví và áo khoác, mỗi sản phẩm là một tác phẩm nghệ thuật độc bản."
+  }
+]

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Details | ReVibe</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .od-wrap{background:#eef6ec;border-radius:16px;padding:16px}
+    .od-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:16px}
+    .card{background:#fff;border-radius:12px;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,0.1);margin-bottom:12px}
+    .card h3{font-size:16px;margin-bottom:12px}
+    .kv{display:grid;grid-template-columns:160px 1fr;row-gap:12px;column-gap:14px;font-size:14px;line-height:1.6}
+    .kv > div{padding:2px 0}
+    .kv div:nth-child(odd){color:#666}
+    .items{display:flex;flex-direction:column;gap:16px}
+    .item{display:grid;grid-template-columns:64px 1fr 120px;align-items:center;gap:14px}
+    .item img{width:64px;height:64px;border-radius:8px;object-fit:cover}
+    .price-line{display:flex;flex-direction:column;align-items:flex-end;font-size:14px;row-gap:4px}
+    .price-line .strike{text-decoration:line-through;color:#999}
+    .sum{border-top:1px dashed #ddd;margin-top:14px;padding-top:12px;display:grid;grid-template-columns:1fr auto;row-gap:10px}
+    .back-area{display:flex;justify-content:flex-start;margin-top:12px}
+    .btn-back{background:#2e7d32;color:#fff;border:none;border-radius:10px;height:36px;padding:0 14px;cursor:pointer}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar" data-include="partials/sidebar.html"></aside>
+    <main class="main">
+      <header class="header" data-include="partials/header.html"></header>
+
+      <div class="od-wrap">
+        <div class="od-grid">
+          <div class="left">
+            <div class="card" id="card-order">
+              <h3>Order information</h3>
+              <div class="kv" id="orderInfo"></div>
+            </div>
+            <div class="card" id="card-customer">
+              <h3>Customer information</h3>
+              <div class="kv" id="customerInfo"></div>
+            </div>
+            <div class="card" id="card-shipping">
+              <h3>Shipping information</h3>
+              <div class="kv" id="shippingInfo"></div>
+            </div>
+            <div class="card" id="card-payment">
+              <h3>Order & Payment summary</h3>
+              <div class="kv" id="paymentInfo"></div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="card">
+              <div class="items" id="items"></div>
+              <div class="sum">
+                <div>Subtotal:</div><div id="subtotal"></div>
+                <div>Shipping fee:</div><div id="shipFee"></div>
+                <div>Shipping discount:</div><div id="shipDiscount"></div>
+                <div style="font-weight:700">Total:</div><div id="grandTotal" style="font-weight:700"></div>
+              </div>
+              <div class="back-area"><button id="backBtn" class="btn-back">◀ Back</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="../js/layout.js"></script>
+  <script src="../js/order_details.js"></script>
+</body>
+</html>
+
+

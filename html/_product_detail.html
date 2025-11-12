@@ -1,0 +1,76 @@
+<div class="pdp-layout container section">
+    
+    <nav class="breadcrumbs">
+        <a href="index.html" class="breadcrumbs__link ajax-link">Home</a>
+        <span class="breadcrumbs__divider">›</span>
+        <a href="products.html" class="breadcrumbs__link ajax-link" id="pd-breadcrumb-category">Shop</a>
+        <span class="breadcrumbs__divider">›</span>
+        <span class="breadcrumbs__current" id="pd-breadcrumb-name">Loading...</span>
+    </nav>
+
+    <div class="product-detail-layout">
+        
+        <div class="product-images">
+            <div class="product-images__main">
+                <img src="../assets/images/placeholder.jpg" alt="Loading product image" id="pd-main-image">
+            </div>
+            </div>
+
+        <div class="product-info">
+            <span class="product-info__artisan" id="pd-artisan-name">By Artisan</span>
+            <span class="product-info__score" id="pd-score">Score: 0/10</span>
+            
+            <h1 class="product-info__title" id="pd-product-name">Loading Product...</h1>
+            
+            <div class="product-info__price">
+                <span class="price--discounted" id="pd-price-discounted"></span>
+                <span class="price--original on-sale" id="pd-price-original"></span>
+            </div>
+
+            <p class="product-info__description" id="pd-description">Loading description...</p>
+
+            <div class="product-info__quantity">
+                <label for="quantity-input" class="quantity-label">Quantity:</label>
+                <div class="quantity-selector">
+                    <button class="quantity-selector__btn" id="qty-decrease">−</button>
+                    <input type="number" class="quantity-selector__input" id="quantity-input" value="1" min="1">
+                    <button class="quantity-selector__btn" id="qty-increase">+</button>
+                </div>
+            </div>
+
+            <div class="product-info__actions">
+                <button class="auth-form__button" id="add-to-cart-btn">Add to Cart</button>
+                <button class="auth-form__button button--outlined" id="buy-now-btn">Buy Now</button>
+            </div>
+            
+            <div class="pdp-tabs-section">
+                <nav class="tab-nav">
+                    <button class="tab-nav__button is-active" data-target="tab-content-details">Details</button>
+                    <button class="tab-nav__button" data-target="tab-content-artisan">Artisan</button>
+                    <button class="tab-nav__button" data-target="tab-content-reviews">
+                        Reviews (<span id="pd-review-count">0</span>)
+                        </button>
+                </nav>
+                <div class="tab-content-wrapper">
+                    <div class="tab-content is-active" id="tab-content-details">
+                        <p>Thông tin chi tiết về vật liệu, kích thước, v.v. sẽ được tải vào đây.</p>
+                        <ul>
+                            <li>Material: Recycled PET, Reclaimed Wood</li>
+                            <li>Dimensions: 20cm x 15cm x 5cm</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="tab-content-artisan">
+                        <p>Thông tin về nghệ nhân (artisan) sẽ được tải vào đây.</p>
+                    </div>
+                    <div class="tab-content" id="tab-content-reviews">
+                        <h3 class="review-section-title" style="text-align: center; font-size: 1.5rem; margin-bottom: 20px;">Customer Reviews</h3>
+
+                        <div id="product-reviews-container">
+                            <div class="loading-spinner" style="margin: 40px auto;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

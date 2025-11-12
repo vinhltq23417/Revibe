@@ -1,0 +1,58 @@
+[
+  {
+    "id": "u1",
+    "email": "buyer01@gmail.com",
+    "password": "Password123",
+    "firstName": "Huy",
+    "lastName": "Hoàng",
+    "role": "buyer", 
+    "phone": "0901234567",
+    "defaultAddressId": "a101",
+    "addresses": [
+      {
+        "id": "a101",
+        "fullName": "Huy Hoàng",
+        "phone": "0901234567",
+        "street": "123 Đường ABC, Phường 1",
+        "city": "Quận 1, TP. Hồ Chí Minh"
+      },
+      {
+        "id": "a102",
+        "fullName": "Huy Hoàng (Văn phòng)",
+        "phone": "0901234567",
+        "street": "456 Tòa nhà XYZ, Phường Bến Nghé",
+        "city": "Quận 1, TP. Hồ Chí Minh"
+      }
+    ]
+  },
+  {
+    "id": "u2",
+    "email": "buyer02@gmail.com",
+    "password": "Password456",
+    "firstName": "An",
+    "lastName": "Nhiên",
+    "role": "buyer", 
+    "phone": "0987654321",
+    "defaultAddressId": "a201",
+    "addresses": [
+      {
+        "id": "a201",
+        "fullName": "An Nhiên",
+        "phone": "0987654321",
+        "street": "789 Đường DEF, Phường 10",
+        "city": "Quận Gò Vấp, TP. Hồ Chí Minh"
+      }
+    ]
+  },
+  {
+    "id": "u3",
+    "email": "admin@revibe.com",
+    "password": "admin123",
+    "firstName": "ReVibe",
+    "lastName": "Admin",
+    "role": "admin", 
+    "phone": "0888888888",
+    "defaultAddressId": null,
+    "addresses": []
+  }
+]

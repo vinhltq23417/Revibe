@@ -1,0 +1,46 @@
+<div class="page-container" id="search-results-page">
+  
+  <header class="page-header" style="text-align: center; margin-bottom: 20px;">
+    <div class="breadcrumb-nav">
+      <a href="index.html" class="breadcrumb-link ajax-link">Home</a>
+      <span class="breadcrumb-separator">/</span>
+      <span class="breadcrumb-current">Search</span>
+    </div>
+    <h1 style="font-size: 2.5rem; margin-top: 10px;">
+      Search Results for "<span id="search-query-display">...</span>"
+    </h1>
+  </header>
+  
+  <main class="main-content" style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+    
+    <nav class="profile-nav" id="search-results-nav" style="justify-content: center; margin-bottom: 30px;">
+      <a href="#" class="profile-nav__link search-tab-link is-active" data-target="tab-products">
+        Products
+      </a>
+      <a href="#" class="profile-nav__link search-tab-link" data-target="tab-artisans">
+        Artisans
+      </a>
+      <a href="#" class="profile-nav__link search-tab-link" data-target="tab-blogs">
+        Blog Posts
+      </a>
+    </nav>
+    <div class="tab-content" id="tab-products" style="display: block;">
+      <div id="search-results-products" class="product-grid-4-col">
+        <div class="loading-spinner" style="margin: 30px auto;"></div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="tab-artisans" style="display: none;">
+      <div id="search-results-artisans" class="artisan-grid">
+         <div class="loading-spinner" style="margin: 30px auto;"></div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="tab-blogs" style="display: none;">
+      <div id="search-results-blogs" class="story-grid">
+         <div class="loading-spinner" style="margin: 30px auto;"></div>
+      </div>
+    </div>
+    
+    </main>
+</div>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Sign In - ReVibe</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+        
+        <link rel="stylesheet" href="../css/main.css" /> 
+    </head>
+    <body class="auth-page-body"> 
+
+        <main class="auth-main">
+            <div class="auth-form-container">
+                <!-- Tiêu đề (có thể là "Add" hoặc "Edit" Address) -->
+                <h1 class="auth-form__title" id="address-form-title">Add New Address</h1>
+                
+                <form class="auth-form" onsubmit="return false;">
+                
+                <!-- Dùng 2 cột cho Tên và SĐT (Cải tiến) -->
+                <div class="form-row">
+                    <div class="form-group form-group--half">
+                    <label for="addr-full-name" class="form-group__label">Full Name</label>
+                    <input type="text" id="addr-full-name" class="form-group__input" required>
+                    </div>
+                    <div class="form-group form-group--half">
+                    <label for="addr-phone" class="form-group__label">Phone Number</label>
+                    <input type="tel" id="addr-phone" class="form-group__input" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="addr-detail" class="form-group__label">Address Details (Street, Number)</label>
+                    <input type="text" id="addr-detail" class="form-group__input" required>
+                </div>
+
+                <!-- (Tùy chọn: Thêm Dropdown cho Tỉnh/Thành, Quận/Huyện, Phường/Xã) -->
+                
+                <div class="form-group-inline">
+                    <input type="checkbox" id="addr-set-default" class="form-checkbox">
+                    <label for="addr-set-default" class="form-checkbox-label">Set as default address</label>
+                </div>
+
+                <button type="button" id="save-address-button" class="auth-form__button">Save Address</button>
+                
+                <!-- Link "Cancel" sẽ tải lại trang profile -->
+                <a href="profile.html" class="auth-form__footer-link ajax-link" style="text-align: center; margin-top: 16px;">Cancel</a>
+                
+                </form>
+            </div>
+        </main>
+
+        <script src="../js/main.js"></script>
+
+    </body>
+</html>

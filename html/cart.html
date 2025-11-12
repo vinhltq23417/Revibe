@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Story - ReVibe</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <div class="page-container" id="cart-page-new">
+  
+  <h1 class="cart-header">My Shopping Cart</h1>
+
+  <div class="cart-layout-container" id="cart-layout">
+    
+    <div class="cart-items-column">
+      
+      <div class="cart-items-header">
+        <div class="custom-checkbox" id="select-all-checkbox"></div>
+        <div class="col-product">Product</div>
+        <div class="col-price">Price</div>
+        <div class="col-quantity">Quantity</div>
+        <div class="col-total">Total Price</div>
+        <div class="col-delete"></div>
+      </div>
+
+      <div id="cart-items-list-container">
+        <div class="loading-spinner" style="margin: 50px auto;"></div>
+      </div>
+      
+    </div>
+
+    <div class="cart-summary-column" id="cart-summary-box">
+        <h2 class="cart-summary-title">Cart Total</h2>
+        
+        <div class="cart-summary-row">
+            <span>Item Quantity:</span>
+            <span id="cart-summary-item-count">0</span>
+        </div>
+
+        <div class="cart-summary-row total">
+            <span>Total:</span>
+            <span id="cart-summary-total-price">0 đ</span>
+        </div>
+
+        <a href="check_out.html" id="cart-checkout-btn" class="proceed-to-checkout-btn">
+          Proceed to Checkout
+        </a>
+    </div>
+
+  </div> <div id="cart-empty-container" style="display: none;">
+    <p class="cart-empty-message" style="text-align: center; padding: 40px; border: 2px dashed #eee; border-radius: 8px;">
+      Your cart is empty.
+    </p>
+  </div>
+</div>
+
+  </body>
+</html>

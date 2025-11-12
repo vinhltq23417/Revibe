@@ -1,0 +1,259 @@
+[
+  {
+    "id": "b1",
+    "category": "GUIDES",
+    "title": "How to Start Your Sustainable Journey",
+    "snippet": "It's not about being perfect, it's about starting small. Here are 5 easy steps you can take today...",
+    "publishDate": "November 8, 2025",
+    "imageUrl": "../assets/images/artisan1.jpg",
+    "authorName": "An Nhien",
+    "authorAvatarUrl": "../assets/icons/avatar_full.svg",
+    "content": [
+      "It's not about being perfect, it's about starting small. Here are 5 easy steps you can take today to build a more sustainable lifestyle...",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.",
+      "Step 1: Understand Your 'Why'. Is it for the planet? For your health? For your children? Knowing your 'why' will keep you motivated.",
+      "Step 2: Start with One Swap. Don't try to change everything at once. This week, just focus on swapping plastic water bottles for a reusable one. That's it. Next week, try reusable coffee cups.",
+      "Step 3: Check the Label. Before you buy, check the 'Sustainability Score' on ReVibe or look for materials like 'Reclaimed Wood' and 'Recycled Cotton'.",
+      "Step 4: Support Local Artisans. Buying from local creators reduces your carbon footprint from shipping and supports the community. It's a win-win.",
+      "Step 5: Be Kind to Yourself. You will forget your reusable bag. You will accidentally buy a plastic-wrapped item. It's okay. Sustainability is a journey, not a destination."
+    ]
+  },
+  {
+    "id": "b2",
+    "category": "ARTISANS",
+    "title": "Meet 'The Saigon Upcyclers': The Team Behind the Totes",
+    "snippet": "We visit the workshop of the artisans who turn discarded advertising banners into the unique bags you love.",
+    "publishDate": "November 1, 2025",
+    "imageUrl": "../assets/images/artisan2.jpg",
+    "authorName": "Minh Tuan",
+    "authorAvatarUrl": "../assets/icons/avatar_full.svg",
+    "content": [
+      "We visit the workshop of the artisans who turn discarded advertising banners into the unique bags you love.",
+      "For Minh and his team, a discarded truck tire isn't waste—it's a high-quality raw material. We visited his workshop to see exactly how he transforms rugged rubber into sleek, water-resistant accessories. 'It's about seeing potential where others see trash,' Minh explains.",
+      "The process is meticulous. Each banner is collected, sorted, cleaned with eco-friendly detergents, and then hand-cut. This is where the artistry truly begins..."
+    ]
+  },
+  {
+    "id": "b3",
+    "category": "MATERIALS",
+    "title": "What is 'Reclaimed Wood' and Why Is It Better?",
+    "snippet": "A deep dive into the world of reclaimed wood, its benefits, and how it becomes a beautiful piece of furniture.",
+    "publishDate": "October 28, 2025",
+    "imageUrl": "../assets/images/artisan3.jpg",
+    "authorName": "ReVibe Team",
+    "authorAvatarUrl": "../assets/icons/logo.svg",
+    "content": [
+      "A deep dive into the world of reclaimed wood, its benefits, and how it becomes a beautiful piece of furniture.",
+      "When we talk about 'reclaimed wood', we're referring to wood that has been salvaged from old structures like barns, warehouses, ships, and even wine barrels. Instead of ending up in a landfill, this wood is given a new life.",
+      "Is it really 'better'?",
+      "In short: yes. Reclaimed wood is not only stronger and more durable (it has withstood the test of time), but it also possesses a unique character and patina that new wood simply cannot replicate. Furthermore, it significantly reduces the demand for virgin timber, helping to preserve our forests."
+    ]
+  },
+  {
+    "id": "b4",
+    "category": "INSPIRATION",
+    "title": "5 Ways to Style Your Upcycled Bag",
+    "snippet": "From street style to office chic, your sustainable bag can be the most versatile piece in your wardrobe.",
+    "publishDate": "October 22, 2025",
+    "imageUrl": "../assets/images/artisan4.jpg",
+    "authorName": "An Nhien",
+    "authorAvatarUrl": "../assets/icons/avatar_full.svg",
+    "content": [
+      "From street style to office chic, your sustainable bag can be the most versatile piece in your wardrobe.",
+      "An upcycled bag, especially one made from a material like a recycled banner, is a statement piece. Here’s how to make it work for any occasion:",
+      "1. The Casual Weekender: Pair it with high-waisted jeans, a white tee, and sneakers. Let the bag be the pop of color.",
+      "2. The Office Commute: A larger tote bag is perfect for your laptop. Pair it with neutral-toned trousers and a blazer to show off your professional yet conscious style.",
+      "3. The Market Run: It's durable and waterproof, perfect for carrying groceries or flowers from the local market.",
+      "4. The Art Gallery Visit: Complement the bag's artistic roots by pairing it with a simple, minimalist dress.",
+      "5. The Beach Day: Strong enough to hold your towel, sunscreen, and book, and easy to wipe clean."
+    ]
+  },
+  {
+    "id": "b5",
+    "category": "GUIDES",
+    "title": "The Truth About Plastic Recycling",
+    "snippet": "Understanding the numbers on your plastics and what can *really* be recycled in Vietnam.",
+    "publishDate": "October 15, 2025",
+    "imageUrl": "../assets/images/artisan5.jpg",
+    "authorName": "Minh Tuan",
+    "authorAvatarUrl": "../assets/icons/avatar_full.svg",
+    "content": [
+      "Understanding the numbers on your plastics and what can *really* be recycled in Vietnam.",
+      "You see the recycling symbol, but do you know what the numbers 1 through 7 actually mean? This guide breaks it down. For example, PET (Polyethylene Terephthalate), marked with a '1', is widely recycled and is the source material for many sustainable fashion items. In contrast, PVC (Polyvinyl Chloride), marked with a '3', is notoriously difficult to recycle..."
+    ]
+  },
+  {
+    "id": "b6",
+    "category": "ARTISANS",
+    "title": "Vung Tau Reclaimed: Mr. Ba's Story",
+    "snippet": "A profile on the artisan who finds beauty in salvaged fishing boats from the Vung Tau coastline.",
+    "publishDate": "October 10, 2025",
+    "imageUrl": "../assets/images/artisan6.jpg",
+    "authorName": "ReVibe Team",
+    "authorAvatarUrl": "../assets/icons/logo.svg",
+    "content": [
+      "A profile on the artisan who finds beauty in salvaged fishing boats from the Vung Tau coastline.",
+      "Mr. Ba, a retired boat builder, couldn't stand to see the colorful, history-rich wood of old fishing boats go to waste. His workshop, 'Vung Tau Reclaimed', sources timber exclusively from decommissioned vessels, preserving the original paint, nail holes, and patina of time. Each piece is a testament to the sea."
+    ]
+  },
+  {
+    "id": "b7",
+    "category": "GUIDES",
+    "title": "A Beginner's Guide to Composting in an Apartment",
+    "snippet": "Think you can't compost in a small space? Think again. Here's how to start reducing your food waste today.",
+    "publishDate": "October 5, 2025",
+    "imageUrl": "../assets/images/artisan6.jpg",
+    "authorName": "Minh Tuan",
+    "authorAvatarUrl": "../assets/icons/avatar_full.svg",
+    "content": [
+      "Think you can't compost in a small space? Think again. Here's how to start reducing your food waste today.",
+      "Composting in an apartment might seem daunting, but it's one of the most impactful ways to reduce your carbon footprint. We explore two popular methods: Bokashi Bins and Vermicomposting (worm composting). Both are low-odor and perfect for a balcony or kitchen corner."
+    ]
+  },
+  {
+    "id": "b8",
+    "category": "INSPIRATION",
+    "title": "The Future of Fashion: Is 'Tire Vibe' the New Leather?",
+    "snippet": "We explore the innovative process of turning old tires into high-fashion accessories that are both vegan and durable.",
+    "publishDate": "September 30, 2025",
+    "imageUrl": "../assets/images/artisan3.jpg",
+    "authorName": "An Nhien",
+    "authorAvatarUrl": "../assets/icons/avatar_full.svg",
+    "content": [
+      "We explore the innovative process of turning old tires into high-fashion accessories that are both vegan and durable.",
+      "Leather is beautiful, but its environmental impact is significant. Enter 'Tire Vibe', a Da Nang workshop that is transforming rugged, non-biodegradable rubber from old truck tires into sleek, minimalist wallets, belts, and bags. The texture is unique, it's waterproof, and it's 100% vegan. This might just be the future of sustainable accessories."
+    ]
+  },
+  {
+    "id": "b9",
+    "category": "MATERIALS",
+    "title": "The Rebirth of a Bottle: How PET Becomes Premium Fabric",
+    "snippet": "It starts in a bin, but where does it go? We trace the complete journey of a plastic bottle to soft, durable thread.",
+    "publishDate": "September 25, 2025",
+    "imageUrl": "../assets/images/artisan3.jpg",
+    "authorName": "ReVibe Team",
+    "authorAvatarUrl": "../assets/icons/logo.svg",
+    "content": [
+      "It starts in a bin, but where does it go? We trace the complete journey of a plastic bottle to soft, durable thread.",
+      "It's hard to believe that the soft t-shirt you're wearing could have started as a water bottle. The process, known as 'rPET', involves collecting, sorting, and cleaning PET bottles. They are then shredded into fine flakes, melted down, and extruded into fine filaments. This filament is spun into 'yarn', which becomes the premium, soft fabric used in our ReNew collection."
+    ]
+  },
+  {
+    "id": "b10",
+    "category": "GUIDES",
+    "title": "How to Read Our 'Sustainability Score': A Guide to Beating Greenwashing",
+    "snippet": "What does 'eco-friendly' truly mean? We break down the real data behind every ReVibe product, explaining exactly how our score is calculated.",
+    "publishDate": "September 20, 2025",
+    "imageUrl": "../assets/images/artisan1.jpg",
+    "authorName": "Minh Tuan",
+    "authorAvatarUrl": "../assets/icons/avatar_full.svg",
+    "content": [
+      "What does 'eco-friendly' truly mean? We break down the real data behind every ReVibe product, explaining exactly how our score is calculated.",
+      "You asked for transparency, and we're delivering. Our 'Sustainability Score' isn't a marketing gimmick; it's a data-driven metric based on four key pillars: Recycled Content (%), Natural Materials (%), Local Production (Yes/No), and Artisan Made (Yes/No). This guide explains exactly what each pillar means, so you can shop with verified confidence."
+    ]
+  },
+  {
+    "id": "b-1",
+    "category": "GUIDES",
+    "title": "From Waste to Worth: The Power of Reusable Bags",
+    "snippet": "Reusable bags cut plastic waste and save resources. Here's how to start.",
+    "publishDate": "October 1, 2025",
+    "imageUrl": "https://picsum.photos/seed/reusable-bag-1/800/520",
+    "authorName": "ReVibe Team",
+    "authorAvatarUrl": "../assets/icons/logo.svg",
+    "content": [
+      "Reusable bags cut plastic waste and save resources. Here's how to start."
+    ]
+  },
+  {
+    "id": "b-2",
+    "category": "GUIDES",
+    "title": "Small Habits for a Greener Home",
+    "snippet": "Composting, energy saving, and mindful shopping make a real difference.",
+    "publishDate": "October 12, 2025",
+    "imageUrl": "https://picsum.photos/seed/green-home-2/800/520",
+    "authorName": "Khanh Ly",
+    "authorAvatarUrl": "../assets/icons/avatar_full.svg",
+    "content": [
+      "Composting, energy saving, and mindful shopping make a real difference."
+    ]
+  },
+  {
+    "id": "b-3",
+    "category": "GUIDES",
+    "title": "Upcycling Furniture: Tips for Beginners",
+    "snippet": "Give old furniture a new life with safe finishes and simple tools.",
+    "publishDate": "October 20, 2025",
+    "imageUrl": "https://picsum.photos/seed/upcycle-3/800/520",
+    "authorName": "ReVibe Studio",
+    "authorAvatarUrl": "../assets/icons/logo.svg",
+    "content": [
+      "Give old furniture a new life with safe finishes and simple tools."
+    ]
+  },
+  {
+    "id": "b-4",
+    "category": "GUIDES",
+    "title": "Composting 101: Turn Kitchen Waste into Gold",
+    "snippet": "Simple steps to start composting even in small apartments.",
+    "publishDate": "October 25, 2025",
+    "imageUrl": "https://picsum.photos/seed/compost-4/800/520",
+    "authorName": "Green Home",
+    "authorAvatarUrl": "../assets/icons/avatar_full.svg",
+    "content": [
+      "Simple steps to start composting even in small apartments."
+    ]
+  },
+  {
+    "id": "b-5",
+    "category": "MATERIALS",
+    "title": "A Guide to Sustainable Fabrics",
+    "snippet": "Bamboo, hemp, organic cotton and how to choose wisely.",
+    "publishDate": "October 28, 2025",
+    "imageUrl": "https://picsum.photos/seed/fabrics-5/800/520",
+    "authorName": "ReVibe Team",
+    "authorAvatarUrl": "../assets/icons/logo.svg",
+    "content": [
+      "Bamboo, hemp, organic cotton and how to choose wisely."
+    ]
+  },
+  {
+    "id": "b-6",
+    "category": "GUIDES",
+    "title": "Zero-Waste Kitchen: 7 Easy Swaps",
+    "snippet": "Reusable wraps, jars, and bulk shopping to reduce trash.",
+    "publishDate": "November 1, 2025",
+    "imageUrl": "https://picsum.photos/seed/zerowaste-6/800/520",
+    "authorName": "Khanh Ly",
+    "authorAvatarUrl": "../assets/icons/avatar_full.svg",
+    "content": [
+      "Reusable wraps, jars, and bulk shopping to reduce trash."
+    ]
+  },
+  {
+    "id": "b-7",
+    "category": "INSPIRATION",
+    "title": "Renewable Energy at Home: Where to Start",
+    "snippet": "From energy audits to rooftop solar basics.",
+    "publishDate": "November 2, 2025",
+    "imageUrl": "https://picsum.photos/seed/solar-7/800/520",
+    "authorName": "Eco Power",
+    "authorAvatarUrl": "../assets/icons/avatar_full.svg",
+    "content": [
+      "From energy audits to rooftop solar basics."
+    ]
+  },
+  {
+    "id": "b-8",
+    "category": "INSPIRATION",
+    "title": "Green Travel: Packing and Planning Tips",
+    "snippet": "Cut emissions with smarter routes and lighter luggage.",
+    "publishDate": "November 3, 2025",
+    "imageUrl": "https://picsum.photos/seed/travel-8/800/520",
+    "authorName": "ReVibe Studio",
+    "authorAvatarUrl": "../assets/icons/logo.svg",
+    "content": [
+      "Cut emissions with smarter routes and lighter luggage."
+    ]
+  }
+]

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edit Promotion | ReVibe</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .np-wrap{background:#eef6ec;border-radius:16px;padding:24px}
+    .np-header{display:flex;align-items:center;gap:10px;margin-bottom:20px}
+    .np-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .np-card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 1px 3px rgba(0,0,0,0.1)}
+    .row{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
+    .row input,.row select{padding:10px 12px;border:1px solid #e5e7eb;border-radius:10px}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .actions{display:flex;justify-content:space-between;margin-top:16px}
+    .btn-light{background:#e5e7eb;border:none;border-radius:10px;padding:10px 16px;cursor:pointer}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar" data-include="partials/sidebar.html"></aside>
+    <main class="main">
+      <header class="header" data-include="partials/header.html"></header>
+      <div class="np-wrap">
+        <div class="np-header"><button id="epBack" class="btn-light">◀ Back</button><h2>EDIT PROMOTION</h2></div>
+        <div class="np-grid">
+          <div class="np-card">
+            <div class="row"><label>Promotion Name</label><input id="epName" type="text"/></div>
+            <div class="row"><label>Type</label>
+              <div class="split">
+                <label><input type="radio" name="type" value="Discount %"/> Discount %</label>
+                <label><input type="radio" name="type" value="Fix Amount"/> Fix Amount</label>
+                <label><input type="radio" name="type" value="Freeship"/> Freeship</label>
+                <label><input type="radio" name="type" value="Buy X get Y"/> Buy X get Y</label>
+              </div>
+            </div>
+            <div class="row"><label>Discount Value</label><input id="epDiscount" type="text"/></div>
+            <div class="row"><label>Minimum order value</label><input id="epMin" type="number"/></div>
+            <div class="row"><label>Max discount amount</label><input id="epMax" type="number"/></div>
+          </div>
+          <div class="np-card">
+            <div class="row"><label>Eligible users</label>
+              <div class="split">
+                <label><input type="radio" name="eligible" value="All customers"/> All customers</label>
+                <label><input type="radio" name="eligible" value="New customer"/> New customer</label>
+                <label><input type="radio" name="eligible" value="Membership"/> Membership</label>
+              </div>
+            </div>
+            <div class="split">
+              <div class="row"><label>Start Date</label><input id="epStart" type="date"/></div>
+              <div class="row"><label>End Date</label><input id="epEnd" type="date"/></div>
+            </div>
+            <div class="row"><label>Limit per user</label><input id="epLimit" type="number"/></div>
+            <div class="row"><label>Usage</label><input id="epUsage" type="text"/></div>
+          </div>
+        </div>
+        <div class="actions">
+          <button id="epCancel" class="btn-light">Cancel</button>
+          <button id="epSave" class="btn-primary">Save</button>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="../js/layout.js"></script>
+  <script src="../js/edit_promotion.js"></script>
+</body>
+</html>
+
+
+
+
+

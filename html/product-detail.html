@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi tiết Sản phẩm</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/Product_Details.css">
+</head>
+<body>
+  
+  <main class="product-detail-page">
+    <div class="container section--small">
+      <nav class="breadcrumbs">
+        <a href="/" class="breadcrumbs__link">Home</a>
+        <span class="breadcrumbs__divider">/</span>
+        <a href="#" class="breadcrumbs__link" id="breadcrumb-category">...</a>
+        <span class="breadcrumbs__divider">/</span>
+        <span class="breadcrumbs__current" id="breadcrumb-current">...</span>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="product-detail-layout">
+
+        <div class="product-detail-layout__images">
+          <div class="product-images">
+            <div class="product-images__main">
+              <img src="" alt="Loading..." id="product-main-image">
+            </div>
+            </div>
+        </div>
+
+        <div class="product-detail-layout__info">
+          <h1 class="product-info__title" id="product-name">Loading...</h1>
+
+          <div class="product-info__price">
+            <span class="price--discounted" id="product-price-discounted"></span>
+            <span class="price--original" id="product-price-original"></span>
+          </div>
+
+          <div class="product-info__sustainability">
+            <div class="sustainability-score">
+              <div class="sustainability-score__circle">
+                <span class="sustainability-score__value" id="product-score-value">0.0</span>
+              </div>
+              <span class="sustainability-score__label">Sustainability Score</span>
+            </div>
+          </div>
+
+          <p class="product-info__description" id="product-description">
+            Loading description...
+          </p>
+
+          <div class="product-info__quantity">
+            <label for="quantity" class="quantity-label">Quantity</label>
+            <div class="quantity-selector">
+              <button class="quantity-selector__btn" id="quantity-decrease">-</button>
+              <input type="number" id="quantity-input" class="quantity-selector__input" value="1" min="1">
+              <button class="quantity-selector__btn" id="quantity-increase">+</button>
+            </div>
+          </div>
+
+          <div class="product-info__actions">
+            <button class="button button--filled button--large" id="add-to-cart-btn">Add to Cart</button>
+            <button class="button button--outlined button--large">Buy Now</button>
+          </div>
+
+          <div class="product-info__accordion">
+            <div class="accordion-item is-open">
+              <h3 class="accordion-item__header">Rebirth Journey</h3>
+              <div class="accordion-item__content">
+                <p><strong>Material:</strong> <span id="journey-material">...</span></p>
+                <p><strong>Process:</strong> <span id="journey-process">...</span></p>
+                <p><strong>Impact:</strong> <span id="journey-impact">...</span></p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-item__header">Description</h3>
+              <div class="accordion-item__content">
+                <p>Mô tả chi tiết hơn về sản phẩm, kích thước, chất liệu, hướng dẫn bảo quản...</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-item__header">Reviews (0)</h3>
+              <div class="accordion-item__content">
+                <p>Hiện chưa có đánh giá nào cho sản phẩm này.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

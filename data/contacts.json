@@ -1,0 +1,24 @@
+{
+  "contacts": [
+    {"id":"CT01","name":"Lily","email":"lily@gmail.com","date":"2025-05-19T07:30:00.000Z","status":"Pending"},
+    {"id":"CT02","name":"Emma","email":"emma@yahoo.com","date":"2025-05-18T14:20:00.000Z","status":"Replied"},
+    {"id":"CT03","name":"Sophia","email":"sophia@hotmail.com","date":"2025-05-17T09:15:00.000Z","status":"Pending"},
+    {"id":"CT04","name":"Olivia","email":"olivia@gmail.com","date":"2025-05-16T16:45:00.000Z","status":"Pending"},
+    {"id":"CT05","name":"Ava","email":"ava@outlook.com","date":"2025-05-15T11:00:00.000Z","status":"Replied"},
+    {"id":"CT06","name":"Isabella","email":"isabella@gmail.com","date":"2025-05-14T08:30:00.000Z","status":"Replied"},
+    {"id":"CT07","name":"Mia","email":"mia@yahoo.com","date":"2025-05-13T13:25:00.000Z","status":"Pending"},
+    {"id":"CT08","name":"Charlotte","email":"charlotte@hotmail.com","date":"2025-05-12T10:10:00.000Z","status":"Pending"},
+    {"id":"CT09","name":"Amelia","email":"amelia@gmail.com","date":"2025-05-11T15:40:00.000Z","status":"Replied"},
+    {"id":"CT10","name":"Harper","email":"harper@outlook.com","date":"2025-05-10T12:55:00.000Z","status":"Pending"},
+    {"id":"CT11","name":"Evelyn","email":"evelyn@gmail.com","date":"2025-05-09T09:20:00.000Z","status":"Replied"},
+    {"id":"CT12","name":"Abigail","email":"abigail@yahoo.com","date":"2025-05-08T14:35:00.000Z","status":"Pending"},
+    {"id":"CT13","name":"Emily","email":"emily@hotmail.com","date":"2025-05-07T11:50:00.000Z","status":"Pending"},
+    {"id":"CT14","name":"Elizabeth","email":"elizabeth@gmail.com","date":"2025-05-06T16:15:00.000Z","status":"Replied"},
+    {"id":"CT15","name":"Mila","email":"mila@outlook.com","date":"2025-05-05T08:40:00.000Z","status":"Pending"},
+    {"id":"CT16","name":"Ella","email":"ella@yahoo.com","date":"2025-05-04T13:25:00.000Z","status":"Replied"},
+    {"id":"CT17","name":"Avery","email":"avery@gmail.com","date":"2025-05-03T10:10:00.000Z","status":"Pending"},
+    {"id":"CT18","name":"Sofia","email":"sofia@hotmail.com","date":"2025-05-02T15:30:00.000Z","status":"Replied"},
+    {"id":"CT19","name":"Camila","email":"camila@outlook.com","date":"2025-05-01T09:45:00.000Z","status":"Pending"},
+    {"id":"CT20","name":"Aria","email":"aria@gmail.com","date":"2025-04-30T12:20:00.000Z","status":"Replied"}
+  ]
+}

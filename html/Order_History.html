@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order History - REVIBE</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/utility.css" />
+</head>
+<body>
+
+  <div class="order-history-container">
+    <!-- Breadcrumb -->
+    <div class="order-history-breadcrumb">
+      <a href="Homepage.html">
+        <img class="home-icon" src="../assets/icons/house.svg" alt="Home" />
+      </a>
+      <span class="separator">›</span>
+      <a href="Profile.html">Account</a>
+      <span class="separator">›</span>
+      <span class="current">Order History</span>
+    </div>
+
+    <div class="order-history-layout">
+      <!-- Account Sidebar -->
+      <aside class="account-sidebar">
+        <h2 class="account-sidebar-title">Account</h2>
+        
+        <nav class="account-nav">
+          <a href="personal-info.html" class="account-nav-item">
+            <div class="account-nav-icon">
+              <img src="../assets/icons/user.svg" width="24" height="24" />
+            </div>
+            <span class="account-nav-text">Personal Info</span>
+          </a>
+          
+          <a href="address-book.html" class="account-nav-item">
+            <div class="account-nav-icon">
+              <img src="../assets/icons/address.svg" alt="Address Icon" width="24" height="24" />
+            </div>
+            <span class="account-nav-text">Address Book</span>
+          </a>
+          
+          <a href="order-history.html" class="account-nav-item active">
+            <div class="account-nav-icon">
+              <img src="../assets/icons/history.svg" width="24" height="24" />
+            </div>
+            <span class="account-nav-text">Order History</span>
+          </a>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="order-history-content">
+        <div class="content-card">
+          <h1 class="order-history-title">Order History</h1>
+
+          <!-- Search Section -->
+          <section class="order-search">
+            <div class="search-input-wrapper">
+              <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"/>
+              </svg>
+              <input 
+                type="search" 
+                class="search-input" 
+                placeholder="Search by Order ID or Product name"
+                aria-label="Search orders"
+                id="searchInput"
+              />
+            </div>
+            <button class="search-btn" type="button" id="searchBtn">Search</button>
+          </section>
+
+          <!-- Filters Section -->
+          <section class="order-filters">
+            <div class="filter-tabs">
+              <button class="filter-tab active" data-status="all">
+                <span class="filter-tab-text">All Order</span>
+                <span class="filter-tab-count" id="allCount">(0)</span>
+              </button>
+              <button class="filter-tab" data-status="Processing">
+                <span class="filter-tab-text">Processing</span>
+                <span class="filter-tab-count" id="processingCount">(0)</span>
+              </button>
+              <button class="filter-tab" data-status="Shipped">
+                <span class="filter-tab-text">Shipped</span>
+                <span class="filter-tab-count" id="shippedCount">(0)</span>
+              </button>
+              <button class="filter-tab" data-status="Canceled">
+                <span class="filter-tab-text">Canceled</span>
+                <span class="filter-tab-count" id="canceledCount">(0)</span>
+              </button>
+            </div>
+
+            <div class="filter-controls">
+              <div class="date-filters">
+                <div class="date-filter">
+                  <label class="date-label">From:</label>
+                  <div class="date-input-wrapper">
+                    <input type="date" class="date-input" id="fromDate" aria-label="From date" />
+                  </div>
+                </div>
+                <div class="date-filter">
+                  <label class="date-label">To:</label>
+                  <div class="date-input-wrapper">
+                    <input type="date" class="date-input" id="toDate" aria-label="To date" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="sort-filter">
+                <select class="sort-select" id="sortSelect" aria-label="Sort orders">
+                  <option value="latest">Sorted by: Latest</option>
+                  <option value="oldest">Sorted by: Oldest</option>
+                  <option value="total-low">Sorted by: Total: Low to High</option>
+                  <option value="total-high">Sorted by: Total: High to Low</option>
+                </select>
+              </div>
+            </div>
+          </section>
+
+          <!-- Orders Table -->
+          <section class="orders-table-container">
+            <div class="orders-table-header">
+              <span>Order ID</span>
+              <span>Product</span>
+              <span>Order Date</span>
+              <span>Status</span>
+              <span>Total</span>
+              <span>Action</span>
+            </div>
+
+            <div id="ordersContainer">
+              <!-- Orders will be dynamically loaded here -->
+            </div>
+          </section>
+
+          <!-- Pagination -->
+          <nav class="orders-pagination" aria-label="Order pagination">
+            <button class="pagination-btn" id="prevPage" aria-label="Previous page">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            
+            <div class="pagination-pages" id="paginationPages">
+              <!-- Pagination numbers will be dynamically generated -->
+            </div>
+            
+            <button class="pagination-btn" id="nextPage" aria-label="Next page">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </nav>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="../js/main.js"></script>
+</body>
+</html>

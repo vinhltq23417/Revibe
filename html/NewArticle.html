@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>New Article | ReVibe</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .na-wrap{background:#eef6ec;border-radius:16px;padding:24px}
+    .na-header{display:flex;align-items:center;gap:10px;margin-bottom:20px}
+    .na-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:24px}
+    .na-upload{background:#ddd;border-radius:12px;height:380px;display:flex;align-items:center;justify-content:center}
+    .na-upload img{max-width:100%;max-height:100%;object-fit:contain;border-radius:12px}
+    .na-browse{display:flex;justify-content:center;margin-top:14px}
+    .na-browse input{display:none}
+    .na-col .row{display:flex;flex-direction:column;gap:6px;margin-bottom:10px}
+    .na-col input,.na-col textarea{padding:10px 12px;border:1px solid #e5e7eb;border-radius:10px}
+    .na-actions{display:flex;gap:12px;justify-content:flex-end;margin-top:14px}
+    .btn-light{background:#e5e7eb;border:none;padding:10px 16px;border-radius:10px;cursor:pointer}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar" data-include="partials/sidebar.html"></aside>
+    <main class="main">
+      <header class="header" data-include="partials/header.html"></header>
+
+      <div class="na-wrap">
+        <div class="na-header">
+          <button id="naBack" class="btn-light">◀ Back</button>
+          <h2>NEW ARTICLE</h2>
+        </div>
+
+        <div class="na-grid">
+          <div>
+            <div id="preview" class="na-upload"><span>Preview</span></div>
+            <div class="na-browse">
+              <label class="btn-light" for="fileInput">Browse Image ⭳</label>
+              <input id="fileInput" type="file" accept="image/*" />
+            </div>
+          </div>
+          <div class="na-col">
+            <div class="row"><label for="naTitle">Article Name</label><input id="naTitle" type="text" /></div>
+            <div class="row"><label for="naAuthor">Author</label><input id="naAuthor" type="text" /></div>
+            <div class="row"><label for="naContent">Content</label><textarea id="naContent" rows="8"></textarea></div>
+          </div>
+        </div>
+
+        <div class="na-actions">
+          <button id="naCancel" class="btn-light">Cancel</button>
+          <button id="naCreate" class="btn-primary">Create</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/layout.js"></script>
+  <script>
+  (function(){
+    const EXTRA_KEY = 'revibe_blog_extra';
+    function readExtras(){ try{ return JSON.parse(localStorage.getItem(EXTRA_KEY)||'[]'); }catch(e){ return []; } }
+    function writeExtras(arr){ try{ localStorage.setItem(EXTRA_KEY, JSON.stringify(arr)); }catch(e){} }
+    function newId(){ return 'bp-' + Math.random().toString(36).slice(2,10); }
+    let imageDataURL = '';
+
+    function wireUpload(){
+      const input = document.getElementById('fileInput');
+      const preview = document.getElementById('preview');
+      input.addEventListener('change', ()=>{
+        const f = input.files && input.files[0]; if (!f) return;
+        const r = new FileReader(); r.onload = ()=>{ imageDataURL = r.result; preview.innerHTML = `<img src="${imageDataURL}" alt="preview"/>`; }; r.readAsDataURL(f);
+      });
+    }
+
+    function wireButtons(){
+      document.getElementById('naBack').addEventListener('click', ()=> location.href = 'BlogManagement.html');
+      document.getElementById('naCancel').addEventListener('click', ()=>{
+        ['naTitle','naAuthor','naContent'].forEach(id=> document.getElementById(id).value = '');
+        imageDataURL = ''; document.getElementById('fileInput').value=''; document.getElementById('preview').innerHTML='<span>Preview</span>';
+      });
+      document.getElementById('naCreate').addEventListener('click', ()=>{
+        const title = (document.getElementById('naTitle').value||'').trim();
+        const author = (document.getElementById('naAuthor').value||'').trim();
+        const content = (document.getElementById('naContent').value||'').trim();
+        if (!title){ alert('Please enter article name'); return; }
+        const extras = readExtras();
+        extras.push({ id:newId(), title, author, content, image:imageDataURL, createdAt:new Date().toISOString() });
+        writeExtras(extras);
+        location.href = 'BlogManagement.html';
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', ()=>{ wireUpload(); wireButtons(); });
+  })();
+  </script>
+</body>
+</html>
+
+

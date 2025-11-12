@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Management | ReVibe</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar" data-include="partials/sidebar.html"></aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <header class="header" data-include="partials/header.html"></header>
+
+      <div class="page-header">
+        <h2>Order Management - All Orders</h2>
+        <div class="actions">
+          <select id="statusFilter">
+            <option value="all">All Orders</option>
+            <option value="Received">Received</option>
+            <option value="Pending">Pending</option>
+            <option value="Shipping">Shipping</option>
+            <option value="Cancelled">Cancelled</option>
+          </select>
+          <select id="sortOrder" class="sort">
+            <option value="latest">Sorted by: Latest</option>
+            <option value="oldest">Sorted by: Oldest</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="order-table-head">
+        <div>Order ID</div>
+        <div class="col-product">Product</div>
+        <div>Order Date</div>
+        <div>Status</div>
+        <div>Total</div>
+        <div>Action</div>
+      </div>
+
+      <div class="order-list"></div>
+    </main>
+  </div>
+</body>
+<script src="../js/layout.js"></script>
+<script src="../js/orders.js"></script>
+</html>

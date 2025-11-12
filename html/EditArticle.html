@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edit Article | ReVibe</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .ea-wrap{background:#eef6ec;border-radius:16px;padding:24px}
+    .ea-header{display:flex;align-items:center;gap:10px;margin-bottom:20px}
+    .ea-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:24px}
+    .ea-upload{background:#ddd;border-radius:12px;height:380px;display:flex;align-items:center;justify-content:center}
+    .ea-upload img{max-width:100%;max-height:100%;object-fit:contain;border-radius:12px}
+    .ea-browse{display:flex;justify-content:center;margin-top:14px}
+    .ea-browse input{display:none}
+    .ea-col .row{display:flex;flex-direction:column;gap:6px;margin-bottom:10px}
+    .ea-col input,.ea-col textarea{padding:10px 12px;border:1px solid #e5e7eb;border-radius:10px}
+    .ea-actions{display:flex;gap:12px;justify-content:flex-end;margin-top:14px}
+    .btn-light{background:#e5e7eb;border:none;padding:10px 16px;border-radius:10px;cursor:pointer}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar" data-include="partials/sidebar.html"></aside>
+    <main class="main">
+      <header class="header" data-include="partials/header.html"></header>
+
+      <div class="ea-wrap">
+        <div class="ea-header">
+          <button id="eaBack" class="btn-light">◀ Back</button>
+          <h2>EDIT ARTICLE</h2>
+        </div>
+
+        <div class="ea-grid">
+          <div>
+            <div id="preview" class="ea-upload"><span>Preview</span></div>
+            <div class="ea-browse">
+              <label class="btn-light" for="fileInput">Browse Image ⭳</label>
+              <input id="fileInput" type="file" accept="image/*" />
+            </div>
+          </div>
+          <div class="ea-col">
+            <div class="row"><label for="eaTitle">Article Name</label><input id="eaTitle" type="text" /></div>
+            <div class="row"><label for="eaAuthor">Author</label><input id="eaAuthor" type="text" /></div>
+            <div class="row"><label for="eaContent">Content</label><textarea id="eaContent" rows="8"></textarea></div>
+          </div>
+        </div>
+
+        <div class="ea-actions">
+          <button id="eaCancel" class="btn-light">Cancel</button>
+          <button id="eaSave" class="btn-primary">Save</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../js/layout.js"></script>
+  <script>
+  (function(){
+    const DATA_URL = '../assets/data/blog.json';
+    const EXTRA_KEY = 'revibe_blog_extra';
+    function readExtras(){ try{ return JSON.parse(localStorage.getItem(EXTRA_KEY)||'[]'); }catch(e){ return []; } }
+    function writeExtras(arr){ try{ localStorage.setItem(EXTRA_KEY, JSON.stringify(arr)); }catch(e){} }
+    function q(k){ try{ return new URLSearchParams(location.search).get(k)||''; }catch(e){ return ''; } }
+    let imageDataURL = '';
+
+    async function loadArticle(){
+      const id = q('id');
+      const res = await fetch(DATA_URL); const json = await res.json();
+      const base = (json.posts||[]).find(p=>p.id===id);
+      const override = readExtras().find(p=>p.id===id);
+      const data = {...base, ...override};
+      if (data.image){ imageDataURL = data.image; document.getElementById('preview').innerHTML = `<img src="${data.image}" alt="preview"/>`; }
+      if (data.title) document.getElementById('eaTitle').value = data.title;
+      if (data.author) document.getElementById('eaAuthor').value = data.author;
+      if (data.content) document.getElementById('eaContent').value = data.content;
+    }
+
+    function wireUpload(){
+      const input = document.getElementById('fileInput');
+      const preview = document.getElementById('preview');
+      input.addEventListener('change', ()=>{
+        const f = input.files && input.files[0]; if (!f) return;
+        const r = new FileReader(); r.onload = ()=>{ imageDataURL = r.result; preview.innerHTML = `<img src="${imageDataURL}" alt="preview"/>`; }; r.readAsDataURL(f);
+      });
+    }
+
+    function wireButtons(){
+      document.getElementById('eaBack').addEventListener('click', ()=> location.href = 'BlogManagement.html');
+      document.getElementById('eaCancel').addEventListener('click', ()=>{
+        ['eaTitle','eaAuthor','eaContent'].forEach(id=> document.getElementById(id).value = '');
+        imageDataURL=''; document.getElementById('fileInput').value=''; document.getElementById('preview').innerHTML='<span>Preview</span>';
+      });
+      document.getElementById('eaSave').addEventListener('click', ()=>{
+        const id = q('id');
+        const payload = {
+          id,
+          title: (document.getElementById('eaTitle').value||'').trim(),
+          author: (document.getElementById('eaAuthor').value||'').trim(),
+          content: (document.getElementById('eaContent').value||'').trim(),
+          image: imageDataURL,
+          createdAt: new Date().toISOString()
+        };
+        const extras = readExtras();
+        const idx = extras.findIndex(p=>p.id===id);
+        if (idx>=0) extras[idx] = {...extras[idx], ...payload}; else extras.push(payload);
+        writeExtras(extras);
+        location.href = 'BlogManagement.html';
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', ()=>{ loadArticle(); wireUpload(); wireButtons(); });
+  })();
+  </script>
+</body>
+</html>
+
+

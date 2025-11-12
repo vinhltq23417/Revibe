@@ -1,0 +1,1052 @@
+[
+  {
+    "id": "p1",
+    "name": "Organic Cotton V-Neck Tee",
+    "imageUrl": "../assets/images/product1.jpg",
+    "artisanName": "Hanoi Circular Textiles",
+    "sustainability_score": 8.5,
+    "category": "Sustainable Fashion",
+    "subCategory": "T-Shirts & Tops",
+    "price": {
+      "original": 350000,
+      "discounted": null
+    },
+    "description": "Áo thun cotton hữu cơ mềm mại, thoáng khí, nhuộm màu tự nhiên an toàn cho da.",
+    "rebirth_journey": {
+      "title": "Từ Sợi Bông Tinh Khiết",
+      "material": "100% Cotton Organic (GOTS)",
+      "process": "Trồng không thuốc trừ sâu, dệt và nhuộm bằng quy trình khép kín, tiết kiệm nước.",
+      "impact": "Giảm 70% nước so với cotton thường, không gây ô nhiễm đất."
+    },
+    "stock": 50
+  },
+  {
+    "id": "p2",
+    "name": "Capri Button Down (Linen)",
+    "imageUrl": "../assets/images/product4.jpg",
+    "artisanName": "EcoHub",
+    "sustainability_score": 8.0,
+    "category": "Sustainable Fashion",
+    "subCategory": "T-Shirts & Tops",
+    "price": {
+      "original": 450000,
+      "discounted": 325000
+    },
+    "description": "Áo sơ mi linen thoáng mát, sử dụng 100% sợi lanh tự nhiên, nhuộm màu từ thực vật.",
+    "rebirth_journey": {
+      "title": "Từ Sợi lanh Tự nhiên",
+      "material": "100% Sợi lanh (Linen) tự nhiên.",
+      "process": "Trồng cây lanh không thuốc trừ sâu, dệt thủ công và nhuộm màu bằng phương pháp an toàn.",
+      "impact": "Vải tự phân hủy sinh học. Tiêu thụ ít nước hơn 60% so với cotton."
+    },
+    "stock": 30
+  },
+  {
+    "id": "p3",
+    "name": "Bamboo Fiber Long Sleeve",
+    "imageUrl": "../assets/images/product6.jpg",
+    "artisanName": "Jorden House",
+    "sustainability_score": 8.8,
+    "category": "Sustainable Fashion",
+    "subCategory": "T-Shirts & Tops",
+    "price": {
+      "original": 550000,
+      "discounted": null
+    },
+    "description": "Áo tay dài làm từ sợi tre (bamboo) có khả năng kháng khuẩn tự nhiên, siêu mềm mại.",
+    "rebirth_journey": {
+      "title": "Sự mềm mại từ Tre",
+      "material": "95% Sợi tre (Bamboo Fiber), 5% Spandex",
+      "process": "Vải tre được dệt theo quy trình khép kín, thân thiện với môi trường.",
+      "impact": "Vải tre có khả năng kháng khuẩn tự nhiên, không cần hóa chất."
+    },
+    "stock": 20
+  },
+  {
+    "id": "p4",
+    "name": "Recycled PET Polo Shirt",
+    "imageUrl": "../assets/images/product_placeholder.jpg",
+    "artisanName": "Hanoi Circular Textiles",
+    "sustainability_score": 9.0,
+    "category": "Sustainable Fashion",
+    "subCategory": "T-Shirts & Tops",
+    "price": {
+      "original": 600000,
+      "discounted": 499000
+    },
+    "description": "Áo polo thể thao làm từ sợi polyester tái chế từ chai nhựa PET.",
+    "rebirth_journey": {
+      "title": "Sự tái sinh của Chai nhựa",
+      "material": "Sợi Polyester tái chế (từ chai PET).",
+      "process": "Chai nhựa được làm sạch, băm nhỏ, nung chảy và kéo thành sợi vải.",
+      "impact": "Mỗi chiếc áo tái chế khoảng 10 chai nhựa, giảm rác thải ra đại dương."
+    },
+    "stock": 15
+  },
+  {
+    "id": "p5",
+    "name": "Hemp Relaxed Fit Tee",
+    "imageUrl": "../assets/images/product4.jpg",
+    "artisanName": "EcoHub",
+    "sustainability_score": 8.2,
+    "category": "Sustainable Fashion",
+    "subCategory": "T-Shirts & Tops",
+    "price": {
+      "original": 420000,
+      "discounted": null
+    },
+    "description": "Áo thun vải gai dầu (hemp), một trong những vật liệu bền vững nhất hành tinh.",
+    "rebirth_journey": {
+      "title": "Sức mạnh của Gai dầu",
+      "material": "Vải Gai dầu (Hemp).",
+      "process": "Cây gai dầu phát triển nhanh, không cần thuốc trừ sâu và cần rất ít nước.",
+      "impact": "Cải tạo đất trồng, siêu bền, càng giặt càng mềm."
+    },
+    "stock": 25
+  },
+  {
+    "id": "p6",
+    "name": "Recycled Denim Jeans (Straight Fit)",
+    "imageUrl": "../assets/images/product5.jpg",
+    "artisanName": "Hanoi Circular Textiles",
+    "sustainability_score": 9.1,
+    "category": "Sustainable Fashion",
+    "subCategory": "Pants & Jeans",
+    "price": {
+      "original": 1200000,
+      "discounted": 999000
+    },
+    "description": "Quần jean ống đứng được làm từ 40% denim tái chế và 60% cotton hữu cơ.",
+    "rebirth_journey": {
+      "title": "Denim không bao giờ cũ",
+      "material": "Vải Denim tái chế (từ quần jean cũ) và Cotton hữu cơ.",
+      "process": "Quần jean cũ được tháo dỡ, nghiền thành sợi và dệt lại thành vải denim mới.",
+      "impact": "Tiết kiệm 90% nước so với sản xuất một chiếc quần jean mới."
+    },
+    "stock": 30
+  },
+  {
+    "id": "p7",
+    "name": "Lounge Leggings in Black",
+    "imageUrl": "../assets/images/product6.jpg",
+    "artisanName": "Jorden House",
+    "sustainability_score": 8.2,
+    "category": "Sustainable Fashion",
+    "subCategory": "Pants & Jeans",
+    "price": {
+      "original": 550000,
+      "discounted": 490000
+    },
+    "description": "Quần legging co giãn, được làm từ 80% sợi tre (bamboo) và 20% spandex tái chế.",
+    "rebirth_journey": {
+      "title": "Sự mềm mại từ Sợi tre",
+      "material": "Sợi tre (Bamboo Fiber) và Spandex tái chế.",
+      "process": "Vải tre được dệt theo quy trình khép kín, thân thiện với môi trường.",
+      "impact": "Vải tre có khả năng kháng khuẩn tự nhiên, không cần hóa chất."
+    },
+    "stock": 40
+  },
+  {
+    "id": "p8",
+    "name": "Recycled Denim Skinny Jeans",
+    "imageUrl": "../assets/images/product3.jpg",
+    "artisanName": "Hanoi Circular Textiles",
+    "sustainability_score": 9.0,
+    "category": "Sustainable Fashion",
+    "subCategory": "Pants & Jeans",
+    "price": {
+      "original": 1350000,
+      "discounted": null
+    },
+    "description": "Quần jean skinny co giãn, sử dụng công nghệ dệt từ vải denim cũ, tiết kiệm nước tối đa.",
+    "rebirth_journey": {
+      "title": "Denim không bao giờ cũ",
+      "material": "Vải Denim tái chế (từ quần jean cũ) và Cotton hữu cơ.",
+      "process": "Quần jean cũ được tháo dỡ, nghiền thành sợi và dệt lại thành vải denim mới.",
+      "impact": "Tiết kiệm 90% nước so với sản xuất một chiếc quần jean mới."
+    },
+    "stock": 15
+  },
+  {
+    "id": "p9",
+    "name": "Linen Drawstring Trousers",
+    "imageUrl": "../assets/images/product5.jpg",
+    "artisanName": "Jorden House",
+    "sustainability_score": 8.1,
+    "category": "Sustainable Fashion",
+    "subCategory": "Pants & Jeans",
+    "price": {
+      "original": 750000,
+      "discounted": null
+    },
+    "description": "Quần dài vải linen ống rộng, cạp chun, siêu mát cho mùa hè.",
+    "rebirth_journey": {
+      "title": "Từ Sợi lanh Tự nhiên",
+      "material": "100% Sợi lanh (Linen) tự nhiên.",
+      "process": "Trồng cây lanh không thuốc trừ sâu, dệt thủ công và nhuộm màu bằng phương pháp an toàn.",
+      "impact": "Vải tự phân hủy sinh học, cần ít nước hơn 60% so với cotton."
+    },
+    "stock": 22
+  },
+  {
+    "id": "p10",
+    "name": "Recycled Jogger Pants",
+    "imageUrl": "../assets/images/product3.jpg",
+    "artisanName": "Hanoi Circular Textiles",
+    "sustainability_score": 8.9,
+    "category": "Sustainable Fashion",
+    "subCategory": "Pants & Jeans",
+    "price": {
+      "original": 800000,
+      "discounted": 650000
+    },
+    "description": "Quần jogger nỉ thể thao, làm từ 50% cotton tái chế và 50% polyester tái chế.",
+    "rebirth_journey": {
+      "title": "Tái chế từ cả hai nguồn",
+      "material": "Cotton tái chế (từ vải thừa) và Polyester tái chế (từ chai PET).",
+      "process": "Kết hợp hai nguồn sợi tái chế để tạo ra vải nỉ mềm mại và bền bỉ.",
+      "impact": "Giảm thiểu rác thải dệt may và rác thải nhựa cùng lúc."
+    },
+    "stock": 18
+  },
+  {
+    "id": "p11",
+    "name": "Váy Lụa Tái Chế 'Hoa Gió'",
+    "imageUrl": "../assets/images/product1.jpg",
+    "artisanName": "Nhung Silk",
+    "sustainability_score": 8.8,
+    "category": "Sustainable Fashion",
+    "subCategory": "Dresses & Skirts",
+    "price": {
+      "original": 1200000,
+      "discounted": null
+    },
+    "description": "Một chiếc váy lụa thướt tha được may từ lụa tơ tằm tái chế, thu thập từ các mảnh lụa kimono cũ của Nhật Bản.",
+    "rebirth_journey": {
+      "title": "Sự tái sinh của Lụa",
+      "material": "Lụa Tơ tằm (từ Kimono cũ) và chỉ tơ tự nhiên.",
+      "process": "Các mảnh lụa được lựa chọn, ghép nối thủ công và may đo tỉ mỉ.",
+      "impact": "Giảm rác thải dệt may cao cấp, mang lại vòng đời mới cho vật liệu quý."
+    },
+    "stock": 7
+  },
+  {
+    "id": "p12",
+    "name": "Chân váy Denim chắp vá",
+    "imageUrl": "../assets/images/product1.jpg",
+    "artisanName": "Hanoi Circular Textiles",
+    "sustainability_score": 9.0,
+    "category": "Sustainable Fashion",
+    "subCategory": "Dresses & Skirts",
+    "price": {
+      "original": 700000,
+      "discounted": null
+    },
+    "description": "Chân váy chữ A cá tính, được may theo phong cách patchwork (chắp vá) từ vải denim cũ.",
+    "rebirth_journey": {
+      "title": "Denim không bao giờ cũ",
+      "material": "Vải Denim (từ quần jean cũ).",
+      "process": "Quần jean cũ được tháo dỡ, giặt sạch, sau đó được thiết kế và may chắp vá (patchwork) lại.",
+      "impact": "Tiết kiệm hàng ngàn lít nước so với việc sản xuất một chiếc váy denim mới."
+    },
+    "stock": 14
+  },
+  {
+    "id": "p13",
+    "name": "Váy Maxi Vải Linen",
+    "imageUrl": "../assets/images/product3.jpg",
+    "artisanName": "EcoHub",
+    "sustainability_score": 8.1,
+    "category": "Sustainable Fashion",
+    "subCategory": "Dresses & Skirts",
+    "price": {
+      "original": 950000,
+      "discounted": 799000
+    },
+    "description": "Váy maxi hai dây vải linen, nhẹ và mát, hoàn hảo cho những chuyến đi biển.",
+    "rebirth_journey": {
+      "title": "Từ Sợi lanh Tự nhiên",
+      "material": "100% Sợi lanh (Linen) tự nhiên.",
+      "process": "Trồng cây lanh không thuốc trừ sâu, dệt thủ công và nhuộm màu bằng phương pháp an toàn.",
+      "impact": "Vải tự phân hủy sinh học, cần ít nước hơn 60% so với cotton."
+    },
+    "stock": 11
+  },
+  {
+    "id": "p14",
+    "name": "Váy Sơ mi Cotton Hữu cơ",
+    "imageUrl": "../assets/images/product4.jpg",
+    "artisanName": "Jorden House",
+    "sustainability_score": 8.5,
+    "category": "Sustainable Fashion",
+    "subCategory": "Dresses & Skirts",
+    "price": {
+      "original": 880000,
+      "discounted": null
+    },
+    "description": "Váy sơ mi (shirt dress) thanh lịch, làm từ 100% cotton hữu cơ cao cấp.",
+    "rebirth_journey": {
+      "title": "Từ Sợi Bông Tinh Khiết",
+      "material": "100% Cotton Organic (GOTS)",
+      "process": "Trồng không thuốc trừ sâu, dệt và nhuộm bằng quy trình khép kín, tiết kiệm nước.",
+      "impact": "Giảm 70% nước so với cotton thường, không gây ô nhiễm đất."
+    },
+    "stock": 20
+  },
+  {
+    "id": "p15",
+    "name": "Chân váy Lụa Tơ Tằm",
+    "imageUrl": "../assets/images/product5.jpg",
+    "artisanName": "Nhung Silk",
+    "sustainability_score": 8.7,
+    "category": "Sustainable Fashion",
+    "subCategory": "Dresses & Skirts",
+    "price": {
+      "original": 1100000,
+      "discounted": null
+    },
+    "description": "Chân váy lụa dáng xòe, được may từ lụa tơ tằm Bảo Lộc, nhuộm màu thủ công.",
+    "rebirth_journey": {
+      "title": "Nét lụa Việt Nam",
+      "material": "Lụa Tơ tằm Bảo Lộc (Việt Nam).",
+      "process": "Lụa được dệt và nhuộm thủ công, giữ nguyên độ mềm mại tự nhiên.",
+      "impact": "Hỗ trợ làng nghề dệt lụa truyền thống, vật liệu 100% tự nhiên."
+    },
+    "stock": 9
+  },
+  {
+    "id": "p16",
+    "name": "Áo Khoác 'Denim Chắp Vá'",
+    "imageUrl": "../assets/images/product_placeholder.jpg",
+    "artisanName": "Jorden House",
+    "sustainability_score": 9.0,
+    "category": "Sustainable Fashion",
+    "subCategory": "Outerwear",
+    "price": {
+      "original": 1100000,
+      "discounted": 950000
+    },
+    "description": "Áo khoác denim cá tính được chắp vá từ nhiều nguồn quần jean cũ. Mỗi chiếc áo là một sự kết hợp màu sắc ngẫu nhiên.",
+    "rebirth_journey": {
+      "title": "Denim không bao giờ cũ",
+      "material": "Vải Denim (từ quần jean cũ).",
+      "process": "Quần jean cũ được tháo dỡ, giặt sạch, sau đó được thiết kế và may chắp vá (patchwork) lại.",
+      "impact": "Tiết kiệm hàng ngàn lít nước so với việc sản xuất một chiếc áo khoác denim mới."
+    },
+    "stock": 12
+  },
+  {
+    "id": "p17",
+    "name": "Áo khoác Bomber PET Tái chế",
+    "imageUrl": "../assets/images/product6.jpg",
+    "artisanName": "Hanoi Circular Textiles",
+    "sustainability_score": 9.3,
+    "category": "Sustainable Fashion",
+    "subCategory": "Outerwear",
+    "price": {
+      "original": 1450000,
+      "discounted": null
+    },
+    "description": "Áo khoác bomber 2 lớp, lớp vỏ ngoài chống nước làm từ 100% sợi polyester tái chế từ chai nhựa.",
+    "rebirth_journey": {
+      "title": "Sự tái sinh của Chai nhựa",
+      "material": "Sợi Polyester tái chế (từ chai PET).",
+      "process": "Chai nhựa được làm sạch, băm nhỏ, nung chảy và kéo thành sợi vải, sau đó được dệt chống thấm.",
+      "impact": "Mỗi chiếc áo tái chế khoảng 25 chai nhựa, giữ cho chúng không ra bãi rác."
+    },
+    "stock": 10
+  },
+  {
+    "id": "p18",
+    "name": "Áo khoác Len Lông Cừu Tái chế",
+    "imageUrl": "../assets/images/product4.jpg",
+    "artisanName": "Jorden House",
+    "sustainability_score": 8.7,
+    "category": "Sustainable Fashion",
+    "subCategory": "Outerwear",
+    "price": {
+      "original": 2100000,
+      "discounted": null
+    },
+    "description": "Áo khoác dạ (wool) ấm áp, dệt từ 70% len lông cừu tái chế và 30% sợi tái chế khác.",
+    "rebirth_journey": {
+      "title": "Sự ấm áp bền vững",
+      "material": "Len lông cừu tái chế (từ áo len cũ).",
+      "process": "Áo len cũ được phân loại màu, nghiền thành sợi và dệt lại thành vải dạ mới.",
+      "impact": "Giảm chất thải dệt may, tiết kiệm năng lượng và nước so với sản xuất len mới."
+    },
+    "stock": 8
+  },
+  {
+    "id": "p19",
+    "name": "Áo Cardigan Cotton Tái chế",
+    "imageUrl": "../assets/images/product3.jpg",
+    "artisanName": "EcoHub",
+    "sustainability_score": 8.6,
+    "category": "Sustainable Fashion",
+    "subCategory": "Outerwear",
+    "price": {
+      "original": 650000,
+      "discounted": 550000
+    },
+    "description": "Áo khoác len mỏng (cardigan) dệt kim, làm từ 100% sợi cotton tái chế.",
+    "rebirth_journey": {
+      "title": "Tái chế từ vải vụn",
+      "material": "Cotton tái chế (từ vải thừa nhà máy).",
+      "process": "Vải vụn được thu gom, nghiền thành xơ, kéo sợi và dệt kim.",
+      "impact": "Tận dụng vải thừa, giảm rác thải công nghiệp."
+    },
+    "stock": 20
+  },
+  {
+    "id": "p20",
+    "name": "Áo Măng tô (Trench Coat) Vải Tái chế",
+    "imageUrl": "../assets/images/product5.jpg",
+    "artisanName": "Hanoi Circular Textiles",
+    "sustainability_score": 9.2,
+    "category": "Sustainable Fashion",
+    "subCategory": "Outerwear",
+    "price": {
+      "original": 2500000,
+      "discounted": null
+    },
+    "description": "Áo măng tô thanh lịch, lớp vỏ ngoài làm từ sợi nylon tái chế (ECONYL®).",
+    "rebirth_journey": {
+      "title": "Tái sinh từ Lưới đánh cá",
+      "material": "Sợi Nylon tái chế (từ lưới đánh cá cũ và phế liệu nylon).",
+      "process": "Lưới đánh cá cũ được thu gom, làm sạch và tái sinh thành sợi nylon mới chất lượng cao.",
+      "impact": "Giúp làm sạch đại dương, giảm rác thải nhựa."
+    },
+    "stock": 7
+  },
+  {
+    "id": "p21",
+    "name": "Túi Tote \"Bạt Hiflex\" Sài Gòn",
+    "imageUrl": "../assets/images/product5.jpg",
+    "artisanName": "The Saigon Upcyclers",
+    "sustainability_score": 9.8,
+    "category": "Sustainable Fashion",
+    "subCategory": "Bags & Totes (from Banners)",
+    "price": {
+      "original": 350000,
+      "discounted": null
+    },
+    "description": "Chiếc túi siêu bền được may từ bạt quảng cáo Hiflex đã qua sử dụng. Mỗi chiếc túi là duy nhất.",
+    "rebirth_journey": {
+      "title": "Hành trình của Tấm bạt Quảng cáo",
+      "material": "Bạt Hiflex (từ các sự kiện, banner đường phố).",
+      "process": "Bạt được thu gom, xử lý làm sạch bằng dung dịch sinh học, sau đó được các nghệ nhân cắt may thủ công.",
+      "impact": "Tái chế 1.5kg nhựa PVC. Mỗi túi là một câu chuyện độc bản."
+    },
+    "stock": 15
+  },
+  {
+    "id": "p22",
+    "name": "Ba lô \"Bạt Hiflex\" Chống nước",
+    "imageUrl": "../assets/images/product4.jpg",
+    "artisanName": "The Saigon Upcyclers",
+    "sustainability_score": 9.8,
+    "category": "Sustainable Fashion",
+    "subCategory": "Bags & Totes (from Banners)",
+    "price": {
+      "original": 750000,
+      "discounted": null
+    },
+    "description": "Ba lô đi học, đi làm, chống nước tuyệt đối nhờ vật liệu bạt Hiflex tái chế.",
+    "rebirth_journey": {
+      "title": "Hành trình của Tấm bạt Quảng cáo",
+      "material": "Bạt Hiflex (từ các sự kiện, banner đường phố).",
+      "process": "Bạt được thu gom, xử lý làm sạch bằng dung dịch sinh học, sau đó được các nghệ nhân cắt may thủ công.",
+      "impact": "Tái chế 2.5kg nhựa PVC. Chống nước và siêu bền."
+    },
+    "stock": 10
+  },
+  {
+    "id": "p23",
+    "name": "Túi Đeo chéo \"Bạt Hiflex\" Cỡ nhỏ",
+    "imageUrl": "../assets/images/product3.jpg",
+    "artisanName": "The Saigon Upcyclers",
+    "sustainability_score": 9.7,
+    "category": "Sustainable Fashion",
+    "subCategory": "Bags & Totes (from Banners)",
+    "price": {
+      "original": 280000,
+      "discounted": 250000
+    },
+    "description": "Túi đeo chéo (crossbody) tiện lợi, cá tính, làm từ bạt quảng cáo. Mỗi túi một màu sắc.",
+    "rebirth_journey": {
+      "title": "Hành trình của Tấm bạt Quảng cáo",
+      "material": "Bạt Hiflex (từ các sự kiện, banner đường phố).",
+      "process": "Bạt được thu gom, xử lý làm sạch bằng dung dịch sinh học, sau đó được các nghệ nhân cắt may thủ công.",
+      "impact": "Tái chế 1kg nhựa PVC. Nhỏ gọn và độc đáo."
+    },
+    "stock": 20
+  },
+  {
+    "id": "p24",
+    "name": "Ví \"Bạt Hiflex\"",
+    "imageUrl": "../assets/images/product5.jpg",
+    "artisanName": "The Saigon Upcyclers",
+    "sustainability_score": 9.6,
+    "category": "Sustainable Fashion",
+    "subCategory": "Bags & Totes (from Banners)",
+    "price": {
+      "original": 150000,
+      "discounted": null
+    },
+    "description": "Ví đựng tiền và thẻ, siêu bền, không thấm nước, làm từ bạt tái chế.",
+    "rebirth_journey": {
+      "title": "Hành trình của Tấm bạt Quảng cáo",
+      "material": "Bạt Hiflex (từ các sự kiện, banner đường phố).",
+      "process": "Bạt được thu gom, xử lý làm sạch bằng dung dịch sinh học, sau đó được các nghệ nhân cắt may thủ công.",
+      "impact": "Tận dụng mẩu bạt nhỏ nhất, giảm rác thải tối đa."
+    },
+    "stock": 30
+  },
+  {
+    "id": "p25",
+    "name": "Vintage Plain Fabric Bag with Bamboo Handle",
+    "imageUrl": "../assets/images/product3.jpg",
+    "artisanName": "The Saigon Upcyclers",
+    "sustainability_score": 9.2,
+    "category": "Sustainable Fashion",
+    "subCategory": "Bags & Totes (from Banners)",
+    "price": {
+      "original": 100000,
+      "discounted": 75000
+    },
+    "description": "Một chiếc túi vải mộc mạc với quai tre độc đáo, được may thủ công từ vải canvas tái chế.",
+    "rebirth_journey": {
+      "title": "Hành trình của Vải Canvas",
+      "material": "Vải canvas (vải bố) tái chế từ các cuộn vải thừa công nghiệp.",
+      "process": "Vải thừa được thu gom, phân loại màu, làm sạch và may thủ công.",
+      "impact": "Giảm 5kg rác thải dệt may. Tiết kiệm 10L nước."
+    },
+    "stock": 25
+  },
+  {
+    "id": "p26",
+    "name": "Bộ Lót Ly 'Nắp Chai' (Set 4)",
+    "imageUrl": "../assets/images/product6.jpg",
+    "artisanName": "Re-Plastic",
+    "sustainability_score": 9.5,
+    "category": "Recycled Homewares",
+    "subCategory": "Kitchen & Dining",
+    "price": {
+      "original": 180000,
+      "discounted": null
+    },
+    "description": "Bộ 4 lót ly độc đáo được làm từ 100% nắp chai nhựa (HDPE/PP) tái chế. Chịu nhiệt và chống nước.",
+    "rebirth_journey": {
+      "title": "Hành trình của Nắp chai nhựa",
+      "material": "Nhựa HDPE/PP (từ nắp chai nước ngọt, sữa...).",
+      "process": "Nắp chai được thu gom, phân loại màu, băm nhỏ và ép nóng trong khuôn để tạo ra các hoa văn vân đá.",
+      "impact": "Mỗi bộ lót ly tái chế khoảng 20-25 nắp chai nhựa."
+    },
+    "stock": 40
+  },
+  {
+    "id": "p27",
+    "name": "Thớt Gỗ Tái chế Cỡ lớn",
+    "imageUrl": "../assets/images/product4.jpg",
+    "artisanName": "Vung Tau Reclaimed",
+    "sustainability_score": 8.4,
+    "category": "Recycled Homewares",
+    "subCategory": "Kitchen & Dining",
+    "price": {
+      "original": 450000,
+      "discounted": null
+    },
+    "description": "Thớt gỗ Teak (Giả tỵ) tái chế, an toàn cho thực phẩm, được phủ sáp ong tự nhiên.",
+    "rebirth_journey": {
+      "title": "Tái chế từ Gỗ Teak",
+      "material": "Gỗ Teak (Giả tỵ) thừa từ các xưởng nội thất lớn.",
+      "process": "Các mẩu gỗ thừa được thu gom, làm sạch, ghép lại và phủ sáp ong.",
+      "impact": "Giảm lãng phí gỗ quý, an toàn cho sức khỏe."
+    },
+    "stock": 15
+  },
+  {
+    "id": "p28",
+    "name": "Tô trộn Salad 'Vỏ Dừa'",
+    "imageUrl": "../assets/images/product4.jpg",
+    "artisanName": "EcoHub",
+    "sustainability_score": 8.0,
+    "category": "Recycled Homewares",
+    "subCategory": "Kitchen & Dining",
+    "price": {
+      "original": 120000,
+      "discounted": null
+    },
+    "description": "Bát (tô) làm từ gáo dừa Bến Tre, được mài mịn và đánh bóng bằng dầu dừa.",
+    "rebirth_journey": {
+      "title": "Từ Vỏ Dừa Bến Tre",
+      "material": "Gáo dừa tự nhiên.",
+      "process": "Vỏ dừa (phụ phẩm) được thu gom, cắt, mài mịn và đánh bóng bằng dầu dừa.",
+      "impact": "Tận dụng 100% phế phẩm nông nghiệp, vật liệu tự phân hủy."
+    },
+    "stock": 30
+  },
+  {
+    "id": "p29",
+    "name": "Ly thủy tinh tái chế (Set 2)",
+    "imageUrl": "../assets/images/product5.jpg",
+    "artisanName": "Re-Plastic",
+    "sustainability_score": 9.1,
+    "category": "Recycled Homewares",
+    "subCategory": "Kitchen & Dining",
+    "price": {
+      "original": 220000,
+      "discounted": 199000
+    },
+    "description": "Bộ 2 ly uống nước làm từ 100% thủy tinh tái chế, có màu xanh đặc trưng.",
+    "rebirth_journey": {
+      "title": "Thủy tinh tái sinh",
+      "material": "Thủy tinh tái chế (từ chai lọ cũ).",
+      "process": "Thủy tinh được nấu chảy ở nhiệt độ cao và đúc khuôn thủ công.",
+      "impact": "Giảm 30% năng lượng so với sản xuất thủy tinh mới."
+    },
+    "stock": 18
+  },
+  {
+    "id": "p30",
+    "name": "Khay đựng 'Nhựa Tái chế'",
+    "imageUrl": "../assets/images/product6.jpg",
+    "artisanName": "Re-Plastic",
+    "sustainability_score": 9.4,
+    "category": "Recycled Homewares",
+    "subCategory": "Kitchen & Dining",
+    "price": {
+      "original": 300000,
+      "discounted": null
+    },
+    "description": "Khay đựng đồ đa năng với hoa văn vân đá độc đáo, làm từ nhựa tái chế.",
+    "rebirth_journey": {
+      "title": "Hành trình của Nắp chai nhựa",
+      "material": "Nhựa HDPE/PP (từ nắp chai nước ngọt, sữa...).",
+      "process": "Nắp chai được thu gom, phân loại màu, băm nhỏ và ép nóng trong khuôn.",
+      "impact": "Mỗi chiếc khay tái chế khoảng 50 nắp chai nhựa."
+    },
+    "stock": 12
+  },
+  {
+    "id": "p31",
+    "name": "Gương Treo Tường 'Gỗ Lũa'",
+    "imageUrl": "../assets/images/product4.jpg",
+    "artisanName": "Vung Tau Reclaimed",
+    "sustainability_score": 8.9,
+    "category": "Recycled Homewares",
+    "subCategory": "Home Decor",
+    "price": {
+      "original": 750000,
+      "discounted": null
+    },
+    "description": "Gương treo tường với khung làm từ gỗ lũa tự nhiên được thu nhặt từ các bãi biển.",
+    "rebirth_journey": {
+      "title": "Vẻ đẹp từ Biển cả",
+      "material": "Gỗ lũa (Driftwood) tự nhiên.",
+      "process": "Gỗ được phơi khô tự nhiên dưới ánh nắng, làm sạch, xử lý thủ công và lắp ráp quanh gương.",
+      "impact": "Tận dụng vật liệu tự nhiên bị bỏ đi, không can thiệp vào rừng nguyên sinh."
+    },
+    "stock": 11
+  },
+  {
+    "id": "p32",
+    "name": "Chậu cây 'Nhựa Tái chế' (Size M)",
+    "imageUrl": "../assets/images/product5.jpg",
+    "artisanName": "Re-Plastic",
+    "sustainability_score": 9.3,
+    "category": "Recycled Homewares",
+    "subCategory": "Home Decor",
+    "price": {
+      "original": 250000,
+      "discounted": null
+    },
+    "description": "Chậu trồng cây cảnh, hoa văn vân đá (terrazzo) làm từ nhựa tái chế.",
+    "rebirth_journey": {
+      "title": "Hành trình của Nhựa HDPE",
+      "material": "Nhựa HDPE (từ chai sữa, dầu gội...).",
+      "process": "Nhựa được băm nhỏ, trộn màu và ép nóng thành chậu, siêu bền.",
+      "impact": "Tái chế khoảng 40-50 vỏ chai HDPE."
+    },
+    "stock": 20
+  },
+  {
+    "id": "p33",
+    "name": "Kệ tường \"Ống nước\" Công nghiệp",
+    "imageUrl": "../assets/images/placeholder/home_decor_3.jpg",
+    "artisanName": "EcoHub",
+    "sustainability_score": 7.5,
+    "category": "Recycled Homewares",
+    "subCategory": "Home Decor",
+    "price": {
+      "original": 620000,
+      "discounted": null
+    },
+    "description": "Kệ trang trí phong cách industrial, kết hợp giữa gỗ tái chế và các ống nước kim loại cũ.",
+    "rebirth_journey": {
+      "title": "Vẻ đẹp từ phế liệu xây dựng",
+      "material": "Ống nước kim loại và gỗ thông tái chế.",
+      "process": "Kim loại được xử lý chống gỉ và sơn tĩnh điện. Gỗ được xử lý bề mặt.",
+      "impact": "Tận dụng vật liệu xây dựng dư thừa, tạo ra sản phẩm nội thất cá tính."
+    },
+    "stock": 8
+  },
+  {
+    "id": "p34",
+    "name": "Giỏ Đan Lục Bình",
+    "imageUrl": "../assets/images/placeholder/home_decor_4.jpg",
+    "artisanName": "EcoHub",
+    "sustainability_score": 8.0,
+    "category": "Recycled Homewares",
+    "subCategory": "Home Decor",
+    "price": {
+      "original": 380000,
+      "discounted": null
+    },
+    "description": "Giỏ đựng đồ đa năng được đan thủ công từ sợi cây Lục bình (Ecichornia) phơi khô.",
+    "rebirth_journey": {
+      "title": "Từ Cây Lục Bình",
+      "material": "Sợi Lục bình phơi khô.",
+      "process": "Lục bình (vốn là thực vật xâm lấn) được thu hoạch, phơi khô và đan thủ công.",
+      "impact": "Biến thực vật xâm lấn thành sản phẩm hữu ích, hỗ trợ thợ thủ công địa phương."
+    },
+    "stock": 15
+  },
+  {
+    "id": "p35",
+    "name": "Khung ảnh Gỗ Tái chế (A4)",
+    "imageUrl": "../assets/images/placeholder/home_decor_5.jpg",
+    "artisanName": "Vung Tau Reclaimed",
+    "sustainability_score": 8.3,
+    "category": "Recycled Homewares",
+    "subCategory": "Home Decor",
+    "price": {
+      "original": 200000,
+      "discounted": 175000
+    },
+    "description": "Khung ảnh cỡ A4 làm từ gỗ thông pallet tái chế, giữ nguyên vẻ mộc mạc.",
+    "rebirth_journey": {
+      "title": "Sự sống mới của Gỗ Pallet",
+      "material": "Gỗ thông từ các pallet hàng hóa đã qua sử dụng.",
+      "process": "Gỗ được tháo dỡ, chà nhám, xử lý và lắp ráp thủ công.",
+      "impact": "Giảm khai thác gỗ mới, mỗi khung ảnh có vân gỗ độc đáo."
+    },
+    "stock": 25
+  },
+  {
+    "id": "p36",
+    "name": "Đèn bàn \"Tái sinh\" từ gỗ Pallet",
+    "imageUrl": "../assets/images/product5.jpg",
+    "artisanName": "EcoHub",
+    "sustainability_score": 8.5,
+    "category": "Recycled Homewares",
+    "subCategory": "Lighting",
+    "price": {
+      "original": 780000,
+      "discounted": 699000
+    },
+    "description": "Chiếc đèn bàn mang phong cách rustic, được làm thủ công từ gỗ thông pallet tái chế.",
+    "rebirth_journey": {
+      "title": "Sự sống mới của Gỗ Pallet",
+      "material": "Gỗ thông từ các pallet hàng hóa.",
+      "process": "Gỗ được tháo dỡ, chà nhám, xử lý chống mối mọt tự nhiên và lắp ráp thủ công.",
+      "impact": "Giảm khai thác gỗ mới. Mang lại vẻ đẹp độc đáo cho không gian."
+    },
+    "stock": 10
+  },
+  {
+    "id": "p37",
+    "name": "Đèn thả \"Vỏ chai thủy tinh\"",
+    "imageUrl": "../assets/images/placeholder/home_light_1.jpg",
+    "artisanName": "EcoHub",
+    "sustainability_score": 9.0,
+    "category": "Recycled Homewares",
+    "subCategory": "Lighting",
+    "price": {
+      "original": 450000,
+      "discounted": null
+    },
+    "description": "Đèn thả trần làm từ vỏ chai rượu/bia thủy tinh được cắt và mài mịn.",
+    "rebirth_journey": {
+      "title": "Thủy tinh tái sinh",
+      "material": "Vỏ chai thủy tinh (rượu, bia).",
+      "process": "Vỏ chai được cắt, mài cạnh an toàn và lắp ráp với bộ đèn.",
+      "impact": "Tái chế vỏ chai thủy tinh, giảm rác thải."
+    },
+    "stock": 14
+  },
+  {
+    "id": "p38",
+    "name": "Đèn ngủ \"Gỗ Lũa\" (Driftwood)",
+    "imageUrl": "../assets/images/placeholder/home_light_2.jpg",
+    "artisanName": "Vung Tau Reclaimed",
+    "sustainability_score": 8.9,
+    "category": "Recycled Homewares",
+    "subCategory": "Lighting",
+    "price": {
+      "original": 900000,
+      "discounted": null
+    },
+    "description": "Đèn ngủ để bàn độc đáo, thân đèn làm từ gỗ lũa (driftwood) tự nhiên.",
+    "rebirth_journey": {
+      "title": "Vẻ đẹp từ Biển cả",
+      "material": "Gỗ lũa (Driftwood) tự nhiên.",
+      "process": "Gỗ được phơi khô tự nhiên dưới ánh nắng, làm sạch, và gắn vào đế đèn.",
+      "impact": "Tận dụng vật liệu tự nhiên bị bỏ đi, mỗi chiếc đèn là độc bản."
+    },
+    "stock": 5
+  },
+  {
+    "id": "p39",
+    "name": "Đèn bàn \"Ống nước\" Industrial",
+    "imageUrl": "../assets/images/placeholder/home_light_3.jpg",
+    "artisanName": "EcoHub",
+    "sustainability_score": 7.6,
+    "category": "Recycled Homewares",
+    "subCategory": "Lighting",
+    "price": {
+      "original": 1150000,
+      "discounted": null
+    },
+    "description": "Đèn bàn phong cách industrial, làm từ ống nước kim loại cũ.",
+    "rebirth_journey": {
+      "title": "Vẻ đẹp từ phế liệu xây dựng",
+      "material": "Ống nước kim loại cũ.",
+      "process": "Kim loại được xử lý chống gỉ, sơn và lắp ráp sáng tạo.",
+      "impact": "Tận dụng vật liệu xây dựng dư thừa."
+    },
+    "stock": 9
+  },
+  {
+    "id": "p40",
+    "name": "Đèn lồng đan từ Nhựa tái chế",
+    "imageUrl": "../assets/images/placeholder/home_light_4.jpg",
+    "artisanName": "Re-Plastic",
+    "sustainability_score": 9.2,
+    "category": "Recycled Homewares",
+    "subCategory": "Lighting",
+    "price": {
+      "original": 550000,
+      "discounted": null
+    },
+    "description": "Đèn lồng treo (thả), khung sắt bọc sợi nhựa dệt từ túi nilon tái chế.",
+    "rebirth_journey": {
+      "title": "Tái sinh từ Túi Nilon",
+      "material": "Túi nilon (nhựa LDPE) đã qua sử dụng.",
+      "process": "Túi nilon được làm sạch, cắt thành sợi và dệt thủ công bọc quanh khung sắt.",
+      "impact": "Tái chế hàng trăm túi nilon cho mỗi sản phẩm, giảm rác thải nhựa."
+    },
+    "stock": 13
+  },
+  {
+    "id": "p41",
+    "name": "Đồ chơi \"Xe Tải\" Gỗ Thông",
+    "imageUrl": "../assets/images/product_placeholder.jpg",
+    "artisanName": "Vung Tau Reclaimed",
+    "sustainability_score": 8.5,
+    "category": "Recycled Homewares",
+    "subCategory": "Toys (from Reclaimed Wood)",
+    "price": {
+      "original": 250000,
+      "discounted": null
+    },
+    "description": "Đồ chơi xe tải an toàn cho bé, làm từ gỗ thông pallet tái chế, không sơn, chỉ mài mịn và phủ sáp ong.",
+    "rebirth_journey": {
+      "title": "Đồ chơi an toàn từ Gỗ tái chế",
+      "material": "Gỗ thông (từ pallet) và sáp ong tự nhiên.",
+      "process": "Gỗ được mài mịn, bo tròn các góc cạnh để đảm bảo an toàn tuyệt đối cho trẻ nhỏ.",
+      "impact": "Không chứa chì hoặc các hóa chất độc hại như đồ chơi nhựa."
+    },
+    "stock": 20
+  },
+  {
+    "id": "p42",
+    "name": "Bộ Xếp hình \"Thuyền\" Gỗ Tái chế",
+    "imageUrl": "../assets/images/placeholder/home_toys_1.jpg",
+    "artisanName": "Vung Tau Reclaimed",
+    "sustainability_score": 8.6,
+    "category": "Recycled Homewares",
+    "subCategory": "Toys (from Reclaimed Wood)",
+    "price": {
+      "original": 320000,
+      "discounted": null
+    },
+    "description": "Bộ xếp hình 3D hình con thuyền, làm từ gỗ tàu thuyền cũ, sơn màu an toàn.",
+    "rebirth_journey": {
+      "title": "Từ Gỗ Tàu thuyền cũ",
+      "material": "Gỗ tàu thuyền (đã qua sử dụng).",
+      "process": "Gỗ được xử lý, cắt laser và sơn màu không độc hại.",
+      "impact": "Giữ lại một phần lịch sử của biển cả trong món đồ chơi."
+    },
+    "stock": 15
+  },
+  {
+    "id": "p43",
+    "name": "Đoàn tàu Gỗ Pallet",
+    "imageUrl": "../assets/images/placeholder/home_toys_2.jpg",
+    "artisanName": "Vung Tau Reclaimed",
+    "sustainability_score": 8.5,
+    "category": "Recycled Homewares",
+    "subCategory": "Toys (from Reclaimed Wood)",
+    "price": {
+      "original": 400000,
+      "discounted": 350000
+    },
+    "description": "Đoàn tàu hỏa bằng gỗ pallet, các toa có thể nối vào nhau, an toàn cho bé.",
+    "rebirth_journey": {
+      "title": "Đồ chơi an toàn từ Gỗ tái chế",
+      "material": "Gỗ thông (từ pallet) và sáp ong tự nhiên.",
+      "process": "Gỗ được mài mịn, bo tròn các góc cạnh để đảm bảo an toàn tuyệt đối cho trẻ nhỏ.",
+      "impact": "Không chứa chì hoặc các hóa chất độc hại như đồ chơi nhựa."
+    },
+    "stock": 10
+  },
+  {
+    "id": "p44",
+    "name": "Bảng chữ cái Gỗ Tái chế",
+    "imageUrl": "../assets/images/placeholder/home_toys_3.jpg",
+    "artisanName": "Vung Tau Reclaimed",
+    "sustainability_score": 8.4,
+    "category": "Recycled Homewares",
+    "subCategory": "Toys (from Reclaimed Wood)",
+    "price": {
+      "original": 280000,
+      "discounted": null
+    },
+    "description": "Bộ chữ cái bằng gỗ thông tái chế, giúp bé học chữ một cách an toàn.",
+    "rebirth_journey": {
+      "title": "Đồ chơi an toàn từ Gỗ tái chế",
+      "material": "Gỗ thông (từ pallet) và sáp ong tự nhiên.",
+      "process": "Gỗ được mài mịn, bo tròn các góc cạnh và cắt laser.",
+      "impact": "Không chứa chì hoặc các hóa chất độc hại như đồ chơi nhựa."
+    },
+    "stock": 18
+  },
+  {
+    "id": "p45",
+    "name": "Con quay Gỗ Tái chế",
+    "imageUrl": "../assets/images/placeholder/home_toys_4.jpg",
+    "artisanName": "Vung Tau Reclaimed",
+    "sustainability_score": 8.2,
+    "category": "Recycled Homewares",
+    "subCategory": "Toys (from Reclaimed Wood)",
+    "price": {
+      "original": 50000,
+      "discounted": null
+    },
+    "description": "Con quay (spinning top) truyền thống, làm từ gỗ thừa, phủ sáp ong.",
+    "rebirth_journey": {
+      "title": "Đồ chơi an toàn từ Gỗ tái chế",
+      "material": "Gỗ thừa (từ xưởng mộc).",
+      "process": "Gỗ được tiện và mài mịn, bo tròn.",
+      "impact": "Tận dụng mẩu gỗ vụn nhỏ nhất."
+    },
+    "stock": 30
+  },
+  {
+    "id": "p46",
+    "name": "Ghế Đẩu 'Lốp Xe Bền Bỉ'",
+    "imageUrl": "../assets/images/placeholder/home_outdoor_1.jpg",
+    "artisanName": "Tire Vibe",
+    "sustainability_score": 8.7,
+    "category": "Recycled Homewares",
+    "subCategory": "Outdoor (from Tires)",
+    "price": {
+      "original": 750000,
+      "discounted": 680000
+    },
+    "description": "Ghế đẩu ngoài trời có khả năng chống chịu thời tiết, làm từ lốp xe ô tô tái chế và dây thừng bện.",
+    "rebirth_journey": {
+      "title": "Vòng đời mới của Lốp xe",
+      "material": "Lốp xe ô tô cũ và dây thừng/dây dù tái chế.",
+      "process": "Lốp xe được làm sạch, gia cố bên trong, sau đó được bện dây thừng thủ công bên ngoài.",
+      "impact": "Ngăn chặn một lốp xe (vật liệu cực kỳ khó phân hủy) bị chôn lấp."
+    },
+    "stock": 8
+  },
+  {
+    "id": "p47",
+    "name": "Ví Card \"Săm Xe\" Bền bỉ",
+    "imageUrl": "../assets/images/placeholder/fashion_wallet_2.jpg",
+    "artisanName": "Tire Vibe",
+    "sustainability_score": 9.0,
+    "category": "Recycled Homewares",
+    "subCategory": "Outdoor (from Tires)",
+    "price": {
+      "original": 190000,
+      "discounted": null
+    },
+    "description": "Ví đựng thẻ siêu bền, được làm từ ruột lốp xe đạp và xe máy đã qua sử dụng. (Phân loại: Outdoor/Phụ kiện)",
+    "rebirth_journey": {
+      "title": "Vòng đời thứ hai của Săm xe",
+      "material": "Ruột lốp xe (Săm xe) đã qua sử dụng.",
+      "process": "Vật liệu được thu gom từ các tiệm sửa xe, làm sạch đa lớp, và cắt may.",
+      "impact": "Giảm hàng ngàn lốp xe cao su thải ra bãi rác mỗi năm."
+    },
+    "stock": 30
+  },
+  {
+    "id": "p48",
+    "name": "Chậu cây treo 'Lốp xe'",
+    "imageUrl": "../assets/images/placeholder/home_outdoor_2.jpg",
+    "artisanName": "Tire Vibe",
+    "sustainability_score": 8.6,
+    "category": "Recycled Homewares",
+    "subCategory": "Outdoor (from Tires)",
+    "price": {
+      "original": 350000,
+      "discounted": null
+    },
+    "description": "Chậu cây treo độc đáo, cắt và tạo hình từ lốp xe máy cũ, sơn màu.",
+    "rebirth_journey": {
+      "title": "Vòng đời mới của Lốp xe",
+      "material": "Lốp xe máy cũ.",
+      "process": "Lốp xe được cắt, tạo hình và sơn chống thấm, chịu được thời tiết ngoài trời.",
+      "impact": "Tái chế lốp xe, tạo điểm nhấn xanh cho ban công."
+    },
+    "stock": 15
+  },
+  {
+    "id": "p49",
+    "name": "Dây nịt (Thắt lưng) \"Săm xe\"",
+    "imageUrl": "../assets/images/placeholder/fashion_belt_1.jpg",
+    "artisanName": "Tire Vibe",
+    "sustainability_score": 8.9,
+    "category": "Recycled Homewares",
+    "subCategory": "Outdoor (from Tires)",
+    "price": {
+      "original": 450000,
+      "discounted": null
+    },
+    "description": "Dây nịt nam cá tính, làm từ nhiều lớp săm xe (ruột lốp) ép lại, siêu bền.",
+    "rebirth_journey": {
+      "title": "Vòng đời thứ hai của Săm xe",
+      "material": "Ruột lốp xe (Săm xe) đã qua sử dụng.",
+      "process": "Vật liệu được thu gom, làm sạch đa lớp, và ép nhiệt để tạo độ cứng.",
+      "impact": "Tạo ra phụ kiện thời trang bền bỉ từ rác thải cao su."
+    },
+    "stock": 20
+  },
+  {
+    "id": "p50",
+    "name": "Xích đu 'Lốp xe'",
+    "imageUrl": "../assets/images/placeholder/home_outdoor_3.jpg",
+    "artisanName": "Tire Vibe",
+    "sustainability_score": 8.3,
+    "category": "Recycled Homewares",
+    "subCategory": "Outdoor (from Tires)",
+    "price": {
+      "original": 500000,
+      "discounted": null
+    },
+    "description": "Xích đu sân vườn cổ điển, làm từ lốp xe ô tô cũ, kèm dây thừng chịu lực.",
+    "rebirth_journey": {
+      "title": "Vòng đời mới của Lốp xe",
+      "material": "Lốp xe ô tô cũ và dây thừng.",
+      "process": "Lốp xe được làm sạch, khoan lỗ và gắn dây thừng chịu lực.",
+      "impact": "Tái chế lốp xe, tạo niềm vui cho sân vườn."
+    },
+    "stock": 5
+  }
+]

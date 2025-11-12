@@ -1,0 +1,112 @@
+[
+  {
+    "reviewId": "RV1001",
+    "orderId": "ORD1001",
+    "customerId": "u1",
+    "productId": "p2",
+    "productName": "Capri Button Down (Linen)",
+    "rating": 5,
+    "image": "../assets/images/reviews/review_img_1.jpg",
+    "video": null,
+    "content": "Áo vải linen mặc rất mát, form áo chuẩn, đường may kỹ. Màu sắc y như hình. Rất hài lòng."
+  },
+  {
+    "reviewId": "RV1002",
+    "orderId": "ORD1001",
+    "customerId": "u1",
+    "productId": "p4",
+    "productName": "Bình Nước 'Vỏ Trấu'",
+    "rating": 4,
+    "image": null,
+    "video": null,
+    "content": "Bình đẹp, nhẹ, thân thiện môi trường. Tuy nhiên nắp vặn lúc đầu hơi rít, dùng vài lần mới quen. Giữ nhiệt ở mức trung bình."
+  },
+  {
+    "reviewId": "RV1003",
+    "orderId": "ORD1002",
+    "customerId": "u2",
+    "productId": "p8",
+    "productName": "Khuyên Tai 'Giấy Xoắn'",
+    "rating": 5,
+    "image": "../assets/images/reviews/review_img_2.jpg",
+    "video": null,
+    "content": "Rất độc đáo! Khuyên tai nhẹ, đeo không bị dị ứng. Màu sắc đẹp, nhiều người hỏi thăm. Sẽ ủng hộ shop tiếp."
+  },
+  {
+    "reviewId": "RV1004",
+    "orderId": "ORD1006",
+    "customerId": "u2",
+    "productId": "p1",
+    "productName": "Organic Cotton V-Neck Tee",
+    "rating": 5,
+    "image": null,
+    "video": null,
+    "content": "Áo thun cơ bản nhưng vải mặc rất thích. Mềm, thấm hút mồ hôi tốt. Mua 1 cái mặc thử giờ phải mua thêm."
+  },
+  {
+    "reviewId": "RV1005",
+    "orderId": "ORD1006",
+    "customerId": "u2",
+    "productId": "p3",
+    "productName": "Túi Tote 'Vải Bạt'",
+    "rating": 4,
+    "image": "../assets/images/reviews/review_img_3.jpg",
+    "video": null,
+    "content": "Túi siêu to, đựng được cả laptop và nhiều đồ lặt vặt. Vải bạt lúc đầu hơi cứng nhưng dùng một thời gian sẽ mềm hơn."
+  },
+  {
+    "reviewId": "RV1006",
+    "orderId": "ORD1007",
+    "customerId": "u1",
+    "productId": "p25",
+    "productName": "Sổ Tay 'Giấy Tái Chế'",
+    "rating": 5,
+    "image": "../assets/images/reviews/review_img_4.jpg",
+    "video": null,
+    "content": "Giấy chất lượng tốt, viết êm, không bị lem mực. Rất thích ý tưởng tái chế này. Bìa sổ cũng đẹp nữa."
+  },
+  {
+    "reviewId": "RV1007",
+    "orderId": "ORD1007",
+    "customerId": "u1",
+    "productId": "p26",
+    "productName": "Bút Chì 'Gỗ Nhánh Cây'",
+    "rating": 3,
+    "image": null,
+    "video": null,
+    "content": "Bút chì nhìn thì đẹp và độc đáo thật, nhưng ruột chì bên trong hơi dễ gãy. Chỉ hợp để trang trí bàn làm việc."
+  },
+  {
+    "reviewId": "RV1008",
+    "orderId": "ORD1008",
+    "customerId": "u2",
+    "productId": "p40",
+    "productName": "Túi Đựng Laptop 'Bao Cà Phê'",
+    "rating": 5,
+    "image": "../assets/images/reviews/review_img_5.jpg",
+    "video": null,
+    "content": "Cực kỳ ấn tượng! Túi chống sốc tốt, ngăn bên trong lót êm. Vẫn còn mùi cà phê thơm nhẹ. Mọi người ở văn phòng ai cũng hỏi. 10 điểm!"
+  },
+  {
+    "reviewId": "RV1009",
+    "orderId": "ORD1003",
+    "customerId": "u1",
+    "productId": "p15",
+    "productName": "Chậu Cây 'Vỏ Dừa'",
+    "rating": 4,
+    "image": null,
+    "video": null,
+    "content": "Chậu xinh, trồng cây sen đá rất hợp. Hơi nhỏ hơn so với mình tưởng tượng nhưng vẫn đẹp."
+  },
+  {
+    "reviewId": "RV1010",
+    "orderId": "ORD1001",
+    "customerId": "u1",
+    "productId": "p2",
+    "productName": "Capri Button Down (Linen)",
+    "rating": 5,
+    "image": null,
+    "video": null,
+    "content": "Mua cái thứ 2 cho chồng. Vẫn hài lòng như lần đầu."
+  }
+]

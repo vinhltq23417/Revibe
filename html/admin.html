@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard | ReVibe</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar" data-include="partials/sidebar.html"></aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <!-- Header -->
+      <header class="header" data-include="partials/header.html"></header>
+
+      <!-- Stats Cards -->
+      <section class="stats">
+        <div class="stat-card">
+          <div class="icon green">👥</div>
+          <div class="info">
+            <h3>Total Customers</h3>
+            <p class="value">1,000</p>
+            <p class="change up">↑ 17%</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="icon blue">🛍️</div>
+          <div class="info">
+            <h3>Total Orders</h3>
+            <p class="value">1,300</p>
+            <p class="change down">↓ 12%</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="icon purple">💰</div>
+          <div class="info">
+            <h3>Total Income</h3>
+            <p class="value">100M</p>
+            <p class="change up">↑ 28%</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="icon orange">📄</div>
+          <div class="info">
+            <h3>Total Feedbacks</h3>
+            <p class="value">900</p>
+            <p class="change up">↑ 25%</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Charts & Tables -->
+      <section class="charts">
+        <div class="chart-card income">
+          <h3>Annual Income</h3>
+          <div class="chart-placeholder">
+            <div id="incomeMaxBadge" class="chart-badge"></div> <!-- thêm dòng này -->
+            <canvas id="incomeChart"></canvas>
+          </div>
+        </div>
+        <div class="chart-card pie">
+          <h3>Sales by Category</h3>
+          <div class="pie-placeholder">
+            <canvas id="categoryChart"></canvas>
+          </div>
+          <div id="categoryLegend" class="category-legend"></div>
+        </div>
+      </section>
+
+      <section class="top-products">
+        <h3>Top Selling Products</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Product A</td><td>200,000</td><td>40</td><td>8,000,000</td></tr>
+            <tr><td>Product B</td><td>150,000</td><td>30</td><td>4,500,000</td></tr>
+            <tr><td>Product C</td><td>100,000</td><td>20</td><td>2,000,000</td></tr>
+            <tr><td>Product D</td><td>50,000</td><td>10</td><td>500,000</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+  <script src="../js/layout.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script>
+    (function(){
+      function formatNumber(n){
+        return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+      }
+
+      function initIncomeChart(){
+        const ctx = document.getElementById('incomeChart');
+        if (!ctx) return;
+        const labels = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+        const data = [32000000, 28000000, 36000000, 18000000, 22000000, 40425000, 30000000, 26000000, 24000000, 34000000, 38000000, 35000000];
+        
+        const maxVal = Math.max(...data);
+        const maxIdx = data.indexOf(maxVal);
+        const badge = document.getElementById('incomeMaxBadge');
+        if (badge) badge.textContent = `Highest Revenue: ${labels[maxIdx]} (${formatNumber(maxVal)} VNĐ)`;
+        // <<<
+
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels,
+            datasets: [{
+              label: 'Income',
+              data,
+              fill: true,
+              tension: 0.35,
+              borderColor: '#2e7d32',
+              backgroundColor: (ctx) => {
+                const {chart} = ctx;
+                const {ctx: c, chartArea} = chart;
+                if (!chartArea) return 'rgba(46,125,50,0.18)';
+                const gradient = c.createLinearGradient(0, chartArea.top, 0, chartArea.bottom);
+                gradient.addColorStop(0, 'rgba(46,125,50,0.25)');
+                gradient.addColorStop(1, 'rgba(46,125,50,0.02)');
+                return gradient;
+              },
+              pointRadius: 3,
+              pointHoverRadius: 5,
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+              y: {
+                ticks: {
+                  callback: (v) => v >= 1000000 ? (v/1000000)+'M' : v
+                },
+                grid: { color: 'rgba(0,0,0,0.06)' }
+              },
+              x: { grid: { display: false } }
+            },
+            plugins: {
+              legend: { display: false },
+              tooltip: {
+                callbacks: {
+                  label: (ctx) => ' ' + formatNumber(ctx.parsed.y)
+                }
+              }
+            }
+          }
+        });
+      }
+
+      function initCategoryChart(){
+        const ctx = document.getElementById('categoryChart');
+        if (!ctx) return;
+        const labels = ['Clothing', 'Footwear', 'Accessories', 'Furniture', 'Home Decor', 'Kitchen & Dining'];
+        const values = [41, 17, 12, 10, 8, 12];
+        const colors = ['#00bcd4', '#d32f2f', '#7cb342', '#64b5f6', '#ab47bc', '#ffcc80'];
+        new Chart(ctx, {
+          type: 'doughnut',
+          data: {
+            labels,
+            datasets: [{
+              data: values,
+              backgroundColor: colors,
+              borderWidth: 0
+            }]
+          },
+          options: {
+            cutout: '62%',
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: { display: false },
+              tooltip: {
+                callbacks: {
+                  label: (ctx) => ` ${ctx.label}: ${ctx.parsed}%`
+                }
+              }
+            }
+          }
+        });
+
+        // Render custom legend in two columns matching the design
+        const container = document.getElementById('categoryLegend');
+        if (container) {
+          const left = { title: 'Sustainable Fashion', items: [0,1,2] };
+          const right = { title: 'Recycled Homewares', items: [3,4,5] };
+          let html = '<div class="legend-grid">';
+          [left, right].forEach(group => {
+            html += `<div class="legend-col">`;
+            html += `<h4>${group.title}</h4>`;
+            group.items.forEach(i => {
+              html += `<div class=\"legend-item\"><span class=\"dot\" style=\"background:${colors[i]}\"></span>${labels[i]}</div>`;
+            });
+            html += `</div>`;
+          });
+          html += '</div>';
+          container.innerHTML = html;
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(() => { initIncomeChart(); initCategoryChart(); }, 0);
+      });
+    })();
+  </script>
+</body>
+</html>

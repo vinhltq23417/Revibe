@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Promotion Management | ReVibe</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar" data-include="partials/sidebar.html"></aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <header class="header" data-include="partials/header.html"></header>
+
+      <div class="page-header">
+        <h2>Promotion Management - All Promotions</h2>
+        <div class="actions">
+          <button id="newPromotionBtn" class="btn-primary">Create Promotion</button>
+          <select id="promoFilter">
+            <option value="all">All Promotions</option>
+            <option value="Active">Active</option>
+            <option value="Upcoming">Upcoming</option>
+            <option value="Expired">Expired</option>
+          </select>
+          <select id="sortOrder" class="sort">
+            <option value="latest">Sorted by: Latest</option>
+            <option value="oldest">Sorted by: Oldest</option>
+          </select>
+        </div>
+      </div>
+
+      <table class="promotion-table">
+        <thead>
+          <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Discount value</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Status</th>
+            <th>Usage</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="promoBody"></tbody>
+      </table>
+    </main>
+  </div>
+  <script src="../js/layout.js"></script>
+  <script src="../js/promotions.js"></script>
+</body>
+</html>

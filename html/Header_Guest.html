@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ReVibe - Sustainable Goods</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/main.css" /> 
+</head>
+<body>
+  <header class="site-header">
+    <div class="top-announcement-bar">
+      <p class="announcement-text">Discover the Story & Sustainability Score Behind Every Product</p>
+    </div>
+
+    <div class="middle-header">
+      <div class="header-container">
+        <a href="/" class="logo">
+          <img class="logo__image" src="../assets/icons/logo.svg" alt="ReVibe Logo"/> 
+          <span class="logo__text">ReVibe</span>
+        </a>
+
+        <form class="search-form" action="/search" method="get">
+          <label for="search-input" class="visually-hidden">Search</label> 
+          <div class="search-form__input-wrapper">
+            <img class="search-form__icon" src="../assets/icons/search.svg" alt=""/>
+            <input type="text" id="search-input" class="search-form__input" placeholder="Search">
+          </div>
+          <button type="submit" class="search-form__button">Search</button>
+        </form>
+
+        <div class="header-actions">
+          <a href="/wishlist" class="action-link" aria-label="Wishlist">
+            <img src="../assets/icons/heart.svg" alt="Wishlist Icon" class="action-link__icon"/>
+          </a>
+          <a href="/cart" class="action-link cart-summary" aria-label="Shopping Cart">
+            <div class="cart-summary__icon-wrapper">
+              <img src="../assets/icons/handbag.svg" alt="Cart Icon" class="action-link__icon"/>
+              <span class="cart-summary__count">2</span> </div>
+            <div class="cart-summary__details">
+              <span class="cart-summary__label">Shopping cart</span>
+              <span class="cart-summary__price">$ 200,000</span>
+            </div>
+          </a>
+          <a href="/login" class="auth-link">Sign in / Sign up</a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="main-navigation">
+      <div class="header-container">
+        <button class="all-categories-button">
+          <img src="../assets/icons/menu.svg" alt="" class="all-categories-button__icon"/>
+          All Categories
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-menu__item"><a href="index.html" class="nav-menu__link active">Home</a></li>
+          
+          <li class="nav-menu__item dropdown-container">
+            <a href="products.html" class="nav-menu__link has-dropdown">Shop <img src="../assets/icons/down.svg" alt="" class="nav-menu__arrow"/></a>
+            <ul class="dropdown-menu">
+              <li><a href="products.html?category=fashion" class="dropdown-menu__link">Sustainable Fashion</a></li>
+              <li><a href="products.html?category=homewares" class="dropdown-menu__link">Recycled Homewares</a></li>
+              <li><a href="products.html" class="dropdown-menu__link">All Products</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav-menu__item dropdown-container">
+            <a href="artisans.html" class="nav-menu__link has-dropdown">Artisans <img src="../assets/icons/down.svg" alt="" class="nav-menu__arrow"/></a>
+            <ul class="dropdown-menu">
+              <li><a href="artisans.html" class="dropdown-menu__link">Meet All Artisans</a></li>
+              <li><a href="artisans.html?id=saigon-upcyclers" class="dropdown-menu__link">The Saigon Upcyclers</a></li>
+              <li><a href="artisans.html?id=hanoi-circular" class="dropdown-menu__link">Hanoi Circular Textiles</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-menu__item dropdown-container">
+            <a href="journal.html" class="nav-menu__link has-dropdown">Blogs <img src="../assets/icons/down.svg" alt="" class="nav-menu__arrow"/></a>
+            <ul class="dropdown-menu">
+              <li><a href="journal.html" class="dropdown-menu__link">All Stories</a></li>
+              <li><a href="journal.html?category=profiles" class="dropdown-menu__link">Artisan Profiles</a></li>
+              <li><a href="journal.html?category=materials" class="dropdown-menu__link">Material Spotlights</a></li>
+              <li><a href="journal.html?category=guides" class="dropdown-menu__link">DIY & Guides</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav-menu__item"><a href="about.html" class="nav-menu__link">About Us</a></li>
+          <li class="nav-menu__item"><a href="contact.html" class="nav-menu__link">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="mega-menu" id="mega-menu-content">
+      <div class="header-container mega-menu__container">
+        
+        <div class="mega-menu__column">
+          <h5 class="mega-menu__heading">Sustainable Fashion</h5>
+          <ul class="mega-menu__list">
+            <li><a href="products.html?category=t-shirts" class="mega-menu__link">T-Shirts & Tops</a></li>
+            <li><a href="products.html?category=pants" class="mega-menu__link">Pants & Jeans</a></li>
+            <li><a href="products.html?category=dresses" class="mega-menu__link">Dresses & Skirts</a></li>
+            <li><a href="products.html?category=outerwear" class="mega-menu__link">Outerwear</a></li>
+            <li><a href="products.html?category=bags" class="mega-menu__link">Bags & Totes (from Banners)</a></li>
+          </ul>
+        </div>
+
+        <div class="mega-menu__column">
+          <h5 class="mega-menu__heading">Recycled Homewares</h5>
+          <ul class="mega-menu__list">
+            <li><a href="products.html?category=kitchen" class="mega-menu__link">Kitchen & Dining</a></li>
+            <li><a href="products.html?category=decor" class="mega-menu__link">Home Decor</a></li>
+            <li><a href="products.html?category=lighting" class="mega-menu__link">Lighting</a></li>
+            <li><a href="products.html?category=toys" class="mega-menu__link">Toys (from Reclaimed Wood)</a></li>
+            <li><a href="products.html?category=outdoor" class="mega-menu__link">Outdoor (from Tires)</a></li>
+          </ul>
+        </div>
+
+        <div class="mega-menu__column">
+          <h5 class="mega-menu__heading">Shop by Artisan</h5>
+          <ul class="mega-menu__list">
+            <li><a href="artisans.html?id=saigon-upcyclers" class="mega-menu__link">The Saigon Upcyclers</a></li>
+            <li><a href="artisans.html?id=hanoi-circular" class="mega-menu__link">Hanoi Circular Textiles</a></li>
+            <li><a href="artisans.html?id=vung-tau-reclaimed" class="mega-menu__link">Vung Tau Reclaimed</a></li>
+            <li><a href="artisans.html?id=tire-vibe" class="mega-menu__link">Tire Vibe</a></li>
+            <li><a href="artisans.html" class="mega-menu__link">See All Artisans...</a></li>
+          </ul>
+        </div>
+        
+        <div class="mega-menu__column mega-menu__promo">
+          <a href="products.html?promo=new-glassware">
+            <img src="../assets/images/mega-menu-promo.jpg" alt="Shop our new recycled glassware collection">
+            <p>New In: Recycled Glassware</p>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h1>Page Content</h1>
+  </main>
+
+  <footer>
+    </footer>
+
+  <style>.visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }</style>
+</body>
+</html>

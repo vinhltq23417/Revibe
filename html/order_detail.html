@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Detail - REVIBE</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/utility.css" />
+</head>
+<body>
+
+  <div class="order-history-container">
+    <!-- Breadcrumb -->
+    <div class="order-history-breadcrumb">
+      <a href="Homepage.html">
+        <img class="home-icon" src="../assets/icons/house.svg" alt="Home" />
+      </a>
+      <span class="separator">›</span>
+      <a href="Profile.html">Account</a>
+      <span class="separator">›</span>
+      <a href="Order_History.html">Order History</a>
+      <span class="separator">›</span>
+      <span class="current">Order Detail</span>
+    </div>
+
+    <div class="order-detail-layout">
+      <!-- Left Column - Order Information -->
+      <div class="order-info-column">
+        <!-- Order Information Card -->
+        <div class="info-card">
+          <h2 class="card-title">Order Information</h2>
+          <div class="info-grid">
+            <div class="info-label">Order ID:</div>
+            <div class="info-value" id="orderId">-</div>
+            <div class="info-label">Status:</div>
+            <div class="info-value" id="orderStatus">-</div>
+          </div>
+        </div>
+
+        <!-- Customer Information Card -->
+        <div class="info-card">
+          <h2 class="card-title">Customer Information</h2>
+          <div class="info-grid">
+            <div class="info-label">Customer name:</div>
+            <div class="info-value" id="customerName">-</div>
+            <div class="info-label">Phone:</div>
+            <div class="info-value" id="customerPhone">-</div>
+            <div class="info-label">Shipping address:</div>
+            <div class="info-value address" id="customerAddress">-</div>
+          </div>
+        </div>
+
+        <!-- Shipping Information Card -->
+        <div class="info-card">
+          <h2 class="card-title">Shipping Information</h2>
+          <div class="info-grid">
+            <div class="info-label">Courier service:</div>
+            <div class="info-value" id="courierService">-</div>
+            <div class="info-label">Tracking code:</div>
+            <div class="info-value" id="trackingCode">-</div>
+            <div class="info-label">Delivery status:</div>
+            <div class="info-value" id="deliveryStatus">-</div>
+          </div>
+        </div>
+
+        <!-- Order & Payment Summary Card -->
+        <div class="info-card">
+          <h2 class="card-title">Order & Payment Summary</h2>
+          <div class="info-grid">
+            <div class="info-label">Payment method:</div>
+            <div class="info-value" id="paymentMethod">-</div>
+            <div class="info-label">Order placed:</div>
+            <div class="info-value" id="orderPlaced">-</div>
+            <div class="info-label">Payment confirmed:</div>
+            <div class="info-value" id="paymentConfirmed">-</div>
+            <div class="info-label">Shipper pickup:</div>
+            <div class="info-value" id="shipperPickup">-</div>
+            <div class="info-label">Delivered:</div>
+            <div class="info-value" id="deliveredDate">-</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column - Order Items & Summary -->
+      <div class="order-summary-column">
+        <!-- Order Items Card -->
+        <div class="summary-card">
+          <h2 class="card-title">Order Items</h2>
+          <div id="orderItemsContainer">
+            <!-- Order items will be dynamically loaded here -->
+          </div>
+        </div>
+
+        <!-- Order Summary Card -->
+        <!-- Order Summary Card -->
+    <div class="summary-card">
+      <h2 class="card-title">Order Summary</h2>
+      <div class="summary-grid">
+        <div class="summary-label">Subtotal:</div>
+        <div class="summary-value" id="subtotal">-</div>
+        <div class="summary-label">Shipping fee:</div>
+        <div class="summary-value" id="shippingFee">-</div>
+        <div class="summary-label">Shipping discount:</div>
+        <div class="summary-value discount" id="shippingDiscount">-</div>
+        <div class="summary-label">Total voucher discount:</div>
+        <div class="summary-value discount" id="voucherDiscount">-</div>
+        <div class="divider"></div>
+        <div class="summary-label total">Total:</div>
+        <div class="summary-value total" id="totalAmount">-</div>
+      </div>
+    </div>
+
+<!-- Nút Review nằm ngoài khung summary-card -->
+<button id="reviewButton" style="
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  background:#0e6e0c;
+  border-radius:25px;
+  padding:8px 18px;
+  text-decoration:none;
+  box-sizing:border-box;
+  border:none;
+  cursor:pointer;
+">
+  <span style="
+    color:#ffffff;
+    font-family:'Poppins-SemiBold', sans-serif;
+    font-size:16px;
+    line-height:28px;
+    font-weight:600;
+    letter-spacing:-0.3px;
+  ">
+    Review
+  </span>
+</button>
+
+</div>
+
+
+
+</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

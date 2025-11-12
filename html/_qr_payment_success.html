@@ -1,0 +1,58 @@
+  <div class="qr-container">
+    <!-- Breadcrumb -->
+    <!-- Breadcrumb - Fixed to match other pages -->
+    <div class="qr-breadcrumb">
+        <a href="Homepage.html">
+            <img class="home-icon" src="../assets/icons/house.svg" alt="Home" />
+        </a>
+        <span class="separator">›</span>
+        <a href="Cart.html">My Shopping Cart</a>
+        <span class="separator">›</span>
+        <a href="Product_Order_Page.html">Order Checkout</a>
+        <span class="separator">›</span>
+        <a href="Check_Out.html">Payment</a>
+        <span class="separator">›</span>
+        <span class="current">Payment Successful</span>
+    </div>
+
+    <div class="qr-layout">
+      <!-- Left Column - Success Message -->
+      <div class="success-section">
+        <div class="success-icon">
+          <img src="../assets/images/paysuccess.png" alt="Success" style="width: 80px; height: 80px;" />
+        </div>
+        
+        <h2 class="success-title">Payment Successful!</h2>
+        
+        <p class="success-message">
+          Your payment has been processed successfully. Thank you for your order!
+        </p>
+        
+        <button class="done-btn" id="doneBtn">
+          <span>DONE!</span>
+        </button>
+      </div>
+
+      <!-- Right Column - Order Information -->
+      <div class="order-info-section">
+        <h2 class="section-title">Order Details</h2>
+        
+        <div class="info-grid">
+          <div class="info-label">Order ID:</div>
+          <div class="info-value" id="successOrderId">-</div>
+          
+          <div class="info-label">Total Amount:</div>
+          <div class="info-value total-amount" id="successTotalAmount">-</div>
+          
+          <div class="info-label">Payment Method:</div>
+          <div class="info-value" id="successPaymentMethod">-</div>
+          
+          <div class="info-label">Invoice Number:</div>
+          <div class="info-value" id="successInvoiceNumber">-</div>
+          
+          <div class="info-label">Status:</div>
+          <div class="info-value" style="color: var(--primary);">Completed</div>
+        </div>
+      </div>
+    </div>
+  </div>

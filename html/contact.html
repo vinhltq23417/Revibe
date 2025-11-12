@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - REVIBE</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body>
+
+  <main class="contact-page">
+
+  <section class="container section">
+    <nav class="breadcrumbs-container">
+      <a href="index.html" class="breadcrumb-link ajax-link">Home</a>
+      <span class="breadcrumb-separator">›</span>
+      <span class="breadcrumb-current">Contact Us</span>
+    </nav>
+    <div class="contact-header">
+      <h1 class="section__title" style="text-align: left; margin: 0;">Contact Us</h1>
+    </div>
+  </section>
+
+  <div class="contact-layout container">
+
+    <div class="contact-info-section">
+      <h2 class="contact-info__title">Get in touch</h2>
+      <p class="contact-info__subtitle">
+        We'd love to hear from you. Our team is always here to help.
+      </p>
+
+      <div class="info-blocks-container">
+        <div class="info-block">
+          <img src="../assets/icons/address.svg" alt="Address" class="info-block__icon">
+          <div class="info-block__content">
+            <h4 class="info-block__title">Address</h4>
+            <p class="info-block__text">123 Vo Van Tan, District 3, HCMC</p>
+          </div>
+        </div>
+        <div class="info-block">
+          <img src="../assets/icons/email.svg" alt="Email" class="info-block__icon">
+          <div class="info-block__content">
+            <h4 class="info-block__title">Email</h4>
+            <p class="info-block__text">support@revibe.com</p>
+          </div>
+        </div>
+        <div class="info-block">
+          <img src="../assets/icons/phone.svg" alt="Phone" class="info-block__icon">
+          <div class="info-block__content">
+            <h4 class="info-block__title">Phone</h4>
+            <p class="info-block__text">(+84) 28 3456 7890</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form-section">
+      <form class="auth-form" id="contactForm" style="box-shadow: none; border: none; padding: 0;">
+        <div class="form-group">
+          <label for="contactName" class="form-group__label required">Full Name</label>
+          <input type="text" id="contactName" class="form-group__input" placeholder="Your full name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="contactEmail" class="form-group__label required">Email Address</label>
+          <input type="email" id="contactEmail" class="form-group__input" placeholder="Your email address" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="contactPhone" class="form-group__label">Phone Number</label>
+          <input type="tel" id="contactPhone" class="form-group__input" placeholder="Your phone number">
+        </div>
+
+        <div class="form-group">
+          <label for="contactSubject" class="form-group__label">Subject</label>
+          <input type="text" id="contactSubject" class="form-group__input" placeholder="How can we help?">
+        </div>
+        
+        <div class="form-group">
+          <label for="contactMessage" class="form-group__label">Message (Optional)</label>
+          <textarea id="contactMessage" class="form-group__input form-textarea" placeholder="Write your message..."></textarea>
+        </div>
+        
+        <button type="submit" class="auth-form__button">
+          Send Message
+        </button>
+      </form>
+    </div>
+
+  </div> <section class="map-section section">
+    <div class="map-placeholder container">
+      <img src="../assets/images/map.jpg" alt="REVIBE Location Map" class="map-image" 
+           onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'padding: 20px; text-align: center;\'><h3>REVIBE Location</h3><p>G-12A17, The Manor Officetel, 89 Nguyen Huu Canh, Binh Thanh District, HCMC</p></div>';" />
+    </div>
+  </section>
+
+</main>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

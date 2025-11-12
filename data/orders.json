@@ -1,0 +1,312 @@
+{
+  "orders": [
+    {
+      "orderId": "ORD1001",
+      "customerId": "u1",
+      "date": "2025-10-20T08:15:00",
+      "products": [
+        { "productId": "p2", "quantity": 1, "price": 649000 },
+        { "productId": "p4", "quantity": 2, "price": 225000 }
+      ],
+      "subtotal": 1099000,
+      "shippingFee": 30000,
+      "totalDiscount": 0,
+      "total": 1129000,
+      "status": "Delivered",
+      "shippingMethod": "Giao Hàng Tiêu Chuẩn",
+      "paymentMethod": "COD"
+    },
+    {
+      "orderId": "ORD1002",
+      "customerId": "u2",
+      "date": "2025-10-21T11:30:00",
+      "products": [
+        { "productId": "p8", "quantity": 1, "price": 180000 }
+      ],
+      "subtotal": 180000,
+      "shippingFee": 15000,
+      "totalDiscount": 15000,
+      "total": 180000,
+      "status": "Delivered",
+      "shippingMethod": "Giao Hàng Nhanh",
+      "paymentMethod": "MoMo"
+    },
+    {
+      "orderId": "ORD1003",
+      "customerId": "u1",
+      "date": "2025-10-22T14:00:00",
+      "products": [
+        { "productId": "p15", "quantity": 3, "price": 85000 }
+      ],
+      "subtotal": 255000,
+      "shippingFee": 30000,
+      "totalDiscount": 0,
+      "total": 285000,
+      "status": "Delivered",
+      "shippingMethod": "Giao Hàng Tiêu Chuẩn",
+      "paymentMethod": "COD"
+    },
+    {
+      "orderId": "ORD1004",
+      "customerId": "u2",
+      "date": "2025-11-01T09:05:00",
+      "products": [
+        { "productId": "p30", "quantity": 5, "price": 99000 },
+        { "productId": "p31", "quantity": 2, "price": 135000 }
+      ],
+      "subtotal": 765000,
+      "shippingFee": 0,
+      "totalDiscount": 50000,
+      "total": 715000,
+      "status": "Processing",
+      "shippingMethod": "Giao Hàng Tiêu Chuẩn",
+      "paymentMethod": "Chuyển khoản"
+    },
+    {
+      "orderId": "ORD1005",
+      "customerId": "u1",
+      "date": "2025-11-02T10:00:00",
+      "products": [
+        { "productId": "p45", "quantity": 1, "price": 380000 }
+      ],
+      "subtotal": 380000,
+      "shippingFee": 30000,
+      "totalDiscount": 0,
+      "total": 410000,
+      "status": "Cancelled",
+      "shippingMethod": "Giao Hàng Tiêu Chuẩn",
+      "paymentMethod": "COD"
+    },
+    {
+      "orderId": "ORD1006",
+      "customerId": "u2",
+      "date": "2025-11-03T15:20:00",
+      "products": [
+        { "productId": "p1", "quantity": 1, "price": 350000 },
+        { "productId": "p3", "quantity": 1, "price": 480000 }
+      ],
+      "subtotal": 830000,
+      "shippingFee": 0,
+      "totalDiscount": 83000,
+      "total": 747000,
+      "status": "Delivered",
+      "shippingMethod": "Giao Hàng Nhanh",
+      "paymentMethod": "MoMo"
+    },
+    {
+      "orderId": "ORD1007",
+      "customerId": "u1",
+      "date": "2025-11-05T12:00:00",
+      "products": [
+        { "productId": "p25", "quantity": 2, "price": 120000 },
+        { "productId": "p26", "quantity": 1, "price": 65000 }
+      ],
+      "subtotal": 305000,
+      "shippingFee": 15000,
+      "totalDiscount": 0,
+      "total": 320000,
+      "status": "Delivered",
+      "shippingMethod": "Giao Hàng Nhanh",
+      "paymentMethod": "COD"
+    },
+    {
+      "orderId": "ORD1008",
+      "customerId": "u2",
+      "date": "2025-11-06T17:45:00",
+      "products": [
+        { "productId": "p40", "quantity": 1, "price": 550000 }
+      ],
+      "subtotal": 550000,
+      "shippingFee": 0,
+      "totalDiscount": 50000,
+      "total": 500000,
+      "status": "Delivered",
+      "shippingMethod": "Giao Hàng Tiêu Chuẩn",
+      "paymentMethod": "MoMo"
+    },
+    {
+      "orderId": "ORD1009",
+      "customerId": "u1",
+      "date": "2025-11-07T10:10:00",
+      "products": [
+        { "productId": "p50", "quantity": 1, "price": 750000 }
+      ],
+      "subtotal": 750000,
+      "shippingFee": 50000,
+      "totalDiscount": 75000,
+      "total": 725000,
+      "status": "Shipped",
+      "shippingMethod": "Giao Hàng Hỏa Tốc",
+      "paymentMethod": "Chuyển khoản"
+    },
+    {
+      "orderId": "ORD1010",
+      "customerId": "u1",
+      "date": "2025-11-08T11:00:00",
+      "products": [
+        { "productId": "p10", "quantity": 1, "price": 275000 },
+        { "productId": "p11", "quantity": 2, "price": 310000 }
+      ],
+      "subtotal": 895000,
+      "shippingFee": 0,
+      "totalDiscount": 0,
+      "total": 895000,
+      "status": "Processing",
+      "shippingMethod": "Giao Hàng Tiêu Chuẩn",
+      "paymentMethod": "COD"
+    },
+    {
+      "orderId": "ORD1011",
+      "customerId": "u2",
+      "date": "2025-11-08T13:30:00",
+      "products": [
+        { "productId": "p12", "quantity": 1, "price": 420000 }
+      ],
+      "subtotal": 420000,
+      "shippingFee": 30000,
+      "totalDiscount": 42000,
+      "total": 408000,
+      "status": "Delivered",
+      "shippingMethod": "Giao Hàng Nhanh",
+      "paymentMethod": "MoMo"
+    },
+    {
+      "orderId": "ORD1012",
+      "customerId": "u1",
+      "date": "2025-11-09T09:15:00",
+      "products": [
+        { "productId": "p7", "quantity": 1, "price": 140000 }
+      ],
+      "subtotal": 140000,
+      "shippingFee": 30000,
+      "totalDiscount": 0,
+      "total": 170000,
+      "status": "Cancelled",
+      "shippingMethod": "Giao Hàng Tiêu Chuẩn",
+      "paymentMethod": "COD"
+    },
+    {
+      "orderId": "ORD1013",
+      "customerId": "u1",
+      "date": "2025-11-10T16:00:00",
+      "products": [
+        { "productId": "p18", "quantity": 2, "price": 220000 },
+        { "productId": "p19", "quantity": 1, "price": 190000 }
+      ],
+      "subtotal": 630000,
+      "shippingFee": 0,
+      "totalDiscount": 0,
+      "total": 630000,
+      "status": "Processing",
+      "shippingMethod": "Giao Hàng Tiêu Chuẩn",
+      "paymentMethod": "Chuyển khoản"
+    },
+    {
+      "orderId": "ORD1014",
+      "customerId": "u2",
+      "date": "2025-11-11T08:00:00",
+      "products": [
+        { "productId": "p35", "quantity": 1, "price": 1200000 }
+      ],
+      "subtotal": 1200000,
+      "shippingFee": 50000,
+      "totalDiscount": 120000,
+      "total": 1130000,
+      "status": "Shipped",
+      "shippingMethod": "Giao Hàng Hỏa Tốc",
+      "paymentMethod": "MoMo"
+    },
+    {
+      "orderId": "ORD1015",
+      "customerId": "u2",
+      "date": "2025-11-11T11:00:00",
+      "products": [
+        { "productId": "p22", "quantity": 1, "price": 650000 }
+      ],
+      "subtotal": 650000,
+      "shippingFee": 0,
+      "totalDiscount": 0,
+      "total": 650000,
+      "status": "Delivered",
+      "shippingMethod": "Giao Hàng Tiêu Chuẩn",
+      "paymentMethod": "COD"
+    },
+    {
+      "orderId": "ORD1016",
+      "customerId": "u1",
+      "date": "2025-11-12T14:30:00",
+      "products": [
+        { "productId": "p5", "quantity": 1, "price": 290000 },
+        { "productId": "p40", "quantity": 1, "price": 550000 }
+      ],
+      "subtotal": 840000,
+      "shippingFee": 0,
+      "totalDiscount": 50000,
+      "total": 790000,
+      "status": "Processing",
+      "shippingMethod": "Giao Hàng Tiêu Chuẩn",
+      "paymentMethod": "COD"
+    },
+    {
+      "orderId": "ORD1017",
+      "customerId": "u2",
+      "date": "2025-11-13T10:00:00",
+      "products": [
+        { "productId": "p1", "quantity": 2, "price": 350000 }
+      ],
+      "subtotal": 700000,
+      "shippingFee": 0,
+      "totalDiscount": 70000,
+      "total": 630000,
+      "status": "Processing",
+      "shippingMethod": "Giao Hàng Nhanh",
+      "paymentMethod": "MoMo"
+    },
+    {
+      "orderId": "ORD1018",
+      "customerId": "u1",
+      "date": "2025-11-13T18:00:00",
+      "products": [
+        { "productId": "p42", "quantity": 1, "price": 180000 }
+      ],
+      "subtotal": 180000,
+      "shippingFee": 30000,
+      "totalDiscount": 0,
+      "total": 210000,
+      "status": "Delivered",
+      "shippingMethod": "Giao Hàng Tiêu Chuẩn",
+      "paymentMethod": "COD"
+    },
+    {
+      "orderId": "ORD1019",
+      "customerId": "u2",
+      "date": "2025-11-14T07:30:00",
+      "products": [
+        { "productId": "p33", "quantity": 1, "price": 270000 }
+      ],
+      "subtotal": 270000,
+      "shippingFee": 15000,
+      "totalDiscount": 27000,
+      "total": 258000,
+      "status": "Shipped",
+      "shippingMethod": "Giao Hàng Nhanh",
+      "paymentMethod": "Chuyển khoản"
+    },
+    {
+      "orderId": "ORD1020",
+      "customerId": "u1",
+      "date": "2025-11-14T12:00:00",
+      "products": [
+        { "productId": "p11", "quantity": 1, "price": 310000 },
+        { "productId": "p12", "quantity": 1, "price": 420000 }
+      ],
+      "subtotal": 730000,
+      "shippingFee": 0,
+      "totalDiscount": 50000,
+      "total": 680000,
+      "status": "Processing",
+      "shippingMethod": "Giao Hàng Tiêu Chuẩn",
+      "paymentMethod": "COD"
+    }
+  ]
+}

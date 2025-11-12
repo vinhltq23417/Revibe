@@ -1,0 +1,70 @@
+{
+  "posts": [
+    {
+      "id": "b-1",
+      "title": "From Waste to Worth: The Power of Reusable Bags",
+      "image": "https://picsum.photos/seed/reusable-bag-1/800/520",
+      "author": "ReVibe Team",
+      "content": "Reusable bags cut plastic waste and save resources. Here's how to start.",
+      "createdAt": "2025-10-01T09:00:00.000Z"
+    },
+    {
+      "id": "b-2",
+      "title": "Small Habits for a Greener Home",
+      "image": "https://picsum.photos/seed/green-home-2/800/520",
+      "author": "Khanh Ly",
+      "content": "Composting, energy saving, and mindful shopping make a real difference.",
+      "createdAt": "2025-10-12T10:30:00.000Z"
+    },
+    {
+      "id": "b-3",
+      "title": "Upcycling Furniture: Tips for Beginners",
+      "image": "https://picsum.photos/seed/upcycle-3/800/520",
+      "author": "ReVibe Studio",
+      "content": "Give old furniture a new life with safe finishes and simple tools.",
+      "createdAt": "2025-10-20T14:45:00.000Z"
+    },
+    {
+      "id": "b-4",
+      "title": "Composting 101: Turn Kitchen Waste into Gold",
+      "image": "https://picsum.photos/seed/compost-4/800/520",
+      "author": "Green Home",
+      "content": "Simple steps to start composting even in small apartments.",
+      "createdAt": "2025-10-25T09:10:00.000Z"
+    },
+    {
+      "id": "b-5",
+      "title": "A Guide to Sustainable Fabrics",
+      "image": "https://picsum.photos/seed/fabrics-5/800/520",
+      "author": "ReVibe Team",
+      "content": "Bamboo, hemp, organic cotton and how to choose wisely.",
+      "createdAt": "2025-10-28T12:00:00.000Z"
+    },
+    {
+      "id": "b-6",
+      "title": "Zero-Waste Kitchen: 7 Easy Swaps",
+      "image": "https://picsum.photos/seed/zerowaste-6/800/520",
+      "author": "Khanh Ly",
+      "content": "Reusable wraps, jars, and bulk shopping to reduce trash.",
+      "createdAt": "2025-11-01T08:20:00.000Z"
+    },
+    {
+      "id": "b-7",
+      "title": "Renewable Energy at Home: Where to Start",
+      "image": "https://picsum.photos/seed/solar-7/800/520",
+      "author": "Eco Power",
+      "content": "From energy audits to rooftop solar basics.",
+      "createdAt": "2025-11-02T10:00:00.000Z"
+    },
+    {
+      "id": "b-8",
+      "title": "Green Travel: Packing and Planning Tips",
+      "image": "https://picsum.photos/seed/travel-8/800/520",
+      "author": "ReVibe Studio",
+      "content": "Cut emissions with smarter routes and lighter luggage.",
+      "createdAt": "2025-11-03T07:30:00.000Z"
+    }
+  ]
+}
+
+

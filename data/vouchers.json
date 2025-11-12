@@ -1,0 +1,404 @@
+{
+  "vouchers": [
+    {
+      "code": "FREESHIPMAX",
+      "type": "shipping",
+      "discount": 50000,
+      "description": "Miễn phí vận chuyển tối đa 50.000đ",
+      "minOrder": 100000,
+      "active": true
+    },
+    {
+      "code": "SHIP15K",
+      "type": "shipping",
+      "discount": 15000,
+      "description": "Giảm 15.000đ phí vận chuyển",
+      "minOrder": 0,
+      "active": true
+    },
+    {
+      "code": "SHIP30K",
+      "type": "shipping",
+      "discount": 30000,
+      "description": "Giảm 30.000đ phí vận chuyển",
+      "minOrder": 50000,
+      "active": true
+    },
+    {
+      "code": "SHIP0D",
+      "type": "shipping",
+      "discount": 15000,
+      "description": "Miễn phí vận chuyển (tối đa 15k) cho đơn từ 0đ",
+      "minOrder": 0,
+      "active": true
+    },
+    {
+      "code": "REVIBESHIP",
+      "type": "shipping",
+      "discount": 25000,
+      "description": "REVIBE khao ship 25.000đ",
+      "minOrder": 200000,
+      "active": true
+    },
+    {
+      "code": "VUISHIP",
+      "type": "shipping",
+      "discount": 10000,
+      "description": "Hỗ trợ 10.000đ phí ship",
+      "minOrder": 0,
+      "active": true
+    },
+    {
+      "code": "MIENSHIP",
+      "type": "shipping",
+      "discount": 30000,
+      "description": "Miễn phí vận chuyển toàn quốc (tối đa 30k)",
+      "minOrder": 300000,
+      "active": true
+    },
+    {
+      "code": "NOWSHIP",
+      "type": "shipping",
+      "discount": 40000,
+      "description": "Giảm 40.000đ phí ship hỏa tốc",
+      "minOrder": 500000,
+      "active": true
+    },
+    {
+      "code": "GOISHIP",
+      "type": "shipping",
+      "discount": 15000,
+      "description": "Gói Freeship 15.000đ",
+      "minOrder": 50000,
+      "active": false
+    },
+    {
+      "code": "CUOITUANSHIP",
+      "type": "shipping",
+      "discount": 22000,
+      "description": "Cuối tuần freeship 22.000đ",
+      "minOrder": 150000,
+      "active": true
+    },
+    {
+      "code": "WELCOME10",
+      "type": "order_percent",
+      "discount": 10,
+      "description": "Giảm 10% cho thành viên mới (tối đa 50k)",
+      "minOrder": 0,
+      "active": true
+    },
+    {
+      "code": "MEMBER15",
+      "type": "order_percent",
+      "discount": 15,
+      "description": "Giảm 15% (tối đa 100k) cho thành viên V.I.P",
+      "minOrder": 500000,
+      "active": true
+    },
+    {
+      "code": "SALE10",
+      "type": "order_percent",
+      "discount": 10,
+      "description": "Giảm 10% tổng đơn hàng (tối đa 30k)",
+      "minOrder": 200000,
+      "active": true
+    },
+    {
+      "code": "BIGSALE25",
+      "type": "order_percent",
+      "discount": 25,
+      "description": "Giảm 25% (tối đa 200k) cho đơn hàng giá trị lớn",
+      "minOrder": 1000000,
+      "active": true
+    },
+    {
+      "code": "REVIBE12",
+      "type": "order_percent",
+      "discount": 12,
+      "description": "Giảm 12% toàn bộ sản phẩm (tối đa 70k)",
+      "minOrder": 350000,
+      "active": true
+    },
+    {
+      "code": "ECO10",
+      "type": "order_percent",
+      "discount": 10,
+      "description": "Giảm 10% cho các sản phẩm Eco-friendly (tối đa 40k)",
+      "minOrder": 150000,
+      "active": true
+    },
+    {
+      "code": "GREEN15",
+      "type": "order_percent",
+      "discount": 15,
+      "description": "Giảm 15% cho dòng sản phẩm 'Tái Chế' (tối đa 80k)",
+      "minOrder": 400000,
+      "active": true
+    },
+    {
+      "code": "SAVE10",
+      "type": "order_percent",
+      "discount": 10,
+      "description": "Giảm 10% (tối đa 50k)",
+      "minOrder": 300000,
+      "active": false
+    },
+    {
+      "code": "NEWU10",
+      "type": "order_percent",
+      "discount": 10,
+      "description": "Giảm 10% cho khách hàng mới (tối đa 30k)",
+      "minOrder": 100000,
+      "active": true
+    },
+    {
+      "code": "HELLO15",
+      "type": "order_percent",
+      "discount": 15,
+      "description": "Giảm 15% (tối đa 50k)",
+      "minOrder": 250000,
+      "active": true
+    },
+    {
+      "code": "BLACKFRIDAY20",
+      "type": "order_percent",
+      "discount": 20,
+      "description": "Black Friday: Giảm 20% (tối đa 150k)",
+      "minOrder": 500000,
+      "active": true
+    },
+    {
+      "code": "TET20",
+      "type": "order_percent",
+      "discount": 20,
+      "description": "Giảm 20% (tối đa 100k) mừng Tết",
+      "minOrder": 500000,
+      "active": true
+    },
+    {
+      "code": "SNVV15",
+      "type": "order_percent",
+      "discount": 15,
+      "description": "Mừng sinh nhật: Giảm 15% (tối đa 100k)",
+      "minOrder": 0,
+      "active": true
+    },
+    {
+      "code": "SALE15",
+      "type": "order_percent",
+      "discount": 15,
+      "description": "Giảm 15% (tối đa 30k)",
+      "minOrder": 100000,
+      "active": true
+    },
+    {
+      "code": "SALE20",
+      "type": "order_percent",
+      "discount": 20,
+      "description": "Giảm 20% (tối đa 50k)",
+      "minOrder": 200000,
+      "active": true
+    },
+    {
+      "code": "SAVE20K",
+      "type": "order_flat",
+      "discount": 20000,
+      "description": "Giảm ngay 20.000đ",
+      "minOrder": 150000,
+      "active": true
+    },
+    {
+      "code": "SAVE30K",
+      "type": "order_flat",
+      "discount": 30000,
+      "description": "Giảm ngay 30.000đ",
+      "minOrder": 200000,
+      "active": true
+    },
+    {
+      "code": "SAVE50K",
+      "type": "order_flat",
+      "discount": 50000,
+      "description": "Giảm ngay 50.000đ",
+      "minOrder": 300000,
+      "active": true
+    },
+    {
+      "code": "SAVE100K",
+      "type": "order_flat",
+      "discount": 100000,
+      "description": "Giảm ngay 100.000đ",
+      "minOrder": 700000,
+      "active": true
+    },
+    {
+      "code": "SAVE200K",
+      "type": "order_flat",
+      "discount": 200000,
+      "description": "Giảm ngay 200.000đ",
+      "minOrder": 1500000,
+      "active": true
+    },
+    {
+      "code": "GIAM25K",
+      "type": "order_flat",
+      "discount": 25000,
+      "description": "Giảm 25.000đ cho đơn từ 180k",
+      "minOrder": 180000,
+      "active": true
+    },
+    {
+      "code": "GIAM75K",
+      "type": "order_flat",
+      "discount": 75000,
+      "description": "Giảm 75.000đ cho đơn từ 600k",
+      "minOrder": 600000,
+      "active": true
+    },
+    {
+      "code": "GIAM150K",
+      "type": "order_flat",
+      "discount": 150000,
+      "description": "Giảm 150.000đ cho đơn từ 1.2M",
+      "minOrder": 1200000,
+      "active": true
+    },
+    {
+      "code": "TRIAN50",
+      "type": "order_flat",
+      "discount": 50000,
+      "description": "Tri ân khách hàng: Giảm 50.000đ",
+      "minOrder": 250000,
+      "active": true
+    },
+    {
+      "code": "MUAHE50K",
+      "type": "order_flat",
+      "discount": 50000,
+      "description": "Sale hè: Giảm 50.000đ",
+      "minOrder": 300000,
+      "active": false
+    },
+    {
+      "code": "THU50K",
+      "type": "order_flat",
+      "discount": 50000,
+      "description": "Sale mùa thu: Giảm 50.000đ",
+      "minOrder": 300000,
+      "active": true
+    },
+    {
+      "code": "DON500KGIAM50",
+      "type": "order_flat",
+      "discount": 50000,
+      "description": "Đơn 500k Giảm 50k",
+      "minOrder": 500000,
+      "active": true
+    },
+    {
+      "code": "DON1MGIAM100",
+      "type": "order_flat",
+      "discount": 100000,
+      "description": "Đơn 1 Triệu Giảm 100k",
+      "minOrder": 1000000,
+      "active": true
+    },
+    {
+      "code": "ECO50K",
+      "type": "order_flat",
+      "discount": 50000,
+      "description": "Giảm 50k cho sản phẩm 'Eco'",
+      "minOrder": 300000,
+      "active": true
+    },
+    {
+      "code": "GREEN50K",
+      "type": "order_flat",
+      "discount": 50000,
+      "description": "Giảm 50k cho sản phẩm 'Tái Chế'",
+      "minOrder": 300000,
+      "active": true
+    },
+    {
+      "code": "TICTOC50K",
+      "type": "order_flat",
+      "discount": 50000,
+      "description": "Voucher độc quyền Tictoc: Giảm 50k",
+      "minOrder": 200000,
+      "active": true
+    },
+    {
+      "code": "FB70K",
+      "type": "order_flat",
+      "discount": 70000,
+      "description": "Voucher độc quyền Facebook: Giảm 70k",
+      "minOrder": 300000,
+      "active": true
+    },
+    {
+      "code": "IG50K",
+      "type": "order_flat",
+      "discount": 50000,
+      "description": "Voucher độc quyền Instagram: Giảm 50k",
+      "minOrder": 250000,
+      "active": true
+    },
+    {
+      "code": "THANKS30K",
+      "type": "order_flat",
+      "discount": 30000,
+      "description": "Cảm ơn bạn: Giảm 30k",
+      "minOrder": 100000,
+      "active": true
+    },
+    {
+      "code": "BUYNOW20K",
+      "type": "order_flat",
+      "discount": 20000,
+      "description": "Mua ngay: Giảm 20k",
+      "minOrder": 99000,
+      "active": true
+    },
+    {
+      "code": "FLASH20K",
+      "type": "order_flat",
+      "discount": 20000,
+      "description": "Flash Sale: Giảm 20k",
+      "minOrder": 99000,
+      "active": false
+    },
+    {
+      "code": "HOTDEAL30K",
+      "type": "order_flat",
+      "discount": 30000,
+      "description": "Hot Deal: Giảm 30k",
+      "minOrder": 149000,
+      "active": true
+    },
+    {
+      "code": "BIGBOY100K",
+      "type": "order_flat",
+      "discount": 100000,
+      "description": "Đơn hàng lớn: Giảm 100k",
+      "minOrder": 800000,
+      "active": true
+    },
+    {
+      "code": "TOPSPENDER200K",
+      "type": "order_flat",
+      "discount": 200000,
+      "description": "Dành cho Top Spender: Giảm 200k",
+      "minOrder": 1000000,
+      "active": true
+    },
+    {
+      "code": "DEAL1M",
+      "type": "order_flat",
+      "discount": 100000,
+      "description": "Đơn 1 Triệu Giảm 100k",
+      "minOrder": 1000000,
+      "active": false
+    }
+  ]
+}

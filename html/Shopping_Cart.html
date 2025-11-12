@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Shopping Cart - ReVibe</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/Shopping_Cart.css">
+</head>
+<body>
+  
+  <main class="cart-page container section">
+    
+    <nav class="breadcrumbs">
+      <a href="/" class="breadcrumbs__link">Home</a>
+      <span class="breadcrumbs__divider">/</span>
+      <span class="breadcrumbs__current">Shopping Cart</span>
+    </nav>
+
+    <h1 class="cart-page__title">Your Cart</h1>
+
+    <div class="cart-layout">
+
+      <section class="cart-items-section">
+        
+        <div class="cart-header-row">
+          <span class="cart-header-cell">Product</span>
+          <span class="cart-header-cell">Quantity</span>
+          <span class="cart-header-cell">Price</span>
+          <span class="cart-header-cell">Total</span>
+        </div>
+
+        <div id="cart-items-container">
+          </div>
+
+      </section>
+
+      <aside class="order-summary-section">
+        <div class="order-summary">
+          <h2 class="order-summary__title">Order Summary</h2>
+          
+          <div class="order-summary__row">
+            <span>Subtotal</span>
+            <span id="summary-subtotal">0₫</span>
+          </div>
+
+          <div class="order-summary__row">
+            <span>Shipping</span>
+            <span id="summary-shipping">25.000₫</span>
+          </div>
+
+          <div class="order-summary__row order-summary__row--total">
+            <span>Total</span>
+            <span id="summary-total">25.000₫</span>
+          </div>
+
+          <button class="button button--filled button--large order-summary__checkout-btn">
+            Proceed to Checkout
+          </button>
+
+          <a href="product-list.html" class="order-summary__continue-link">
+            &larr; Continue Shopping
+          </a>
+        </div>
+      </aside>
+
+    </div> </main>
+
+  <script src="../js/Shopping_Cart.js"></script>
+</body>
+</html>

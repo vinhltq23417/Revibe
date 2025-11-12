@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>New Product | ReVibe</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .np-wrap{background:#eef6ec;border-radius:16px;padding:24px}
+    .np-header{display:flex;align-items:center;gap:10px;margin-bottom:20px}
+    .np-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:24px}
+    .np-upload{background:#ddd;border-radius:12px;height:380px;display:flex;align-items:center;justify-content:center;position:relative}
+    .np-upload img{max-width:100%;max-height:100%;object-fit:contain;border-radius:12px}
+    .np-browse{display:flex;justify-content:center;margin-top:14px}
+    .np-browse input{display:none}
+    .np-col .row{display:flex;flex-direction:column;gap:6px;margin-bottom:10px}
+    .np-col input,.np-col textarea,.np-col select{padding:10px 12px;border:1px solid #e5e7eb;border-radius:10px}
+    .np-actions{display:flex;gap:12px;justify-content:flex-end;margin-top:14px}
+    .btn-light{background:#e5e7eb;border:none;padding:10px 16px;border-radius:10px;cursor:pointer}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar" data-include="partials/sidebar.html"></aside>
+    <main class="main">
+      <header class="header" data-include="partials/header.html"></header>
+
+      <div class="np-wrap">
+        <div class="np-header">
+          <button id="npBack" class="btn-light">◀ Back</button>
+          <h2>NEW PRODUCT</h2>
+        </div>
+
+        <div class="np-grid">
+          <div>
+            <div id="preview" class="np-upload"><span>Preview</span></div>
+            <div class="np-browse">
+              <label class="btn-light" for="fileInput">Browse Image ⭳</label>
+              <input id="fileInput" type="file" accept="image/*" />
+            </div>
+          </div>
+          <div class="np-col">
+            <div class="row">
+              <label for="npName">Name</label>
+              <input id="npName" type="text" placeholder="Product name" />
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+              <div class="row"><label for="npPrice">Price</label><input id="npPrice" type="number" min="0" step="1" /></div>
+              <div class="row"><label for="npScore">Sustainability Score</label><input id="npScore" type="number" min="0" max="100" step="1" /></div>
+            </div>
+            <div class="row">
+              <label for="npArtisan">Artisan</label>
+              <input id="npArtisan" type="text" />
+            </div>
+            <div class="row">
+              <label for="npCategory">Category</label>
+              <select id="npCategory"></select>
+            </div>
+            <div class="row">
+              <label for="npDesc">Description</label>
+              <textarea id="npDesc" rows="6"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="np-actions">
+          <button id="npCancel" class="btn-light">Cancel</button>
+          <button id="npCreate" class="btn-primary">Create</button>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="../js/layout.js"></script>
+  <script>
+  (function(){
+    const DATA_URL = '../assets/data/products.json';
+    const STORAGE_KEY = 'revibe_products_extra';
+    let imageDataURL = '';
+    function readExtras(){ try{ return JSON.parse(localStorage.getItem(STORAGE_KEY)||'[]'); }catch(e){ return []; } }
+    function writeExtras(arr){ try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(arr)); }catch(e){} }
+    function newId(){ return 'u-' + Math.random().toString(36).slice(2,10); }
+    function q(name){ try{ return new URLSearchParams(location.search).get(name)||''; }catch(e){ return ''; } }
+
+    async function loadCategories(){
+      const res = await fetch(DATA_URL); const json = await res.json();
+      const all = (json.categories||[]).filter(c => c.toLowerCase() !== 'all products');
+      const sel = document.getElementById('npCategory');
+      sel.innerHTML = all.map(c=>`<option value="${c}">${c}</option>`).join('');
+      const fromQuery = q('cat');
+      if (fromQuery && all.includes(fromQuery)) sel.value = fromQuery;
+    }
+
+    function wireUpload(){
+      const file = document.getElementById('fileInput');
+      const preview = document.getElementById('preview');
+      file.addEventListener('change', () => {
+        const f = file.files && file.files[0];
+        if (!f) return;
+        const r = new FileReader();
+        r.onload = () => { imageDataURL = r.result; preview.innerHTML = `<img src="${imageDataURL}" alt="preview"/>`; };
+        r.readAsDataURL(f);
+      });
+    }
+
+    function wireButtons(){
+      document.getElementById('npBack').addEventListener('click', () => {
+        const cat = document.getElementById('npCategory').value;
+        location.href = `ProductManagement.html?cat=${encodeURIComponent(cat)}`;
+      });
+      document.getElementById('npCancel').addEventListener('click', () => {
+        ['npName','npPrice','npScore','npArtisan','npDesc'].forEach(id => document.getElementById(id).value = '');
+        imageDataURL = '';
+        document.getElementById('fileInput').value = '';
+        document.getElementById('preview').innerHTML = '<span>Preview</span>';
+      });
+      document.getElementById('npCreate').addEventListener('click', () => {
+        const name = (document.getElementById('npName').value||'').trim();
+        const price = (document.getElementById('npPrice').value||'').trim();
+        const score = (document.getElementById('npScore').value||'').trim();
+        const artisan = (document.getElementById('npArtisan').value||'').trim();
+        const desc = (document.getElementById('npDesc').value||'').trim();
+        const cat = document.getElementById('npCategory').value;
+        if (!name){ alert('Please enter product name'); return; }
+        const extras = readExtras();
+        extras.push({ id:newId(), name, image:imageDataURL, category:cat, price, score, artisan, description:desc });
+        writeExtras(extras);
+        location.href = `ProductManagement.html?cat=${encodeURIComponent(cat)}`;
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadCategories();
+      wireUpload();
+      wireButtons();
+    });
+  })();
+  </script>
+</body>
+</html>
+
+

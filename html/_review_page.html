@@ -1,0 +1,71 @@
+<div class="page-container" id="review-page">
+
+  <header class="page-header" style="max-width: 1000px; margin: 0 auto 30px auto; text-align: left;">
+    <div class="breadcrumb-nav">
+      <a href="index.html" class="breadcrumb-link ajax-link">Home</a>
+      <span class="breadcrumb-separator">/</span>
+      <a href="profile.html" class="breadcrumb-link ajax-link">Profile</a>
+      <span class="breadcrumb-separator">/</span>
+      <a href="#" class="breadcrumb-link ajax-link" id="breadcrumb-order-detail">Order Detail</a>
+      <span class="breadcrumb-separator">/</span>
+      <span class="breadcrumb-current">Write Review</span>
+    </div>
+    <h1 style="font-size: 2.5rem; margin-top: 10px;">Write a Review</h1>
+  </header>
+
+  <main class="review-form-container" style="max-width: 1000px; margin: 0 auto;">
+    <div class="review-page-layout">
+
+      <div class="review-product-list">
+        <h3 class="review-section-title">Select a product to review:</h3>
+        <div class="product-list">
+          <div class="loading-spinner"></div>
+        </div>
+      </div>
+
+      <div class="review-form">
+        <h3 class="review-section-title">Your Review</h3>
+
+        <div class="form-group">
+          <label class="form-group__label">Product Rating</label>
+          <div class="stars" data-group="productRate">
+            </div>
+        </div>
+        <p></p>
+        <div class="form-group">
+          <label class="form-group__label" for="review-text">Your Comment</label>
+          <textarea id="review-text" class="review-textarea" rows="5" placeholder="Share your thoughts about the product..."></textarea>
+        </div>
+        <p></p>
+        <p></p>
+        <div class="form-group">
+          <label class="form-group__label">Add Media</label>
+          <p></p>
+          <div class="upload-media-grid">
+            
+            <div class="upload-box" id="imageUpload" style="height: 60px;width:100%;">
+              <input type="file" accept="image/*" class="upload-input">
+              <img src="" class="upload-preview">
+              <div class="upload-placeholder">
+                <i class="fas fa-image"></i>
+                <span>Add Photo</span>
+              </div>
+            </div>
+            
+            <div class="upload-box" id="videoUpload" style="width: 100%;height: 64px;">
+              <input type="file" accept="video/*" class="upload-input">
+              <video class="upload-preview" controls></video>
+              <div class="upload-placeholder">
+                <i class="fas fa-video"></i>
+                <span>Add Video</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="button button--filled submit-btn" style="width: 100%;">Submit Review</button>
+      </div>
+
+    </div>
+  </main>
+</div>

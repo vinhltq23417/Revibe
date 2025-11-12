@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Management | ReVibe</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .modal{position:fixed;inset:0;background:rgba(0,0,0,0.35);display:none;align-items:center;justify-content:center;z-index:50}
+    .modal-card{background:#fff;border-radius:12px;padding:20px;min-width:320px;max-width:90vw;box-shadow:0 10px 30px rgba(0,0,0,.15)}
+    .modal h3{margin-bottom:12px}
+    .modal .row{display:flex;flex-direction:column;gap:6px;margin-bottom:10px}
+    .modal input,.modal select{padding:10px;border:1px solid #e5e7eb;border-radius:8px}
+    .modal .actions{display:flex;gap:8px;justify-content:flex-end;margin-top:8px}
+    .btn-secondary{background:#e5e7eb;border:none;padding:8px 12px;border-radius:8px;cursor:pointer}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar" data-include="partials/sidebar.html"></aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <header class="header" data-include="partials/header.html"></header>
+
+      <div class="page-header">
+        <div>
+          <h2>Product Management</h2>
+        </div>
+        <div class="actions">
+          <select id="categorySelect"></select>
+          <button id="newProductBtn" class="btn-primary">New Product</button>
+        </div>
+      </div>
+
+      <div id="productGrid" class="product-grid"></div>
+
+      <div id="productModal" class="modal">
+        <div class="modal-card">
+          <h3>New Product</h3>
+          <form id="productForm">
+            <div class="row">
+              <label for="modalName">Name</label>
+              <input id="modalName" type="text" placeholder="Product Name" />
+            </div>
+            <div class="row">
+              <label for="modalImage">Image URL</label>
+              <input id="modalImage" type="text" placeholder="https://..." />
+            </div>
+            <div class="row">
+              <label for="modalCategory">Category</label>
+              <select id="modalCategory"></select>
+            </div>
+            <div class="actions">
+              <button type="button" id="modalClose" class="btn-secondary">Cancel</button>
+              <button type="submit" class="btn-primary">Add Product</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="../js/layout.js"></script>
+  <script src="../js/products.js"></script>
+</body>
+</html>

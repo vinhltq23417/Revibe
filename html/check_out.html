@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout - REVIBE</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/utility.css" />
+</head>
+<body>
+
+  <div class="checkout-container">
+    <!-- Breadcrumb -->
+    <div class="checkout-breadcrumb">
+      <a href="Homepage.html">
+        <img class="home-icon" src="../assets/icons/house.svg" alt="Home" />
+      </a>
+      <span class="separator">›</span>
+      <a href="Cart.html">My Shopping Cart</a>
+      <span class="separator">›</span>
+      <a href="Product_Order_Page.html">Order Checkout</a>
+      <span class="separator">›</span>
+      <span class="current">Payment</span>
+    </div>
+    
+
+    <div class="checkout-layout">
+      <!-- Left Column - Checkout Steps -->
+      <div class="checkout-steps-column">
+        <!-- Contact Information -->
+        <!-- Contact Information -->
+      <div class="contact-section">
+        <h2 class="section-title">Contact Information</h2>
+        <div class="customer-info">
+          <!-- Row 1: Customer -->
+          <div class="info-label">Customer:</div>
+          <div class="info-value" id="customerName">-</div>
+          <a href="#" class="change-link">Change</a>
+          
+          <!-- Row 2: Phone -->
+          <div class="info-label">Phone:</div>
+          <div class="info-value" id="customerPhone">-</div>
+          <div class="empty-space"></div>
+          
+          <!-- Row 3: Address -->
+          <div class="info-label">Address:</div>
+          <div class="info-value" id="customerAddress">-</div>
+          <div class="empty-space"></div>
+        </div>
+      </div>
+
+        <!-- Shipping Method -->
+        <div class="shipping-section">
+          <h2 class="section-title">Shipment method</h2>
+          <div id="shippingOptions">
+            <!-- Shipping options will be loaded dynamically -->
+          </div>
+        </div>
+
+        <!-- Payment Method -->
+        <div class="payment-section">
+          <h2 class="section-title">Payment method</h2>
+          <div id="paymentOptions">
+            <!-- Payment options will be loaded dynamically -->
+          </div>
+        </div>
+
+        <!-- Voucher Section -->
+        <div class="voucher-section">
+          <h2 class="section-title">Voucher</h2>
+          <div class="voucher-inputs">
+            <input type="text" class="voucher-input" id="voucherCode" placeholder="Enter discount code or Gift Card">
+            <button class="apply-btn" id="applyVoucherBtn">Apply</button>
+          </div>
+          <div class="voucher-discounts">
+            <div class="discount-item">
+              <span class="discount-label">Shipping discount:</span>
+              <span class="discount-value" id="shippingDiscount">0 đ</span>
+            </div>
+            <div class="discount-item">
+              <span class="discount-label">Order discount:</span>
+              <span class="discount-value" id="orderDiscount">0 đ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column - Order Summary -->
+      <div class="order-summary-column">
+        <div class="order-summary">
+          <h2 class="section-title">Order Summary</h2>
+          
+          <!-- Cart Items Preview -->
+          <div id="cartItemsPreview">
+            <!-- Cart items will be loaded dynamically -->
+          </div>
+
+          <div class="summary-grid">
+            <div class="summary-label">Subtotal:</div>
+            <div class="summary-value" id="subtotal">0 đ</div>
+            
+            <div class="summary-label">Shipping fee:</div>
+            <div class="summary-value" id="shippingFee">0 đ</div>
+            
+            <div class="summary-label">Total discount:</div>
+            <div class="summary-value discount" id="totalDiscount">0 đ</div>
+            
+            <div class="divider"></div>
+            
+            <div class="summary-label total">Total:</div>
+            <div class="summary-value total" id="totalAmount">0 đ</div>
+          </div>
+
+          <div class="order-btn-container">
+            <button class="order-btn" id="placeOrderBtn">
+              <span>Order</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

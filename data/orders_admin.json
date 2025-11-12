@@ -1,0 +1,182 @@
+[
+  {
+    "orderId": "1002",
+    "customerId": "C1001",
+    "date": "2025-03-15T10:30:00.000Z",
+    "customer": {
+      "name": "Luong Tran Quang Vinh",
+      "phone": "+84 37 621 5924",
+      "address": "Vietnam National University - HCM, Dormitory B, Dong Hoa Ward, Di An City, Binh Duong Province"
+    },
+    "shipping": {
+      "courier": "SPX Express",
+      "trackingCode": "SPX-982374613",
+      "deliveryStatus": "Delivered successfully",
+      "deliveredAt": "2025-03-20T14:32:00.000Z"
+    },
+    "payment": {
+      "method": "Credit Card (Visa)",
+      "orderPlaced": "2025-03-15T10:14:00.000Z",
+      "paymentConfirmed": "2025-03-15T10:16:00.000Z",
+      "shipperPickup": "2025-03-16T09:40:00.000Z",
+      "delivered": "2025-03-20T14:32:00.000Z"
+    },
+    "products": [
+      {"productId": "sf-1", "productName": "Eco Tee", "imagePath": "https://picsum.photos/seed/eco-tee/120/120", "originalPrice": 350000, "sellPrice": 320000, "quantity": 1},
+      {"productId": "fur-1", "productName": "Reclaimed Wood Table", "imagePath": "https://picsum.photos/seed/table/120/120", "originalPrice": 3400000, "sellPrice": 3200000, "quantity": 1}
+    ],
+    "subtotal": 3520000,
+    "shippingFee": 35000,
+    "shippingDiscount": 20000,
+    "totalDiscount": 230000,
+    "total": 3325000,
+    "status": "Pending"
+  },
+  {
+    "orderId": "1003",
+    "customerId": "C1023",
+    "date": "2025-03-18T14:12:00.000Z",
+    "customer": {"name": "Tran Minh Ha", "phone": "+84 98 111 2233", "address": "District 3, Ho Chi Minh City"},
+    "shipping": {"courier": "VNPost", "trackingCode": "VN-3311992", "deliveryStatus": "On the way", "deliveredAt": null},
+    "payment": {"method": "COD", "orderPlaced": "2025-03-18T14:12:00.000Z", "paymentConfirmed": "2025-03-18T14:18:00.000Z", "shipperPickup": "2025-03-19T08:30:00.000Z", "delivered": null},
+    "products": [
+      {"productId": "ft-1", "productName": "Recycled Sneakers", "imagePath": "https://picsum.photos/seed/sneaker/120/120", "originalPrice": 900000, "sellPrice": 850000, "quantity": 1},
+      {"productId": "ac-2", "productName": "Cork Wallet", "imagePath": "https://picsum.photos/seed/wallet/120/120", "originalPrice": 280000, "sellPrice": 260000, "quantity": 2}
+    ],
+    "subtotal": 1370000,
+    "shippingFee": 35000,
+    "shippingDiscount": 0,
+    "totalDiscount": 70000,
+    "total": 1335000,
+    "status": "Shipping"
+  },
+  {
+    "orderId": "1004",
+    "customerId": "C1077",
+    "date": "2025-04-02T09:05:00.000Z",
+    "customer": {"name": "Ngo Thi Huong", "phone": "+84 93 999 8888", "address": "Thu Duc City, HCMC"},
+    "shipping": {"courier": "GHN", "trackingCode": "GHN-0007766", "deliveryStatus": "Delivered successfully", "deliveredAt": "2025-04-05T16:05:00.000Z"},
+    "payment": {"method": "Momo E-Wallet", "orderPlaced": "2025-04-02T09:05:00.000Z", "paymentConfirmed": "2025-04-02T09:06:00.000Z", "shipperPickup": "2025-04-02T12:00:00.000Z", "delivered": "2025-04-05T16:05:00.000Z"},
+    "products": [
+      {"productId": "hd-2", "productName": "Recycled Lamp", "imagePath": "https://picsum.photos/seed/lamp/120/120", "originalPrice": 760000, "sellPrice": 720000, "quantity": 1},
+      {"productId": "kd-1", "productName": "Bamboo Cutlery Set", "imagePath": "https://picsum.photos/seed/cutlery/120/120", "originalPrice": 210000, "sellPrice": 190000, "quantity": 3},
+      {"productId": "ac-1", "productName": "Bamboo Sunglasses", "imagePath": "https://picsum.photos/seed/sunglasses/120/120", "originalPrice": 480000, "sellPrice": 450000, "quantity": 1}
+    ],
+    "subtotal": 1710000,
+    "shippingFee": 35000,
+    "shippingDiscount": 0,
+    "totalDiscount": 100000,
+    "total": 1645000,
+    "status": "Received"
+  },
+  {
+    "orderId": "1005",
+    "customerId": "C1119",
+    "date": "2025-04-15T18:22:00.000Z",
+    "customer": {"name": "Pham Quoc Bao", "phone": "+84 97 222 4455", "address": "Ha Noi, Vietnam"},
+    "shipping": {"courier": "SPX Express", "trackingCode": "SPX-887766", "deliveryStatus": "Processing", "deliveredAt": null},
+    "payment": {"method": "Credit Card (Mastercard)", "orderPlaced": "2025-04-15T18:22:00.000Z", "paymentConfirmed": "2025-04-15T18:23:00.000Z", "shipperPickup": "2025-04-16T08:20:00.000Z", "delivered": null},
+    "products": [
+      {"productId": "sf-2", "productName": "Organic Hoodie", "imagePath": "https://picsum.photos/seed/hoodie/120/120", "originalPrice": 620000, "sellPrice": 590000, "quantity": 2}
+    ],
+    "subtotal": 1180000,
+    "shippingFee": 35000,
+    "shippingDiscount": 0,
+    "totalDiscount": 50000,
+    "total": 1165000,
+    "status": "Pending"
+  },
+  {
+    "orderId": "1006",
+    "customerId": "C1155",
+    "date": "2025-05-03T11:10:00.000Z",
+    "customer": {"name": "Le Thi My Duyen", "phone": "+84 96 222 3344", "address": "Bien Hoa, Dong Nai"},
+    "shipping": {"courier": "VNPost", "trackingCode": "VN-556677", "deliveryStatus": "On the way", "deliveredAt": null},
+    "payment": {"method": "Bank Transfer", "orderPlaced": "2025-05-03T11:10:00.000Z", "paymentConfirmed": "2025-05-03T11:20:00.000Z", "shipperPickup": "2025-05-03T15:00:00.000Z", "delivered": null},
+    "products": [
+      {"productId": "fur-2", "productName": "Upcycled Chair", "imagePath": "https://picsum.photos/seed/chair/120/120", "originalPrice": 1600000, "sellPrice": 1500000, "quantity": 4},
+      {"productId": "hd-1", "productName": "Glass Vase", "imagePath": "https://picsum.photos/seed/vase/120/120", "originalPrice": 400000, "sellPrice": 380000, "quantity": 2}
+    ],
+    "subtotal": 6520000,
+    "shippingFee": 70000,
+    "shippingDiscount": 0,
+    "totalDiscount": 300000,
+    "total": 6290000,
+    "status": "Shipping"
+  },
+  {
+    "orderId": "1007",
+    "customerId": "C1181",
+    "date": "2025-06-09T08:44:00.000Z",
+    "customer": {"name": "Nguyen Hai Dang", "phone": "+84 93 777 6677", "address": "Hai Chau, Da Nang"},
+    "shipping": {"courier": "J&T", "trackingCode": "JT-889900", "deliveryStatus": "Delivered successfully", "deliveredAt": "2025-06-12T10:15:00.000Z"},
+    "payment": {"method": "Cash", "orderPlaced": "2025-06-09T08:44:00.000Z", "paymentConfirmed": "2025-06-09T08:48:00.000Z", "shipperPickup": "2025-06-09T12:00:00.000Z", "delivered": "2025-06-12T10:15:00.000Z"},
+    "products": [
+      {"productId": "kd-2", "productName": "Recycled Plate Set", "imagePath": "https://picsum.photos/seed/plates/120/120", "originalPrice": 560000, "sellPrice": 540000, "quantity": 1},
+      {"productId": "ft-2", "productName": "Vegan Leather Boots", "imagePath": "https://picsum.photos/seed/boots/120/120", "originalPrice": 1320000, "sellPrice": 1250000, "quantity": 1},
+      {"productId": "sf-1", "productName": "Eco Tee", "imagePath": "https://picsum.photos/seed/eco-tee/120/120", "originalPrice": 350000, "sellPrice": 320000, "quantity": 2}
+    ],
+    "subtotal": 2450000,
+    "shippingFee": 35000,
+    "shippingDiscount": 0,
+    "totalDiscount": 120000,
+    "total": 2365000,
+    "status": "Received"
+  },
+  {
+    "orderId": "1008",
+    "customerId": "C1200",
+    "date": "2025-07-21T16:05:00.000Z",
+    "customer": {"name": "Do Thi Hoa", "phone": "+84 90 111 8899", "address": "Hue City"},
+    "shipping": {"courier": "Ninja Van", "trackingCode": "NV-454545", "deliveryStatus": "Cancelled", "deliveredAt": null},
+    "payment": {"method": "Momo E-Wallet", "orderPlaced": "2025-07-21T16:05:00.000Z", "paymentConfirmed": "2025-07-21T16:06:00.000Z", "shipperPickup": null, "delivered": null},
+    "products": [
+      {"productId": "fur-1", "productName": "Reclaimed Wood Table", "imagePath": "https://picsum.photos/seed/table/120/120", "originalPrice": 3400000, "sellPrice": 3200000, "quantity": 1},
+      {"productId": "ac-1", "productName": "Bamboo Sunglasses", "imagePath": "https://picsum.photos/seed/sunglasses/120/120", "originalPrice": 480000, "sellPrice": 450000, "quantity": 2}
+    ],
+    "subtotal": 4100000,
+    "shippingFee": 35000,
+    "shippingDiscount": 0,
+    "totalDiscount": 150000,
+    "total": 3985000,
+    "status": "Cancelled"
+  },
+  {
+    "orderId": "1009",
+    "customerId": "C1254",
+    "date": "2025-08-03T12:30:00.000Z",
+    "customer": {"name": "Pham Minh Chau", "phone": "+84 97 000 1234", "address": "Nha Trang"},
+    "shipping": {"courier": "VNPost", "trackingCode": "VN-667788", "deliveryStatus": "Pending", "deliveredAt": null},
+    "payment": {"method": "COD", "orderPlaced": "2025-08-03T12:30:00.000Z", "paymentConfirmed": "2025-08-03T12:35:00.000Z", "shipperPickup": "2025-08-04T08:20:00.000Z", "delivered": null},
+    "products": [
+      {"productId": "sf-1", "productName": "Eco Tee", "imagePath": "https://picsum.photos/seed/eco-tee/120/120", "originalPrice": 350000, "sellPrice": 320000, "quantity": 3},
+      {"productId": "kd-1", "productName": "Bamboo Cutlery Set", "imagePath": "https://picsum.photos/seed/cutlery/120/120", "originalPrice": 210000, "sellPrice": 190000, "quantity": 1}
+    ],
+    "subtotal": 1150000,
+    "shippingFee": 35000,
+    "shippingDiscount": 0,
+    "totalDiscount": 60000,
+    "total": 1120000,
+    "status": "Pending"
+  },
+  {
+    "orderId": "1010",
+    "customerId": "C1302",
+    "date": "2025-09-14T07:15:00.000Z",
+    "customer": {"name": "Hoang Gia Bao", "phone": "+84 91 333 2222", "address": "Bac Ninh"},
+    "shipping": {"courier": "GHN", "trackingCode": "GHN-112233", "deliveryStatus": "Shipping", "deliveredAt": null},
+    "payment": {"method": "Credit Card (Visa)", "orderPlaced": "2025-09-14T07:15:00.000Z", "paymentConfirmed": "2025-09-14T07:16:00.000Z", "shipperPickup": "2025-09-14T11:00:00.000Z", "delivered": null},
+    "products": [
+      {"productId": "ft-1", "productName": "Recycled Sneakers", "imagePath": "https://picsum.photos/seed/sneaker/120/120", "originalPrice": 900000, "sellPrice": 850000, "quantity": 2},
+      {"productId": "hd-2", "productName": "Recycled Lamp", "imagePath": "https://picsum.photos/seed/lamp/120/120", "originalPrice": 760000, "sellPrice": 720000, "quantity": 1}
+    ],
+    "subtotal": 2420000,
+    "shippingFee": 35000,
+    "shippingDiscount": 0,
+    "totalDiscount": 130000,
+    "total": 2325000,
+    "status": "Shipping"
+  }
+]
+
+

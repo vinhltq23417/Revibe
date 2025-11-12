@@ -1,0 +1,61 @@
+  <div class="qr-container">
+    <!-- Breadcrumb -->
+    <!-- Breadcrumb - Fixed to match other pages -->
+    <div class="qr-breadcrumb">
+        <a href="Homepage.html">
+            <img class="home-icon" src="../assets/icons/house.svg" alt="Home" />
+        </a>
+        <span class="separator">›</span>
+        <a href="Cart.html">My Shopping Cart</a>
+        <span class="separator">›</span>
+        <a href="Product_Order_Page.html">Order Checkout</a>
+        <span class="separator">›</span>
+        <a href="Check_Out.html">Payment</a>
+        <span class="separator">›</span>
+        <span class="current">QR Payment</span>
+    </div>
+
+    <div class="qr-layout">
+      <!-- Left Column - QR Code -->
+      <div class="qr-section">
+        <h2 class="qr-title">Scan to Pay</h2>
+        
+        <img src="../assets/images/QRCode.jpg" alt="QR Code" class="qr-image" id="qrCodeImage" />
+        
+        <p class="qr-instructions">
+          Scan the QR code below using your Internet Banking app to make a payment.
+        </p>
+        
+        <p class="qr-note">
+          Note: This QR code will expire 24 hours after creation.
+        </p>
+        
+        <p class="qr-instructions">
+          After payment, click the button below.
+        </p>
+        
+        <button class="payment-btn" id="paymentCompletedBtn">
+          <span>I have completed the payment on the app</span>
+        </button>
+      </div>
+
+      <!-- Right Column - Order Information -->
+      <div class="order-info-section">
+        <h2 class="section-title">Order Information</h2>
+        
+        <div class="info-grid">
+          <div class="info-label">Order ID:</div>
+          <div class="info-value" id="orderIdDisplay">-</div>
+          
+          <div class="info-label">Total Amount:</div>
+          <div class="info-value total-amount" id="totalAmountDisplay">-</div>
+          
+          <div class="info-label">Payment Method:</div>
+          <div class="info-value" id="paymentMethodDisplay">-</div>
+          
+          <div class="info-label">Invoice Number:</div>
+          <div class="info-value" id="invoiceNumberDisplay">-</div>
+        </div>
+      </div>
+    </div>
+  </div>
